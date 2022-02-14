@@ -88,6 +88,9 @@ body {
 .idiscolor {
     color: var(--sangfeel);
 }
+.idisnew {
+    color: var(--bs-red);
+}
 
 hr {
     margin: 1rem 0;
