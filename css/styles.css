@@ -53,7 +53,7 @@
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
     --bs-body-font-family: var(--bs-font-sans-serif);
-    --bs-body-font-size: 1rem;
+    --bs-body-font-size: 20px;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
     --bs-body-color: #212529;
@@ -627,10 +627,11 @@ progress {
 .img-fluid {
     max-width: 100%;
     height: auto;
+    width: auto;
 }
 
 .img-flex1 {
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
     object-fit: cover;
 }
@@ -1447,7 +1448,7 @@ progress {
 
     .col-lg-8 {
         flex: 0 0 auto;
-        width: 66.66666667%;
+        width: max-content;
     }
 
     .col-lg-9 {
@@ -4312,7 +4313,7 @@ fieldset:disabled .btn {
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
     margin-right: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.6rem;
     text-decoration: none;
     white-space: nowrap;
 }
@@ -7401,6 +7402,8 @@ fieldset:disabled .btn {
 
 .justify-content-center {
     justify-content: center !important;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .justify-content-between {
@@ -11747,8 +11750,8 @@ html {
 }
 
 .masthead {
-    padding-top: calc(6rem + 74px);
-    padding-bottom: 6rem;
+    padding-top: 90px;
+    padding-bottom: 25px;
 }
 .masthead .masthead-heading {
     font-size: 2.75rem;
@@ -11826,24 +11829,49 @@ html {
 
 /* 테이블의 CSS */
 
-.myTable {
+.camspec{
+margin-left: 10px;
+margin-right: 10px;
+}
+.camimg{
+    width: 150px;
+    }
+
+.product_list_img img {
+	max-width: 80%;
+	-webkit-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+	-ms-flex-negative: 0;flex-shrink: 0;
+}
+.product_list_fluid {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.myTable  {
     table-layout: auto;
     width: 100%;
-    min-width: 720px;
+    min-width: 100%;
     max-width: 100%;
     overflow: hidden;
     border: 0;
     border-collapse: collapse;
     background-color: #FAFAFA;
-    margin: auto 5px;
+    margin: 1px;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 1vw;
 }
-.wiDe {
-    min-width: 48px;
-}
-.nArrow {
-    max-width: 720px;
+.myTable_gubun {
+    table-layout: auto;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border: 0;
+    border-collapse: collapse;
+    background-color: #FAFAFA;
+    margin: 1px;
+    text-align: center;
+    font-size: 1.2vw;
 }
 .myTable tr {
     height: 40px;
@@ -11851,7 +11879,7 @@ html {
 .myTable td,
 th {
     border: 1px white solid;
-    padding: 10px;
+    padding: 5px;
 }
 .myTable th {
     background-color: #3BAECE;
@@ -11873,7 +11901,7 @@ th {
 .myTable.headerH th {
     border-width: 1px;
 }
-.myTable.headerH tr:hover td {
+.myTable.hover {
     border-color: transparent;
     background-color: #E6E6E6;
 }
@@ -11883,11 +11911,8 @@ th {
 .myTable.headerH tr:hover td:last-Child {
     border-right-color: white;
 }
-.myTable.headerV {
-    width: 60%;
-}
-.myTable.headerV td:nth-Child(odd) {
-    background-color: #F0F0F0;
+.myTable{
+    width: 100%;
 }
 .myTable.headerHybrid tr:first-Child th:first-Child {
     background-color: transparent;
