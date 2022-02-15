@@ -639,6 +639,11 @@ progress {
     object-fit: cover;
 }
 
+.img-flex2 {
+    max-width: 30%;
+    height: auto;
+    object-fit: cover;
+}
 
 .img-thumbnail {
     padding: 0.25rem;
