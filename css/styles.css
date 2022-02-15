@@ -11861,7 +11861,7 @@ margin-right: 10px;
     background-color: #FAFAFA;
     margin: 1px;
     text-align: center;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 .myTable_gubun {
     table-layout: auto;
@@ -11874,7 +11874,7 @@ margin-right: 10px;
     background-color: #FAFAFA;
     margin: 1px;
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 1.2rem;
 }
 .myTable tr {
     height: 40px;
