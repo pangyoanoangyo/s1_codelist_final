@@ -52,7 +52,7 @@
                     aria-controls="navbarResponsive"
                     aria-expanded="false"
                     aria-label="Toggle navigation">
-                    Menu
+                    <strong> MENU </strong>
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -322,7 +322,17 @@
                                 <div class="text-center text-danger mb-3">Error sending message!</div>
                             </div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                        <button
+                            class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+                            type="button" 
+                            data-bs-target="#navbarResponsive"
+                            aria-controls="navbarResponsive"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <a href="mailto:sangfeel@idis.co.kr?body=" title="메일전송"  style="color: white;">
+                            <b>SEND</b></a>
+                        </button>
+                            
                         </form>
                     </div>
                 </div>
@@ -471,9 +481,9 @@
                                                 <td><input type='checkbox' name='선택' value='dome'></td>
                                                 <td><img class="img-flex1" img="img" src="assets\img\cam\2m_d_f_w.png"></td>
                                                 <td>2M</td>
-                                                <td>TGS28250</td>
-                                                <td>NC-D4216RX 2.8mm</td>
-                                                <td>2M / 2.8mm / 0ux / H.265</td>
+                                                <td class="idisnew"><b>채번필요</b></td>
+                                                <td>NC-D4216RX-A 4mm</td>
+                                                <td>2M / 4mm / 0ux / H.265</td>
                                                 <td></td>
                                             </tr>
                                             <tr>
@@ -492,6 +502,15 @@
                                                 <td>VDC10013</td>
                                                 <td>NC-D4213RX 4mm</td>
                                                 <td>2M / 4mm / 0ux / H.265</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type='checkbox' name='선택' value='dome'></td>
+                                                <td><img class="img-flex1" img="img" src="assets\img\cam\2m_d_f.png"></td>
+                                                <td>2M</td>
+                                                <td class="idisnew"><b>채번필요</b></td>
+                                                <td>NC-D4217RX 2.8mm</td>
+                                                <td>2M / 2.8mm / 0ux / H.265</td>
                                                 <td></td>
                                             </tr>
                                             <tr>
@@ -561,7 +580,7 @@
                                                 <td>8M</td>
                                                 <td>VBR10328</td>
                                                 <td>NC-T4831HRX-A</td>
-                                                <td class="camspec"> 8M / 2.7~13.5mm MFZ / 0lux / H.265 /IP67 </td>
+                                                <td> 8M / 2.7~13.5mm MFZ / 0lux / H.265 /IP67 </td>
                                                 <td></td>
                                             </tr>
                                             <tr>
@@ -703,7 +722,7 @@
                                                             <td>12M</td>
                                                             <td>VBR10318</td>
                                                             <td>NC-Y6C16WRX-A</td>
-                                                            <td class="camspec"> 12M(9.4M) / 1.2mm Fisheyes / 0lux / H.265 /IP67 </td>
+                                                            <td class="camspec"> <span><strong>(어안) </strong></span> 12M(9.4M) / 1.2mm / 0lux / IP67 </td>
                                                             <td></td>
                                                         </tr>
                                                         <tr>
@@ -712,7 +731,7 @@
                                                             <td> 5M</td>
                                                             <td> TGS30108</td>
                                                             <td>NC-Y6516WRX-A</td>
-                                                            <td>5M / 1.5mm Fisheyes / 0ux / H.265 / IP67 </td>
+                                                            <td><span><strong>(어안) </strong></span> 5M / 0ux / H.265 / IP67 </td>
                                                             <td></td>
                                                         </tr>
                                                         <tr>
@@ -721,7 +740,7 @@
                                                             <td>8M</td>
                                                             <td>TGS30333</td>
                                                             <td>NC-S3883HRX-A</td>
-                                                            <td>8M / 31x zoom / 0ux / H.265 / IP66 </td>
+                                                            <td><span><strong>(IR PTZ) </strong></span> 8M / 31x zoom / 0ux / IP66 </td>
                                                             <td></td>
                                                         </tr>
                                                         <tr>
@@ -730,7 +749,7 @@
                                                             <td>5M</td>
                                                             <td>TGS30459</td>
                                                             <td>NC-S3583HRX-A</td>
-                                                            <td>5M / 31x zoom / 0ux / H.265 / IP66 </td>
+                                                            <td><strong>(IR PTZ) </strong></span>5M / 31x zoom / 0ux / IP66 </td>
                                                             <td></td>
                                                         </tr>
                                                         <tr>
@@ -739,7 +758,7 @@
                                                             <td>2M</td>
                                                             <td>VDP10061</td>
                                                             <td>NC-S6286HRXL-A</td>
-                                                            <td>2M / 36x zoom / 0ux / H.265 / IP67 </td>
+                                                            <td><strong>(IR PTZ) </strong></span>2M / 36x zoom / 0ux / H.265 / IP67 </td>
                                                             <td></td>
                                                         </tr>
                                                         <tr>
@@ -748,7 +767,7 @@
                                                             <td>2M</td>
                                                             <td>VDP10231</td>
                                                             <td>NC-S3283WHX-A</td>
-                                                            <td>2M / 30x zoom / H.265 / IP66 </td>
+                                                            <td><strong>(PTZ) </strong></span>2M / 30x zoom / H.265 / IP66 </td>
                                                             <td></td>
                                                         </tr>
                                                         <tr>
@@ -757,16 +776,25 @@
                                                             <td>2M</td>
                                                             <td class="idisnew"><b>채번필요</b></td>
                                                             <td>NC-S3283FX-A</td>
-                                                            <td>2M / 30x zoom / H.265 / 매립형 </td>
+                                                            <td><strong>(PTZ) </strong></span>2M / 30x zoom / H.265 / 매립형 </td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type='checkbox' name='선택' value='spd'></td>
+                                                            <td><img class="img-flex1" img="img" src="assets\img\cam\etc_cam\2m_spd_d.png"></td>
+                                                            <td>2M</td>
+                                                            <td>VDP10060</td>
+                                                            <td>DC-S6162WHX-A</td>
+                                                            <td><strong>(PTZ) </strong></span>2M / 30x zoom / H.265 / IP66 </td>
                                                             <td></td>
                                                         </tr>
                                                         <tr>
                                                             <td><input type='checkbox' name='선택' value='pinhole'></td>
-                                                            <td><img class="img-flex1" img="img" src="assets\img\cam\etc_cam\2m_ph.png"></td>
+                                                            <td><img class="img-flex2" img="img" src="assets\img\cam\etc_cam\2m_ph.png"></td>
                                                             <td>2M</td>
                                                             <td>TGS30988</td>
                                                             <td>NC-V4211XJ 2.4mm</td>
-                                                            <td>2M / 2.4mm 핀홀 / H.265 </td>
+                                                            <td><strong>(PTZ) </strong></span>2M / 2.4mm / H.265 </td>
                                                             <td></td>
                                                         </tr>
                                                         <tr>
@@ -775,7 +803,7 @@
                                                             <td>5M</td>
                                                             <td>TGS24831</td>
                                                             <td>DC-TH2012WR</td>
-                                                            <td>5M(영상) - Thermal(160*120) / IP67(실내/외) </td>
+                                                            <td><strong>(열화상) </strong></span> 5M(영상) - Thermal(160*120) / IP67(실내외) </td>
                                                             <td></td>
                                                         </tr>
                                                         <tr>
@@ -784,7 +812,7 @@
                                                             <td>2M</td>
                                                             <td>TGS24788</td>
                                                             <td>DC-TH2011</td>
-                                                            <td>1.3M(영상) - Thermal(80*60) / 실내 </td>
+                                                            <td><strong>(열화상) </strong></span> 1.3M(영상) - Thermal(80*60) / 실내 </td>
                                                             <td></td>
                                                         </tr>
                                                     </table>
@@ -844,8 +872,8 @@
                                                     <td><input type='checkbox' name='선택' value='NVR'></td>
                                                     <td><img class="img-flex1" img="img" src="assets\img\nvr\4ch_nvr.png"></td>
                                                     <td>4CH</td>
-                                                    <td>VRN10029</td>
-                                                    <td>NR-2304P </td>
+                                                    <td class="idisnew"><b>채번필요</b></td>
+                                                    <td>NR-2504P </td>
                                                     <td class="camspec"> 4CH / 기본 2TB(추가 1EA) / PoE 4port / SA </td>
                                                     <td></td>
                                                 </tr>
@@ -853,8 +881,8 @@
                                                     <td><input type='checkbox' name='선택' value='NVR'></td>
                                                     <td><img class="img-flex1" img="img" src="assets\img\nvr\8ch_nvr.png"></td>
                                                     <td>8CH</td>
-                                                    <td>VRN10030</td>
-                                                    <td>NR-2308P </td>
+                                                    <td class="idisnew"><b>채번필요</b></td>
+                                                    <td>NR-2508P </td>
                                                     <td class="camspec"> 8CH / 기본 3TB(추가 1EA) / PoE 8port / SA </td>
                                                     <td></td>
                                                 </tr>
@@ -1264,7 +1292,7 @@
                                                             <td>EoC</td>
                                                             <td>TGS18312</td>
                                                             <td>DA-EC3101R </td>
-                                                            <td class="camspec"> EoC ㄲX / UTP <- 동축변환 </td>
+                                                            <td class="camspec"> EoC RX / UTP <- 동축변환 </td>
                                                             <td></td>
                                                         </tr>
                                                         <tr>
@@ -1273,7 +1301,7 @@
                                                             <td>AL</td>
                                                             <td>TGS29547</td>
                                                             <td>AL-1112 </td>
-                                                            <td class="camspec"> IN -점점,RS232 8PORT / OUT IP 1PORT </td>
+                                                            <td class="camspec"> IN -접점,RS232 8PORT / OUT IP 1PORT </td>
                                                             <td></td>
                                                         </tr>
                                                         <tr>

@@ -7409,7 +7409,8 @@ fieldset:disabled .btn {
 }
 
 .justify-content-center {
-    justify-content: center !important;
+    justify-content: center;
+    display: flex;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -8016,9 +8017,9 @@ fieldset:disabled .btn {
     text-transform: lowercase !important;
 }
 
-.text-uppercase {
+/* .text-uppercase {
     text-transform: uppercase !important;
-}
+} */
 
 .text-capitalize {
     text-transform: capitalize !important;
@@ -11843,7 +11844,7 @@ margin-right: 10px;
 }
 .camimg{
     width: 150px;
-    }
+}
 
 .product_list_img img {
 	max-width: 80%;
