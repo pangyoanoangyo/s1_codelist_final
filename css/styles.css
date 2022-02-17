@@ -11836,6 +11836,13 @@ html {
     background-color: #1a252f;
 }
 
+
+@media (min-width: 992px) {
+    .camimg{
+        width: 0px;
+    }
+}
+
 /* 테이블의 CSS */
 
 .camspec{
@@ -11843,7 +11850,9 @@ margin-left: 10px;
 margin-right: 10px;
 }
 .camimg{
-    width: 150px;
+    width: 30%;
+    flex : auto;
+    padding: 0%;
 }
 
 .product_list_img img {
@@ -11857,7 +11866,10 @@ margin-right: 10px;
     padding-right: 5px;
 }
 .myTable  {
-    table-layout: auto;
+    flex-wrap: wrap;
+    flex: 900px;
+    display: flex;
+    table-layout : auto;
     width: 100%;
     min-width: 100%;
     max-width: 100%;
@@ -11883,7 +11895,8 @@ margin-right: 10px;
     font-size: 1.2rem;
 }
 .myTable tr {
-    height: 40px;
+    height: 1rem;
+    width: 1em;
 }
 .myTable td,
 th {
@@ -11902,13 +11915,6 @@ th {
 }
 .headerBlue th {
     background-color: #7799ff;
-}
-.myTable.headerH tr:nth-Child(odd) {
-    background-color: #F0F0F0;
-}
-.myTable.headerH td,
-.myTable.headerH th {
-    border-width: 1px;
 }
 .myTable.hover {
     border-color: transparent;
