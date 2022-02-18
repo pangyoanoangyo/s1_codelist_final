@@ -88,6 +88,17 @@ body {
 .idiscolor {
     color: var(--sangfeel);
 }
+.idisman {
+    color: var(--sangfeel);
+    font-size: 24px;
+    font-weight: bolder;
+}
+.idisimg {
+    max-width: 30%;
+    height: auto;
+    object-fit: cover;
+    padding-left: 20px;
+}
 .idisnew {
     color: var(--bs-red);
 }
@@ -4354,7 +4365,7 @@ fieldset:disabled .btn {
 .navbar-toggler {
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
-    line-height: 1;
+    line-height: 2.5;
     background-color: transparent;
     border: 0.125rem solid transparent;
     border-radius: 0.5rem;
@@ -7409,8 +7420,7 @@ fieldset:disabled .btn {
 }
 
 .justify-content-center {
-    justify-content: center;
-    display: flex;
+    justify-content: center !important;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -8017,9 +8027,9 @@ fieldset:disabled .btn {
     text-transform: lowercase !important;
 }
 
-/* .text-uppercase {
+.text-uppercase {
     text-transform: uppercase !important;
-} */
+}
 
 .text-capitalize {
     text-transform: capitalize !important;
@@ -8139,6 +8149,11 @@ fieldset:disabled .btn {
 .bg-secondary {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-secondary_2 {
+    --bs-bg-opacity: 1;
+    background-color: whitesmoke;
 }
 
 .bg-success {
@@ -11690,8 +11705,10 @@ html {
 #mainNav .navbar-nav {
     margin-top: 1rem;
 }
+
+/* 제품선택/견적요청 글씨색 */
 #mainNav .navbar-nav li.nav-item a.nav-link {
-    color: #fff;
+    color: #212529;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
     color: #1abc9c;
@@ -11759,7 +11776,9 @@ html {
 }
 
 .masthead {
-    padding-top: 90px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 .masthead .masthead-heading {
@@ -11780,7 +11799,7 @@ html {
     }
     .masthead .masthead-heading {
         font-size: 4rem;
-        line-height: 3.5rem;
+        line-height: 2rem;
     }
     .masthead .masthead-subheading {
         font-size: 1.5rem;
@@ -11849,9 +11868,13 @@ html {
 margin-left: 10px;
 margin-right: 10px;
 }
+
 .camimg{
-    width: 30%;
-    flex : auto;
+    width: 20%;
+    padding: 0%;
+}
+.hddspec{
+    width: 150px;
     padding: 0%;
 }
 
@@ -11866,22 +11889,19 @@ margin-right: 10px;
     padding-right: 5px;
 }
 .myTable  {
-    flex-wrap: wrap;
-    flex: 900px;
-    display: flex;
-    table-layout : auto;
+
     width: 100%;
     min-width: 100%;
     max-width: 100%;
     overflow: hidden;
     border: 0;
     border-collapse: collapse;
-    background-color: #FAFAFA;
+    background-color: whitesmoke;
     margin: 1px;
     text-align: center;
     font-size: 1rem;
 }
-.myTable_gubun {
+/* .myTable_gubun {
     table-layout: auto;
     width: 100%;
     min-width: 100%;
@@ -11893,7 +11913,7 @@ margin-right: 10px;
     margin: 1px;
     text-align: center;
     font-size: 1.2rem;
-}
+} */
 .myTable tr {
     height: 1rem;
     width: 1em;
@@ -11938,4 +11958,40 @@ th {
 }
 .myTable caption {
     margin: 2px 0;
+}
+.selector{
+    color: black ;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* 메일보내기 CSS */
+.button-success {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: #0099B0
+}
+.button-xlarge {
+    font-size: 150%;
+}
+button {
+    justify-items: none;
+}
+#email,
+#phone,
+#name {
+    width: 100%;
+}
+#message{
+    width: 100%;
+}
+.honeypot-field {
+    display: none;
+}
+.thankyou_message {
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
