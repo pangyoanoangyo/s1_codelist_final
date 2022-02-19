@@ -102,7 +102,15 @@ body {
 .idisnew {
     color: var(--bs-red);
 }
-
+#product_sel{
+    font-size: 2.5rem;
+    color: var(--sangfeel);
+}
+#content_name{
+    font-size: 1em;
+    color: #343a40;
+    font-weight: bold;
+}
 hr {
     margin: 1rem 0;
     color: inherit;
@@ -344,6 +352,7 @@ svg {
 table {
     caption-side: bottom;
     border-collapse: collapse;
+    display: flex;
 }
 
 caption {
@@ -12008,6 +12017,7 @@ button {
     display: none;
 }
 .thankyou_message {
+    display: none;
     font-size: large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

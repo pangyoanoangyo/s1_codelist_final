@@ -110,7 +110,7 @@
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">제품 선택</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" id="product_sel">제품 선택</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -217,7 +217,7 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">견적 요청</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" id="product_sel">견적 요청</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -239,21 +239,23 @@
 
     <div class="form-elements">
         <fieldset class="pure-group">
-            <label for="name">성함:
+            <label for="name" id="content_name">
+                <i class="fa-solid fa-check"> 성함 </i> </i>
             </label>
             <input id="name" name="name" placeholder="성함을 입력하세요"/>
         </fieldset>
 
         <div class="form-elements">
             <fieldset class="pure-group">
-                <label for="phone">연락처:
+                <label for="phone" id="content_name">
+                    <i class="fa-solid fa-check"> 연락처 </i>
                 </label>
                 <input id="phone" name="phone" placeholder="연락처를 입력하세요"/>
             </fieldset>
 
             <fieldset class="pure-group">
-                <label for="email">
-                    E-mail Address:</label>
+                <label for="email" id="content_name">
+                    <i class="fa-solid fa-check"> E-mail Address  </i></label>
                 <input
                     id="email"
                     name="email"
@@ -264,7 +266,8 @@
             </fieldset>
 
             <fieldset class="pure-group">
-                <label for="message">견적요청내용:
+                <label for="message" id="content_name">
+                    <i class="fa-solid fa-check"> 견적 요청내용 </i>
                 </label>
                 <textarea
                     id="message"
@@ -285,16 +288,14 @@
         </div>
         <!-- Customise the Thankyou Message People See when they submit the form: -->
         <div class="thankyou_message" style="display:none;">
-            <h2>
-                <em>Thanks</em>
-                for contacting us! We will get back to you soon!</h2>
+            <h2>Thanks for contacting us! We will get back to you soon!</h2>
         </div>
         <!-- 메일보낸후 메세지 띄우기-->
         <script
             data-cfasync="false"
             type="text/javascript"
-            src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-
+            src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
+        </script>
     </form>
                     </div>
                 </div>
@@ -1248,9 +1249,6 @@
                                                             <td class="camspec"> PTZ카메라 벽부형 브라켓+ 선쉴드 (NC-S3283WHX-A용) </td>
                                                                 </tr>
                                             </table>
-                                                <!-- Portfolio Modal - Image-->
-                                                <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png"
-                                                alt="..." /> -->
                                                 <!-- Portfolio Modal - Text -->
                                                 <button class="btn btn-primary" href="" data-bs-dismiss="modal">
                                                 <i class="fas fa-times fa-fw"></i> Close Window
@@ -1267,9 +1265,8 @@
                 src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
             <!-- Core theme JS-->
             <script src="js/scripts.js"></script>
-        </div>
             <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
             <!-- 메일보낸후 메세지 띄우기-->
-            <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+            <script data-cfasync="false" src="form-submission-handler.js"></script>
         </body>
     </html>
