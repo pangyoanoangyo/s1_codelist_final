@@ -655,7 +655,12 @@ progress {
     height: auto;
     object-fit: cover;
 }
-
+.img-flex3 {
+    width: 5em;
+    height: 3em;
+    object-fit: cover;
+    margin: 0%;
+}
 .img-thumbnail {
     padding: 0.25rem;
     background-color: #fff;
@@ -4365,7 +4370,7 @@ fieldset:disabled .btn {
 .navbar-toggler {
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
-    line-height: 2.5;
+    line-height: 1.5;
     background-color: transparent;
     border: 0.125rem solid transparent;
     border-radius: 0.5rem;
@@ -4394,7 +4399,6 @@ fieldset:disabled .btn {
     background-position: center;
     background-size: 100%;
 }
-
 .navbar-nav-scroll {
     max-height: var(--bs-scroll-height, 75vh);
     overflow-y: auto;
@@ -11721,8 +11725,8 @@ html {
     color: #1abc9c;
 }
 #mainNav .navbar-toggler {
-    font-size: 80%;
-    padding: 0.8rem;
+    font-size: 0.9rem;
+    padding: 0.6rem;
 }
 
 @media (min-width: 992px) {
@@ -11756,7 +11760,17 @@ html {
     #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
+    #mainNav.container {
+        display:none;
+    }
 }
+@media (min-width:991px) {
+    #mainNav .idisimg{
+        width:150px;
+    }
+}
+
+
 .form-floating input.form-control,
 .form-floating textarea.form-control {
     font-size: 1.5rem;
@@ -11776,14 +11790,16 @@ html {
 }
 
 .masthead {
+    display: flex;
+    justify-content: center;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 25px;
     padding-bottom: 25px;
 }
 .masthead .masthead-heading {
-    font-size: 2.75rem;
-    line-height: 2.75rem;
+    font-size: 1rem;
+    line-height: 1rem;
 }
 .masthead .masthead-subheading {
     font-size: 1.25rem;
@@ -11794,11 +11810,11 @@ html {
 
 @media (min-width: 992px) {
     .masthead {
-        padding-top: calc(6rem + 104px);
-        padding-bottom: 6rem;
+        padding-top: 9rem;
+        padding-bottom: 2rem;
     }
     .masthead .masthead-heading {
-        font-size: 4rem;
+        font-size: 3rem;
         line-height: 2rem;
     }
     .masthead .masthead-subheading {
@@ -11994,4 +12010,17 @@ button {
 .thankyou_message {
     font-size: large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#boxs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#box1,
+#box2,
+#box3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
 }
