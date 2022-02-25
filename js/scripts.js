@@ -63,7 +63,7 @@ function getCheckboxValue(){
     // 선택된 목록에서 value 찾기
     let result = '';
     selectedEls.forEach((el) => {
-    result += el.value +''+''+'';
+    result += el.value +'      ';
     });
     
     // 출력
