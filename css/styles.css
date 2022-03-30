@@ -398,12 +398,6 @@ svg {
     vertical-align: middle;
 }
 
-table {
-    caption-side: bottom;
-    border-collapse: collapse;
-    display: flex;
-}
-
 caption {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -702,23 +696,6 @@ progress {
     width: auto;
 }
 
-.img-flex1 {
-    max-width: 70%;
-    height: auto;
-    object-fit: cover;
-}
-
-.img-flex2 {
-    max-width: 30%;
-    height: auto;
-    object-fit: cover;
-}
-.img-flex3 {
-    width: 5em;
-    height: 3em;
-    object-fit: cover;
-    margin: 0%;
-}
 .img-thumbnail {
     padding: 0.25rem;
     background-color: #fff;
@@ -11965,44 +11942,125 @@ margin-right: 10px;
 .myTable  {
 
     width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-    overflow: hidden;
     border: 0;
     border-collapse: collapse;
-    background-color: whitesmoke;
+    background-color:whitesmoke;
     margin: 1px;
     text-align: center;
     font-size: 1rem;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     /* display: block; 이거수정하면 하드표가 이상해짐 */
 }
 /* .myTable_gubun {
-    table-layout: auto;
+    background-color: red;
     width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-    overflow: hidden;
     border: 0;
     border-collapse: collapse;
-    background-color: #FAFAFA;
     margin: 1px;
     text-align: center;
-    font-size: 1.2rem;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
 } */
-.myTable tr {
-    height: 1rem;
-    width: 1em;
+
+.img-flex1 {
+    width: 80%;
+    display: flex;
 }
-.myTable td,
-th {
-    border: 1px white solid;
+
+.img-flex2 {
+    width: 50%;
+    display: flex;
     padding: 5px;
 }
-.myTable th {
-    background-color: #3BAECE;
-    color: whitesmoke;
+.img-flex3 {
+    width: 30%;
+    display: flex;
+    padding: 5px;
 }
+
+.ckb{
+    width: 7.5%;
+    display: flex;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    width: 15%;
+    display: flex;
+    /* background-color: #0099B0; */
+    justify-content: center;
+    align-items: center;
+}
+.code{
+    width: 20%;
+    display: flex;
+    /* background-color: blue; */
+    justify-content: center;
+    align-items: center;
+}
+.spec{
+    width: 30%;
+    display: flex;
+    /* background-color:white; */
+    justify-content: center;
+    align-items: center;
+}
+.hdTable1{
+    border: 1px white solid;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    /* background-color: orange; */
+    background-color: #0099B0;
+    font-size: 1rem;
+    height: 40px;
+}
+.hdTable2{
+    border: 1px white solid;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    /* background-color: orange; */
+    font-size: 0.8rem;
+}
+
+/* 
+.myTable tr {
+    width: 100%;
+    display: flex;
+}
+.myTable td {
+    border: 1px white solid;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.myTable th {
+    border: 1px white solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+
+
 .headerOrange th {
     background-color: #F5F5F5;
 }
