@@ -1507,7 +1507,7 @@ progress {
 
     .col-lg-8 {
         flex: 0 0 auto;
-        width: max-content;
+        width: 100%;
     }
 
     .col-lg-9 {
@@ -5933,7 +5933,7 @@ fieldset:disabled .btn {
 
 @media (min-width: 576px) {
     .modal-dialog {
-        max-width: 500px;
+        max-width: 90%;
         margin: 1.75rem auto;
     }
 
@@ -5952,12 +5952,12 @@ fieldset:disabled .btn {
 @media (min-width: 992px) {
     .modal-lg,
     .modal-xl {
-        max-width: 800px;
+        max-width: 90%;
     }
 }
 @media (min-width: 1200px) {
     .modal-xl {
-        max-width: 1140px;
+        max-width: 90%;
     }
 }
 .modal-fullscreen {
@@ -11947,7 +11947,7 @@ margin-right: 10px;
     background-color:whitesmoke;
     margin: 1px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -12004,6 +12004,7 @@ margin-right: 10px;
     /* background-color: blue; */
     justify-content: center;
     align-items: center;
+    /* border:0.1px olivedrab ; */
 }
 .spec{
     width: 30%;
@@ -12023,7 +12024,7 @@ margin-right: 10px;
     flex-wrap: wrap;
     /* background-color: orange; */
     background-color: #0099B0;
-    font-size: 1rem;
+    font-size: 1em;
     height: 40px;
 }
 .hdTable2{
@@ -12036,7 +12037,8 @@ margin-right: 10px;
     text-align: center;
     flex-wrap: wrap;
     /* background-color: orange; */
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+    height: 90px;
 }
 
 /* 
