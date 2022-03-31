@@ -11952,6 +11952,7 @@ margin-right: 10px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
     /* display: block; 이거수정하면 하드표가 이상해짐 */
 }
 /* .myTable_gubun {
@@ -11990,6 +11991,8 @@ margin-right: 10px;
     /* background-color: red; */
     justify-content: center;
     align-items: center;
+    border: 1px white solid;
+    word-break:break-all;
 }
 .img{
     width: 15%;
@@ -11997,6 +12000,7 @@ margin-right: 10px;
     /* background-color: #0099B0; */
     justify-content: center;
     align-items: center;
+    border: 1px white solid;
 }
 .code{
     width: 15%;
@@ -12004,7 +12008,8 @@ margin-right: 10px;
     /* background-color: blue; */
     justify-content: center;
     align-items: center;
-    /* border:0.1px olivedrab ; */
+    border: 1px white solid;
+    word-break:break-all;
 }
 .spec{
     width: 40%;
@@ -12012,9 +12017,11 @@ margin-right: 10px;
     /* background-color:white; */
     justify-content: center;
     align-items: center;
+    border: 1px white solid;
+    word-break:break-all;
 }
 .hdTable1{
-    border: 1px white solid;
+    /* border: 1px white solid; */
     padding: 0px;
     width: 100%;
     display: flex;
@@ -12024,23 +12031,25 @@ margin-right: 10px;
     flex-wrap: wrap;
     /* background-color: orange; */
     background-color: #0099B0;
-    font-size: 1em;
+    font-size: 0.9rem;
     height: 35px;
     color: var(--bs-dark);
+    word-break:break-all;
+
+    
 }
 .hdTable2{
     border: 1px white solid;
-    padding: 0px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* background-color: orange; */
-    font-size: 1rem;
+    font-size: 0.9rem;
     height: 100px;
-    padding: 0.1px;
+
+
 }
 
 /* 
