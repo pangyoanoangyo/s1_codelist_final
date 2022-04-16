@@ -1,1330 +1,811 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>IDIS_CODE</title>
     
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-17RFS9HR88"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-17RFS9HR88');
-    </script>
-    
-        <meta charset="utf-8"/>
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <meta name="description" content=""/>
-        <meta name="author" content=""/>
-        <title>Product_code</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
-        <!-- Font Awesome icons (free version)-->
-        <script
-            src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-            crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link
-            href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-            rel="stylesheet"
-            type="text/css"/>
-        <link
-            href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
-            rel="stylesheet"
-            type="text/css"/>
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-        <link
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <!-- Style The Contact Form How Ever You Prefer -->
-        <link rel="stylesheet" href="style_contact.css">
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet"/>
         <!-- Core icon (includes Bootstrap)-->
         <script src="https://kit.fontawesome.com/ac202f0dd2.js" crossorigin="anonymous"></script>
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary_2 text-uppercase fixed-top"
-            id="mainNav">
-            
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">
-                    <img style="image-resolution: 50%;" src="assets/img/IDIS_logo_only.png" alt="...", id="idissvg">
-                </a>                               
-                <button
-                    class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarResponsive"
-                    aria-controls="navbarResponsive"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                    <strong> MENU </strong>                    
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1 ">
-                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">
-                                <b>제품선택</b>
-                            </a>
-                        </li>
-                        
-                        <li class="nav-item mx-0 mx-lg-1">
-                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">
-                                <b>견적요청</b>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <section id="boxs">
-            <div class="container d-flex align-items-center flex-column" id="box1">
-                <!-- Masthead Heading -->
-                <h1 class="masthead-heading text-uppercase mb-0">IDIS
-                    <span class="idiscolor">CODE</span>
-                    LIST</h1>
-            </div>
-                <!-- Icon Divider-->
-            <div class="divider-custom divider-light" id="box2">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                    <i class="fa-solid fa-video"></i>
-                </div>
-                <div class="divider-custom-line"></div>
-            </div>
-                <!-- Masthead Subheading-->
-            <div >
-                <div class="idisPerson">
-                    <div class="idisPerson_flex">
-                        <p class="idisman"> 김상필 </p>
-                        <p class="manager"> 과장  </p>
-                        <a class="idisPerson_item"> [ sangfeel@idis.co.kr ] </a>
-                    </div>
-                    <div class="idisPerson_flex">
-                        <p class="idisman"> 권혁제 </p>
-                        <p class="manager"> 주임  </p>
-                        <a class="idisPerson_item"> [ gurwp007@idis.co.kr ]</a>
-                    </div>
-                    <div class="idisPerson_flex">
-                        <p class="idisman"> 김오성 </p>
-                        <p class="manager"> 담당  </p>
-                        <a class="idisPerson_item"> [ sungk5@idis.co.kr ] </a>
-                    </div>
-                </div>
-            </div>
-            </section>
-                <!-- 메일보낸후 메세지 띄우기-->
-                <script
-                data-cfasync="false"
-                type="text/javascript"
-                src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
-                </script>
-            
-        </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" id="product_sel">제품 선택</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                        <i class="fa-solid fa-caret-down"></i>
-                    </div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div
-                            class="portfolio-item mx-auto"
-                            data-bs-toggle="modal"
-                            data-bs-target="#portfolioModal1">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/dome.png" alt="..."/>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div
-                            class="portfolio-item mx-auto"
-                            data-bs-toggle="modal"
-                            data-bs-target="#portfolioModal2">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/bullet.png" alt="..."/>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div
-                            class="portfolio-item mx-auto"
-                            data-bs-toggle="modal"
-                            data-bs-target="#portfolioModal3">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/spd.png" alt="..."/>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div
-                            class="portfolio-item mx-auto"
-                            data-bs-toggle="modal"
-                            data-bs-target="#portfolioModal4">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/nvr.png" alt="..."/>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div
-                            class="portfolio-item mx-auto"
-                            data-bs-toggle="modal"
-                            data-bs-target="#portfolioModal5">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/hdtvi.png" alt="..."/>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div
-                            class="portfolio-item mx-auto"
-                            data-bs-toggle="modal"
-                            data-bs-target="#portfolioModal6">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/etc.png" alt="..."/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" id="product_sel">견적 요청</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                        <i class="fa-solid fa-video"></i>
-                    </div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <div class="content_explain">
-                    <label>
-                        <i class="fa-solid fa-check"> 선택한 제품을
-                            <span class="cen">
-                                <p class="button-success button">
-                                    <i class="fa fa-paper-plane"></i>&nbsp;Send
-                                </p>
-                            </span> 하시면 <span style="color:#0d6efd">'판가'</span>를 회신드립니다.
-                        </i>
-                    </label>
-                </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- 아래의 내용이 이메일을 보내는 키워드 -->
-    <form class="gform pure-form pure-form-stacked"
-            method="POST"
-            data-email=""
-            action="https://script.google.com/macros/s/AKfycbxVoWUPegaZU0UUee5gnHmy6-9Ugj0Ly8mhjbDk/exec">
-            <!-- change the form action to your script url -->
 
-        <div class="form-elements"></div>
-            <fieldset class="pure-group">
-            <label for="name" id="content_name">
-                <i class="fa-solid fa-check"> 성함 </i></label>
-            <input
-                id="name"
-                name="name"
-                placeholder="성함을 입력하세요"/>
-            </fieldset>
-
-        <div class="form-elements"></div>
-            <fieldset class="pure-group">
-                <label for="phone" id="content_name">
-                    <i class="fa-solid fa-check"> 연락처 </i>
-                </label>
-                <input id="phone" name="phone" placeholder="연락처를 입력하세요"/></fieldset>
-
-        <div class="form-elements"></div>
-            <fieldset class="pure-group">
-                <label for="email" id="content_name">
-                    <i class="fa-solid fa-check"> E-mail Address  </i></label>
-                <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value=""
-                    required="required"
-                    placeholder="your.name@email.com"/>
-            </fieldset>
-        
-
-        <div class="form-elements"></div>
-            <fieldset class="pure-group">
-                <label for="message" id="content_name">
-                    <i class="fa-solid fa-check"> 견적요청 (제픔을 체크하세요.) </i>
-                </label>
-                <textarea
-                    id="result"
-                    name="message"
-                    required="required"
-                    placeholder="코드와 수량을 입력하세요."></textarea>                    
-            </fieldset>
-
-        <div class="form-elements"></div>
-            <fieldset class="pure-group honeypot-field">
-                <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a
-                    hidden text field; must be empty to submit the form! Otherwise, we assume the
-                    user is a spam bot.</label>
-                <input id="honeypot" type="text" name="honeypot" value=""/>
-            </fieldset>
-            <button class="button-success pure-button button-xlarge">
-                <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-        
-        
-        <!-- Customise the Thankyou Message People See when they submit the form: -->
-        <div class="thankyou_message" style="display:none;">
-            <h2><br> 전송 되었습니다.<br>곧 회신 드리겠습니다.</h2>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="#">
+            <img src="assets\img\IDIS_logo_only.png" class="logo" /></a>
         </div>
-
-    </form>
-                    </div>
+        <div class="headerRight">    
+            <a href="https://www.idisglobal.com/" class="logoHomepage">
+            <div class="idisHomepage">아이디스 홈페이지 > </div></a>
+            <a class="logoHomepage" onclick="openModal('#modalPerson')">
+                <div class="idisHomepage"> 담당자 소개 > </div></a>
+        </div>    
+            
+        <!-- <form>
+            <optgroup label="제품 선택">
+                    <option>돔카메라</option>
+                    <li>뷸렛카메라</li>
+                    <li>특수카메라</li>
+                    <li>네트워크 저장장치</li>
+                    <li>아날로그 저장장치</li>
+                    <li>보안용 악세사리</li>
+                </optgroup>
+        </form>
+        -->
+            <script>
+            //writeContent('#header','JS로 작성했dd습니다');
+        </script>
+    </header>
+    <nav>
+        <h1> <span class="navList">IDIS</span> CODE 
+            <span class="navList">LIST</span></h1>
+        <!-- <div class="navBlank"></div> -->
+    </nav>
+            <section>
+                <img class="cctvImage" src="assets\img\portfolio\dome.png" onclick="openModal('#modalDome')">
+                <img class="cctvImage" src="assets\img\portfolio\bullet.png" onclick="openModal('#modalBullet')">
+                <img class="cctvImage" src="assets\img\portfolio\spd.png" onclick="openModal('#modalSpd')">
+                <img class="cctvImage" src="assets\img\portfolio\nvr.png" onclick="openModal('#modalNvr')">
+                <img class="cctvImage" src="assets\img\portfolio\hdtvi.png" onclick="openModal('#modalHdtvi')">
+                <img class="cctvImage" src="assets\img\portfolio\etc.png" onclick="openModal('#modalEtc')">
+            </section>
+            <!-- <aside>
+                <div class="damdang">
+                    <div><span class="damdangName">김상필 과장</span><br>
+                        <a mailto="sangfeel@idis.co.kr">
+                        <span class='damdangEmail'>[ sangfeel@idis.co.kr ]</span></a></div>
+                    <div><span class="damdangName">권혁제 주임</span><br>
+                        <span class='damdangEmail'>[ gurwp007@idis.co.kr ]</span></div>
+                    <div><span class="damdangName">김오성 담당</span><br>
+                        <span class='damdangEmail'>[ sungk5@idis.co.kr ]</span></div>
+                </div> 
+            </aside> -->
+        </div>
+        <footer>
+            <div class="footerTop">
+                <div class="address">
+                    <span class="spanOne">㈜아이디스</span>
+                    <table>
+                        <tr>본사: 대전 광역시 유성구 테크노3로 8-10</tr><br>
+                        <tr>지사: 경기 성남시 분당구 판교로 344</tr>
+                    </table>
                 </div>
+                <div class="homepage">
+                    <a href="https://www.idisglobal.com"> 
+                    <i class="fa-solid fa-house-chimney-window"></i></a>
+                    <a href="https://www.facebook.com/idis.co.kr">
+                    <i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/channel/UCnGB42OLnoOzdBWoEjWccLg">
+                    <i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="techPhone">
+                    <span class="spanOne">기술상담: 1644-6440</span>
+                    <table>
+                        <tr>(24시간 연중무휴)</tr>
+                    </table>
+                </div>  
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            <b>본사 : 대전 광역시 유성구 테크노3로 8-10<br>
-                            지사 : 경기 성남시 분당구 판교로 344
-                            </b>
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a
-                            class="btn btn-outline-light btn-social mx-1"
-                            href="https://www.facebook.com/idis.co.kr">
-                            <i class="fab fa-fw fa-facebook-f"></i>
-                        </a>
-                        <a
-                            class="btn btn-outline-light btn-social mx-1"
-                            href="https://www.youtube.com/channel/UCnGB42OLnoOzdBWoEjWccLg">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                        <a
-                            class="btn btn-outline-light btn-social mx-1"
-                            href="https://www.linkedin.com/company/idis-global">
-                            <i class="fab fa-fw fa-linkedin-in"></i>
-                        </a>
-                        <a
-                            class="btn btn-outline-light btn-social mx-1"
-                            href="https://www.instagram.com/accounts/login/?next=/idis_korea">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About IDIS</h4>
-                            <a 
-                                class="btn btn-outline-light btn-social mx-1"
-                                href="https://www.idisglobal.com">
-                                <i class="fa-solid fa-house-chimney-window"></i>
-                            </a>
-
-                        </p>
-                    </div>
-                </div>
+            <div class="footerBottom">
+                Copyright © Domestic Business Solution Sales Team 2022
             </div>
         </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container">
-                <small>Copyright &copy; Domestic Business Solution Sales Team 2022</small>
-            </div>
+    </div>
+    <div id="modalPerson" class="modalContainerSmall">
+        <div>
+            <img src="assets\img\idis_logo_sero.png" />
+            <p> 
+                <span style="font-size:20px"> ▫️ 김상필 과장 </span>| sangfeel@idis.co.kr <br>
+                <span style="font-size:20px"> ▫️ 권혁제 주임 </span>| gurwp007@idis.co.kr<br>
+                <span style="font-size:20px"> ▫️ 김오성 담당 </span>| sungk5@idis.co.kr<br>
+            </p>
         </div>
-        <!-- Portfolio Modals-->
-        <!-- DOME -->
-        <div class="product_list product_list_fluid">
-            <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">
-                            <button
-                                class="btn-close"
-                                type="button"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body text-center pb-5">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">DOME CAMERA</h2>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-icon">
-                                                <i class="fa-solid fa-video"></i>
-                                            </div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <table class="myTable">
-                                            <tr class="hdTable1">
-                                                <th class="ckb">✓</th>
-                                                <th class="img">IMG</th>
-                                                <th class="ckb">MP</th>
-                                                <th class="code">코드</th>
-                                                <th class="code">모델명</th>
-                                                <th class="spec">스펙</th>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"><input type='checkbox' name='cam_sel' value='VDR10226'></td>
-                                                <td class="img"><img class="img-flex1" img="img" src="assets\img\cam\8m_d_f.png"></td>
-                                                <td class="ckb">8M</td>
-                                                <td class="code">VDR10226</td>
-                                                <td class="code">NC-D4831HRX-A</td>
-                                                <td class="spec"> 8M / 2.7~13.5mm MFZ / 0.lux / H.265</td>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"><input type='checkbox' name='cam_sel' value='VDR10225'></td>
-                                                <td class="img"><img class="img-flex1" img="img" src="assets\img\cam\8m_d_f.png"></td>
-                                                <td class="ckb"> 8M</td>
-                                                <td class="code"> VDR10225</td>
-                                                <td class="code">NC-D4811WRX-A 3.3mm</td>
-                                                <td class="spec">8M / 3.3mm / 0ux / H.265</td>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"><input type='checkbox' name='cam_sel' value='TGS31463'></td>
-                                                <td class="img"><img class="img-flex1" img="img" src="assets\img\cam\5m_d_v.png"></td>
-                                                <td class="ckb"> 5M</td>
-                                                <td class="code">TGS31463</td>
-                                                <td class="code">NC-D4536WRX-A</td>
-                                                <td class="spec">5M / 3.0~13.5mm MFZ / 0ux / H.265</td>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"><input type='checkbox' name='cam_sel' value='VDR10244'></td>
-                                                <td class="img"><img class="img-flex1" img="img" src="assets\img\cam\5m_d_f.png"></td>
-                                                <td class="ckb"> 5M</td>
-                                                <td class="code">VDR10244</td>
-                                                <td class="code">NC-D4516WRX-A 4mm</td>
-                                                <td class="spec">5M / 4mm / 0ux / H.265</td>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"> <input type='checkbox' name='cam_sel' value='VDR10243'></td>
-                                                <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\5m_d_v.png"></td>
-                                                <td class="ckb"> 2M</td>
-                                                <td class="code">VDR10243</td>
-                                                <td class="code">NC-D4236RX-A</td>
-                                                <td class="spec">2M / 2.8~12mm MFZ / 0ux / H.265</td>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS32030'></td>
-                                                <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\2m_d_f_w.png"></td>
-                                                <td class="ckb"> 2M</td>
-                                                <td class="code">TGS32030 </td>
-                                                <td class="code">NC-D4216RX-A 4mm</td>
-                                                <td class="spec">2M / 4mm / 0ux / H.265</td>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"> <input type='checkbox' name='cam_sel' value='VDR10250'></td>
-                                                <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\2m_d_f.png"></td>
-                                                <td class="ckb"> 2M</td>
-                                                <td class="code">VDR10250</td>
-                                                <td class="code">NC-D4217RX 2.8mm</td>
-                                                <td class="spec">2M / 2.8mm / 0ux / H.265</td>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"> <input type='checkbox' name='cam_sel' value='TSC10266'></td>
-                                                <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\2m_d_f.png"></td>
-                                                <td class="ckb"> 2M</td>
-                                                <td class="code">TSC10266</td>
-                                                <td class="code">NC-D4217RX 4mm</td>
-                                                <td class="spec">2M / 4mm / 0ux / H.265</td>
-                                            </tr>
-                                        </table>
-                                        <!-- Portfolio Modal - Image-->
-                                        <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png"
-                                        alt="..." /> -->
-                                        <!-- Portfolio Modal - Text -->
-                                        <button class="btn btn-primary" href="" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i> 창닫기 </button>
-                                        <button class="btn btn-secondary"
-                                        href="" data-bs-dismiss="modal" id="btn_sel"
-                                        onclick='getCheckboxValue()'>
-                                        <i class="fa-solid fa-circle-check"></i> 선택완료 </button>
-
-                                    </div >
-                                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-                    <!-- BULLET -->
-        <div class="product_list product_list_fluid">
-            <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">
-                            <button
-                                class="btn-close"
-                                type="button"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body text-center pb-5">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">BULLET CAMERA</h2>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-icon">
-                                                <i class="fa-solid fa-video"></i>
-                                            </div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <table class="myTable">
-                                            <tr class="hdTable1">
-                                                <th class="ckb">✓</th>
-                                                <th class="img">IMG</th>
-                                                <th class="ckb">MP</th>
-                                                <th class="code">코드</th>
-                                                <th class="code">모델명</th>
-                                                <th class="spec">스펙</th>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"> <input type='checkbox' name='cam_sel' value='VBR10328'></td>
-                                                <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_v.png"></td>
-                                                <td class="ckb"> 8M</td>
-                                                <td class="code">VBR10328</td>
-                                                <td class="code">NC-T4831HRX-A</td>
-                                                <td class="spec"> 8M / 2.7~13.5mm MFZ / 0lux / H.265 /IP67 </td>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS30334'></td>
-                                                <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_f.png"></td>
-                                                <td class="ckb">  8M</td>
-                                                <td class="code"> TGS30334</td>
-                                                <td class="code">NC-D4811WRX-A 3.3mm</td>
-                                                <td class="spec">8M / 3.3mm / 0ux / H.265 / IP67 </td>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"> <input type='checkbox' name='cam_sel' value='VBR10319'></td>
-                                                <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_v.png"></td>
-                                                <td class="ckb"> 5M</td>
-                                                <td class="code">VBR10319</td>
-                                                <td class="code">NC-T4535WRX-A</td>
-                                                <td class="spec">5M / 4.0~14mm MFZ / 0ux / H.265 / IP67 </td>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS32031'></td>
-                                                <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_v.png"></td>
-                                                <td class="ckb"> 5M</td>
-                                                <td class="code">TGS32031</td>
-                                                <td class="code">NC-T4536HRX-A</td>
-                                                <td class="spec">5M / 3.0~13.5mm MFZ / 0ux / H.265 / IP67 </td>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"> <input type='checkbox' name='cam_sel' value='VBR10346'></td>
-                                                <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_f.png"></td>
-                                                <td class="ckb"> 5M</td>
-                                                <td class="code">VBR10346</td>
-                                                <td class="code">NC-T4516WRX-A 4mm</td>
-                                                <td class="spec">5M / 4mm / 0ux / H.265 / IP67 (only PoE)</td>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"> <input type='checkbox' name='cam_sel' value='VBR10344'></td>
-                                                <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_f.png"></td>
-                                                <td class="ckb"> 5M</td>
-                                                <td class="code">VBR10344</td>
-                                                <td class="code">NC-T4516WRX-A 2.8mm</td>
-                                                <td class="spec">5M / 2.8mm / 0ux / H.265 / IP67 (only PoE)</td>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS30338'></td>
-                                                <td class="img"> <img class="img-flex2" img="img" src="assets\img\cam\bullet\2m_f_v.png"></td>
-                                                <td class="ckb"> 2M</td>
-                                                <td class="code">TGS30338</td>
-                                                <td class="code">NC-T4236WRX-A</td>
-                                                <td class="spec">2M / 2.8~12mm MFZ / 0ux / H.265 / IP67</td>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"> <input type='checkbox' name='cam_sel' value='VBR30672'></td>
-                                                <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_f.png"></td>
-                                                <td class="ckb"> 2M</td>
-                                                <td class="code">VBR30672</td>
-                                                <td class="code">NC-T4216WRX-A 4mm</td>
-                                                <td class="spec">2M / 4mm / 0ux / H.265 / IP67</td>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS28251'></td>
-                                                <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_f.png"></td>
-                                                <td class="ckb"> 2M</td>
-                                                <td class="code">TGS28251</td>
-                                                <td class="code">NC-T4216WRX-A 2.8mm</td>
-                                                <td class="spec">2M / 2.8mm / 0ux / H.265 / IP67</td>
-                                            </tr>
-                                            <tr class="hdTable2">
-                                                <td class="ckb"> <input type='checkbox' name='cam_sel' value='VBR10327'></td>
-                                                <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\2m_f_f.png"></td>
-                                                <td class="ckb"> 2M</td>
-                                                <td class="code">VBR10327</td>
-                                                <td class="code">NC-T4217WRX-A </td>
-                                                <td class="spec">2M / 4mm / 0ux / H.265 / IP67</td>
-                                            </tr>
-                                        </table>
-
-                                        <!-- Portfolio Modal - Image-->
-                                        <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png"
-                                        alt="..." /> -->
-                                        <!-- Portfolio Modal - Text -->
-                                        <button class="btn btn-primary" href="" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i> 창닫기 </button>
-                                        <button class="btn btn-secondary"
-                                        href="" data-bs-dismiss="modal" id="btn_sel"
-                                        onclick='getCheckboxValue()'>
-                                        <i class="fa-solid fa-circle-check"></i> 선택완료 </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    <!-- Etc Cam -->
-                    <div class="product_list product_list_fluid">
-                        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
-                                    <div class="modal-header border-0">
-                                        <button
-                                            class="btn-close"
-                                            type="button"
-                                            data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body text-center pb-5">
-                                        <div class="container">
-                                            <div class="row justify-content-center">
-                                                <div class="col-lg-8">
-                                                    <!-- Portfolio Modal - Title-->
-                                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">SPECIAL CAMERA</h2>
-                                                    <!-- Icon Divider-->
-                                                    <div class="divider-custom">
-                                                        <div class="divider-custom-line"></div>
-                                                        <div class="divider-custom-icon">
-                                                            <i class="fa-solid fa-video"></i>
-                                                        </div>
-                                                        <div class="divider-custom-line"></div>
-                                                    </div>
-                                                    <table class="myTable">
-                                                        <tr class="hdTable1">
-                                                            <th class="ckb">✓</th>
-                                                            <th class="img">IMG</th>
-                                                            <th class="ckb">MP</th>
-                                                            <th class="code">코드</th>
-                                                            <th class="code">모델명</th>
-                                                            <th class="spec">스펙</th>
-                                                        </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='VBR10318'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\12m_fe.png"></td>
-                                                            <td class="ckb"> 12M</td>
-                                                            <td class="code">VBR10318</td>
-                                                            <td class="code">NC-Y6C16WRX-A</td>
-                                                            <td class="spec"><span><strong>(어안)_</strong></span> 12M(9.4M) / 1.2mm / 0lux / IP67 </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS30108'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\5m_fe.png"></td>
-                                                            <td class="ckb">  5M</td>
-                                                            <td class="code"> TGS30108</td>
-                                                            <td class="code">NC-Y6516WRX-A</td>
-                                                            <td class="spec"><span><strong>(어안)_</strong></span> 5M / 0ux / H.265 / IP67 </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS30333'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\8m_spd_ir.png"></td>
-                                                            <td class="ckb"> 8M</td>
-                                                            <td class="code">TGS30333</td>
-                                                            <td class="code">NC-S3883HRX-A</td>
-                                                            <td class="spec"><span><strong>(IR PTZ)_</strong></span> 8M / 31x zoom / 0ux / IP66 </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS30459'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\8m_spd_ir.png"></td>
-                                                            <td class="ckb"> 5M</td>
-                                                            <td class="code">TGS30459</td>
-                                                            <td class="code">NC-S3583HRX-A</td>
-                                                            <td class="spec"><strong>(IR PTZ)_</strong></span>5M / 31x zoom / 0ux / IP66 </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='VDP10061'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\2m_spd_ir.png"></td>
-                                                            <td class="ckb"> 2M</td>
-                                                            <td class="code">VDP10061</td>
-                                                            <td class="code">NC-S6286HRXL-A</td>
-                                                            <td class="spec"><strong>(IR PTZ)_ </strong></span>2M / 36x zoom / 0ux / H.265 / IP67 </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='VDP10231'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\2m_spd_d.png"></td>
-                                                            <td class="ckb"> 2M</td>
-                                                            <td class="code">VDP10231</td>
-                                                            <td class="code">NC-S3283WHX-A</td>
-                                                            <td class="spec"><strong>(PTZ)_ </strong></span>2M / 30x zoom / H.265 / IP66 </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS32032'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\2m_spd_f.png"></td>
-                                                            <td class="ckb"> 2M</td>
-                                                            <td class="code">TGS32032</td>
-                                                            <td class="code">NC-S3283FX-A</td>
-                                                            <td class="spec"><strong>(PTZ)_ </strong></span>2M / 30x zoom / H.265 / 매립형 </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='VDP10060'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\2m_spd_d_m.png"></td>
-                                                            <td class="ckb"> 2M</td>
-                                                            <td class="code">VDP10060</td>
-                                                            <td class="code">DC-S6162WHX-A</td>
-                                                            <td class="spec"><strong>(PTZ)_ </strong></span>2M / 12x zoom / H.265 / 미니사이즈 </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS30988'></td>
-                                                            <td class="img"> <img class="img-flex2" img="img" src="assets\img\cam\etc_cam\2m_ph.png"></td>
-                                                            <td class="ckb"> 2M</td>
-                                                            <td class="code">TGS30988</td>
-                                                            <td class="code">NC-V4211XJ 2.4mm</td>
-                                                            <td class="spec"><strong>(핀홀)_</strong></span>2M / 2.4mm / H.265 </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS24831'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\5m_th.png"></td>
-                                                            <td class="ckb"> 5M</td>
-                                                            <td class="code">TGS24831</td>
-                                                            <td class="code">DC-TH2012WR</td>
-                                                            <td class="spec"><strong>(열화상)_</strong> 5M - Thermal(160*120) / IP67 </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS24788'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\2m_th.png"></td>
-                                                            <td class="ckb"> 2M</td>
-                                                            <td class="code">TGS24788</td>
-                                                            <td class="code">DC-TH2011</td>
-                                                            <td class="spec"><strong>(열화상)_</strong></span> 1.3M - Thermal(80*60) / 실내용 </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS24788'></td>
-                                                            <td class="img"> <img class="img-flex2" img="img" src="assets\img\cam\etc_cam\2m_car.png"></td>
-                                                            <td class="ckb"> 2M</td>
-                                                            <td class="code">TGS28707</td>
-                                                            <td class="code">DC-T2262HRL</td>
-                                                            <td class="spec"><strong>(차량번호)_</strong></span> 2M / 12-50mm / H.265 / IP66 </td>
-                                                                </tr>
-                                                    </table>
-                                                    <!-- Portfolio Modal - Image-->
-                                                    <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png"
-                                                    alt="..." /> -->
-                                                    <!-- Portfolio Modal - Text -->
-                                                    <button class="btn btn-primary" href="" data-bs-dismiss="modal"> 
-                                                        <i class="fas fa-times fa-fw"></i> 창닫기 </button>
-                                                        <button class="btn btn-secondary"
-                                                        href="" data-bs-dismiss="modal" id="btn_sel"
-                                                        onclick='getCheckboxValue()'>
-                                                        <i class="fa-solid fa-circle-check"></i> 선택완료 </button>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <input class="btnC" type="button" onclick="closeModal('#modalPerson')" value="창닫기" />
+    </div>
+<!-- 카메라 콘텐츠 -->
+<!-- 돔카메라 -->
+    <div id="modalDome" class="modalContainer">
+        <h1>DOME CAMERA</h1>
+            <table>
+                <tr class="hdTable1">
+                    <th class="img">IMG</th>
+                    <th class="ckb">MP</th>
+                    <th class="code">코드</th>
+                    <th class="code">모델명</th>
+                    <th class="spec">스펙</th>
+                    <th class="cost">가격</th>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"><img class="img-flex1" src="assets\img\cam\8m_d_f.png">                                                                                                                                                                                                                                                                                                                                                        </td>
+                    <td class="ckb">8M</td>
+                    <td class="code">VDR10226</td>
+                    <td class="code">NC-D4831HRX-A</td>
+                    <td class="spec"> 8M / 2.7~13.5mm MFZ / 0.lux / H.265</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('340,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"><img class="img-flex1" src="assets\img\cam\8m_d_f.png"></td>
+                    <td class="ckb"> 8M</td>
+                    <td class="code"> VDR10225</td>
+                    <td class="code">NC-D4811WRX-A 3.3mm</td>
+                    <td class="spec">8M / 3.3mm / 0ux / H.265</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('270,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"><img class="img-flex1" src="assets\img\cam\5m_d_v.png"></td>
+                    <td class="ckb"> 5M</td>
+                    <td class="code">TGS31463</td>
+                    <td class="code">NC-D4536WRX-A</td>
+                    <td class="spec">5M / 3.0~13.5mm MFZ / 0ux / H.265</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('250,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"><img class="img-flex1" src="assets\img\cam\5m_d_f.png"></td>
+                    <td class="ckb"> 5M</td>
+                    <td class="code">VDR10244</td>
+                    <td class="code">NC-D4516WRX-A 4mm</td>
+                    <td class="spec">5M / 4mm / 0ux / H.265</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('160,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" src="assets\img\cam\5m_d_v.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">VDR10243</td>
+                    <td class="code">NC-D4236RX-A</td>
+                    <td class="spec">2M / 2.8~12mm MFZ / 0ux / H.265</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('160,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" src="assets\img\cam\2m_d_f_w.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">TGS32030 </td>
+                    <td class="code">NC-D4216RX-A 4mm</td>
+                    <td class="spec">2M / 4mm / 0ux / H.265</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('110,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\2m_d_f.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">VDR10250</td>
+                    <td class="code">NC-D4217RX 2.8mm</td>
+                    <td class="spec">2M / 2.8mm / 0ux / H.265</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('79,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\2m_d_f.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">TSC10266</td>
+                    <td class="code">NC-D4217RX 4mm</td>
+                    <td class="spec">2M / 4mm / 0ux / H.265</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('79,000원')"> 클릭 </label></td>
+                </tr>
+            </table>
+                <input class="btnClose" type="button" onclick="closeModal('#modalDome')" value="창닫기" />
+                <!-- <label for="modalBox" onclick="closeModal()"> X </label> -->
+    </div>
+    <div id="modalBullet" class="modalContainer">
+        <h1>BULLET CAMERA</h1>
+            <table>
+                <tr class="hdTable1">
+                    
+                    <th class="img">IMG</th>
+                    <th class="ckb">MP</th>
+                    <th class="code">코드</th>
+                    <th class="code">모델명</th>
+                    <th class="spec">스펙</th>
+                    <th class="cost">가격</th>
+                </tr>
+                <tr class="hdTable2">
+                    
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_v.png"></td>
+                    <td class="ckb"> 8M</td>
+                    <td class="code">VBR10328</td>
+                    <td class="code">NC-T4831HRX-A</td>
+                    <td class="spec"> 8M / 2.7~13.5mm MFZ / 0lux / H.265 /IP67 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('350,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_f.png"></td>
+                    <td class="ckb">  8M</td>
+                    <td class="code"> TGS30334</td>
+                    <td class="code">NC-D4811WRX-A 3.3mm</td>
+                    <td class="spec">8M / 3.3mm / 0ux / H.265 / IP67 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('280,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_v.png"></td>
+                    <td class="ckb"> 5M</td>
+                    <td class="code">VBR10319</td>
+                    <td class="code">NC-T4535WRX-A</td>
+                    <td class="spec">5M / 4.0~14mm MFZ / 0ux / H.265 / IP67 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('250,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_v.png"></td>
+                    <td class="ckb"> 5M</td>
+                    <td class="code">TGS32031</td>
+                    <td class="code">NC-T4536HRX-A</td>
+                    <td class="spec">5M / 3.0~13.5mm MFZ / 0ux / H.265 / IP67 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('290,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_f.png"></td>
+                    <td class="ckb"> 5M</td>
+                    <td class="code">VBR10346</td>
+                    <td class="code">NC-T4516WRX-A 4mm</td>
+                    <td class="spec">5M / 4mm / 0ux / H.265 / IP67 (only PoE)</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('180,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_f.png"></td>
+                    <td class="ckb"> 5M</td>
+                    <td class="code">VBR10344</td>
+                    <td class="code">NC-T4516WRX-A 2.8mm</td>
+                    <td class="spec">5M / 2.8mm / 0ux / H.265 / IP67 (only PoE)</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('180,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex2" img="img" src="assets\img\cam\bullet\2m_f_v.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">TGS30338</td>
+                    <td class="code">NC-T4236WRX-A</td>
+                    <td class="spec">2M / 2.8~12mm MFZ / 0ux / H.265 / IP67</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('186,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_f.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">VBR30672</td>
+                    <td class="code">NC-T4216WRX-A 4mm</td>
+                    <td class="spec">2M / 4mm / 0ux / H.265 / IP67</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('130,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_f.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">TGS28251</td>
+                    <td class="code">NC-T4216WRX-A 2.8mm</td>
+                    <td class="spec">2M / 2.8mm / 0ux / H.265 / IP67</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('135,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\2m_f_f.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">VBR10327</td>
+                    <td class="code">NC-T4217WRX-A </td>
+                    <td class="spec">2M / 4mm / 0ux / H.265 / IP67</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('85,000원')"> 클릭 </label></td>
+                </tr>
+            </table>
+                <input class="btnClose" type="button" onclick="closeModal('#modalBullet')" value="창닫기" />
+    </div>
+    <div id="modalSpd" class="modalContainer">
+        <h1>SPECIAL CAMERA</h1>
+            <table>
+                <tr class="hdTable1">
+                    <th class="img">IMG</th>
+                    <th class="ckb">MP</th>
+                    <th class="code">코드</th>
+                    <th class="code">모델명</th>
+                    <th class="spec">스펙</th>
+                    <th class="cost">가격</th>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\12m_fe.png"></td>
+                    <td class="ckb"> 12M</td>
+                    <td class="code">VBR10318</td>
+                    <td class="code">NC-Y6C16WRX-A</td>
+                    <td class="spec"><span><strong>(어안)_</strong></span> 12M(9.4M) / 1.2mm / 0lux / IP67 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('500,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\5m_fe.png"></td>
+                    <td class="ckb">  5M</td>
+                    <td class="code"> TGS30108</td>
+                    <td class="code">NC-Y6516WRX-A</td>
+                    <td class="spec"><span><strong>(어안)_</strong></span> 5M / 0ux / H.265 / IP67 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('330,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\8m_spd_ir.png"></td>
+                    <td class="ckb"> 8M</td>
+                    <td class="code">TGS30333</td>
+                    <td class="code">NC-S3883HRX-A</td>
+                    <td class="spec"><span><strong>(IR PTZ)_</strong></span> 8M / 31x zoom / 0ux / IP66 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('1,900,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\8m_spd_ir.png"></td>
+                    <td class="ckb"> 5M</td>
+                    <td class="code">TGS30459</td>
+                    <td class="code">NC-S3583HRX-A</td>
+                    <td class="spec"><strong>(IR PTZ)_</strong></span>5M / 31x zoom / 0ux / IP66 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('1,750,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\2m_spd_ir.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">VDP10061</td>
+                    <td class="code">NC-S6286HRXL-A</td>
+                    <td class="spec"><strong>(IR PTZ)_ </strong></span>2M / 36x zoom / 0ux / H.265 / IP67 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('1,180,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\2m_spd_d.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">VDP10231</td>
+                    <td class="code">NC-S3283WHX-A</td>
+                    <td class="spec"><strong>(PTZ)_ </strong></span>2M / 30x zoom / H.265 / IP66 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('750,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\2m_spd_f.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">TGS32032</td>
+                    <td class="code">NC-S3283FX-A</td>
+                    <td class="spec"><strong>(PTZ)_ </strong></span>2M / 30x zoom / H.265 / 매립형 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('750,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\2m_spd_d_m.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">VDP10060</td>
+                    <td class="code">DC-S6162WHX-A</td>
+                    <td class="spec"><strong>(PTZ)_ </strong></span>2M / 12x zoom / H.265 / 미니사이즈 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('640,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex2" img="img" src="assets\img\cam\etc_cam\2m_ph.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">TGS30988</td>
+                    <td class="code">NC-V4211XJ 2.4mm</td>
+                    <td class="spec"><strong>(핀홀)_</strong></span>2M / 2.4mm / H.265 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('280,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\5m_th.png"></td>
+                    <td class="ckb"> 5M</td>
+                    <td class="code">TGS24831</td>
+                    <td class="code">DC-TH2012WR</td>
+                    <td class="spec"><strong>(열화상)_</strong> 5M - Thermal(160*120) / IP67 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('1,200,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\2m_th.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">TGS24788</td>
+                    <td class="code">DC-TH2011</td>
+                    <td class="spec"><strong>(열화상)_</strong></span> 1.3M - Thermal(80*60) / 실내용 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('1,000,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex2" img="img" src="assets\img\cam\etc_cam\2m_car.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">TGS28707</td>
+                    <td class="code">DC-T2262HRL</td>
+                    <td class="spec"><strong>(차량번호)_</strong></span> 2M / 12-50mm / H.265 / IP66 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('1,450,000원')"> 클릭 </label></td>
+                </tr>
+            </table>
+                <input class="btnClose" type="button" onclick="closeModal('#modalSpd')" value="창닫기" />
+    </div>
+    <div id="modalNvr" class="modalContainer">
+        <h1>NETWORK RECORDER</h1>
+            <table>
+                <tr class="hdTable1">
+                    <th class="img">IMG</th>
+                    <th class="ckb">MP</th>
+                    <th class="code">코드</th>
+                    <th class="code">모델명</th>
+                    <th class="spec">스펙</th>
+                    <th class="cost">가격</th>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\8ch_nvr.png"></td>
+                    <td class="ckb"> 4CH</td>
+                    <td class="code">TGS32033</td>
+                    <td class="code">NR-2504P </td>
+                    <td class="spec"> 8CH / 기본 2TB(추가 1EA) / PoE 8port / SA </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('330,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\8ch_nvr.png"></td>
+                    <td class="ckb"> 8CH</td>
+                    <td class="code">VRN10204</td>
+                    <td class="code">NR-2508P </td>
+                    <td class="spec"> 8CH / 기본 2TB(추가 1EA) / PoE 8port / SA </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('400,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\16ch_nvr.png"></td>
+                    <td class="ckb"> 16CH</td>
+                    <td class="code">VRN10107</td>
+                    <td class="code">NR-4316PS</td>
+                    <td class="spec"> 16CH / 기본 3TB(추가 3EA) / PoE 16port / SA</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('700,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\16ch_nvr.png"></td>
+                    <td class="ckb"> 16CH</td>
+                    <td class="code">VRN10187</td>
+                    <td class="code">NR-6516P</td>
+                    <td class="spec"> 16CH / 기본 4TB(추가 5EA) / PoE 16port / SA</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('1,020,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\16ch_nvr.png"></td>
+                    <td class="ckb"> 32CH</td>
+                    <td class="code">VRN10185</td>
+                    <td class="code">NR-6532P</td>
+                    <td class="spec"> 32CH / 기본 4TB(추가 5EA) / PoE 16port / SA</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('1,200,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\64ch_nvr.png"></td>
+                    <td class="ckb"> 64CH</td>
+                    <td class="code">채번필요</td>
+                    <td class="code">DR-8364D</td>
+                    <td class="spec"> 64CH / 기본 0TB / PoE X / SA</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('2,500,000원')"> 클릭 </label></td>
+                </tr>
+            </table>
+                <input class="btnClose" type="button" onclick="closeModal('#modalNvr')" value="창닫기" />
+    </div>
+    <div id="modalHdtvi" class="modalContainer">
+        <h1>HD-TVI PRODUCT</h1>
+            <table>
+                <tr class="hdTable1">
+                    <th class="img">IMG</th>
+                    <th class="ckb">MP</th>
+                    <th class="code">코드</th>
+                    <th class="code">모델명</th>
+                    <th class="spec">스펙</th>
+                    <th class="cost">가격</th>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\5m_b_v.png"></td>
+                    <td class="ckb"> 5M</td>
+                    <td class="code">VBR10345</td>
+                    <td class="code">TC-T5531WRX</td>
+                    <td class="spec"> HD-TVI 5M / 3~13.5mm MFZ / 0lux / IP66 / 어답터 제외 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('155,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_b_v.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">VBR10213</td>
+                    <td class="code">HC-T4221WRX</td>
+                    <td class="spec"> HD-TVI 2M / 2.8~12mm MFZ / 0lux / IP66 / 어답터 제외 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('85,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_b_f.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">TSC10253</td>
+                    <td class="code">MTC-2230BR</td>
+                    <td class="spec"> HD-TVI 2M / 4mm / 0lux / IP66 / 어답터 제외 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('65,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_d_v.png"></td>
+                    <td class="ckb"> 5M</td>
+                    <td class="code">TGS32034</td>
+                    <td class="code">TC-D5531RX</td>
+                    <td class="spec"> HD-TVI 5M / 3~13.5mm / 0lux / 어답터 제외 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('125,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\5m_d_f.png"></td>
+                    <td class="ckb"> 5M</td>
+                    <td class="code">VDR10175</td>
+                    <td class="code">HC-D4511RX</td>
+                    <td class="spec"> HD-TVI 2M / 4mm / 0lux / 어답터 제외 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('68,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_d_v.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">TSC10258</td>
+                    <td class="code">HC-D4221RX</td>
+                    <td class="spec"> HD-TVI 2M / 2.8~12mm MFZ / 0lux / 어답터 제외 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('65,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_d_f.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">TSC10254</td>
+                    <td class="code">MTC-2210DR</td>
+                    <td class="spec"> HD-TVI 2M / 4mm / 0lux / 어답터 제외 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('55,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_ph.png"></td>
+                    <td class="ckb"> 2M</td>
+                    <td class="code">TGS29345</td>
+                    <td class="code">TC-V5211X</td>
+                    <td class="spec"> HD-TVI 2M / 2.4mm / 0.1lux / 어답터 제외 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('85,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable1">
+                <th class="img">IMG</th>
+                <th class="ckb">MP</th>
+                <th class="code">코드</th>
+                <th class="code">모델명</th>
+                <th class="spec">스펙</th>
+                <th class="cost">가격</th>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\dvr\4ch_dvr_1.png"></td>
+                    <td class="ckb"> 4CH</td>
+                    <td class="code">VRN10131</td>
+                    <td class="code">HR-1204A </td>
+                    <td class="spec"> HD-TVI 4CH / 기본 2TB(추가 X) / SA </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('120,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\dvr\4ch_dvr_1.png"></td>
+                    <td class="ckb"> 4CH</td>
+                    <td class="code">TGS32035</td>
+                    <td class="code">HR-1504 </td>
+                    <td class="spec"> HD-TVI 4CH /  기본 2TB(추가 X) / SA </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('165,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\dvr\16ch_dvr.png"></td>
+                    <td class="ckb"> 4CH</td>
+                    <td class="code">TGS31115</td>
+                    <td class="code">HR-2504 </td>
+                    <td class="spec"> HD-TVI 4CH / 기본 2TB(추가 1EA) / SA </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('300,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\dvr\16ch_dvr.png"></td>
+                    <td class="ckb"> 8CH</td>
+                    <td class="code">TGS31426</td>
+                    <td class="code">HR-2508 </td>
+                    <td class="spec"> HD-TVI 8CH / 기본 2TB(추가 1EA) / SA </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('350,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\dvr\16ch_dvr.png"></td>
+                    <td class="ckb"> 16CH</td>
+                    <td class="code">TGS31611</td>
+                    <td class="code">TR-1625 </td>
+                    <td class="spec"> HD-TVI 16CH / 기본 4TB(추가 1EA) / SA </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('460,000원')"> 클릭 </label></td>
+                </tr>
+            </table>    
+                <input class="btnClose" type="button" onclick="closeModal('#modalHdtvi')" value="창닫기" />
             
-            <!-- NVR -->
-            <div class="product_list product_list_fluid">
-                <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header border-0">
-                                <button
-                                    class="btn-close"
-                                    type="button"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body text-center pb-5">
-                                <div class="container">
-                                    <div class="row justify-content-center">
-                                        <div class="col-lg-8">
-                                            <!-- Portfolio Modal - Title-->
-                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">NETWORK RECORDER</h2>
-                                            <!-- Icon Divider-->
-                                            <div class="divider-custom">
-                                                <div class="divider-custom-line"></div>
-                                                <div class="divider-custom-icon">
-                                                    <i class="fa-solid fa-video"></i>
-                                                </div>
-                                                <div class="divider-custom-line"></div>
-                                            </div>
-                                            <table class="myTable">
-                                                <tr class="hdTable1">
-                                                    <th class="ckb">✓</th>
-                                                    <th class="img">IMG</th>
-                                                    <th class="ckb">MP</th>
-                                                    <th class="code">코드</th>
-                                                    <th class="code">모델명</th>
-                                                    <th class="spec">스펙</th>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS32033'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\4ch_nvr.png"></td>
-                                                    <td class="ckb"> 4CH</td>
-                                                    <td class="code">TGS32033</td>
-                                                    <td class="code">NR-2504P </td>
-                                                    <td class="spec"> 4CH / 기본 2TB(추가 1EA) / PoE 4port / SA </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='VRN10204'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\8ch_nvr.png"></td>
-                                                    <td class="ckb"> 8CH</td>
-                                                    <td class="code">VRN10204</td>
-                                                    <td class="code">NR-2508P </td>
-                                                    <td class="spec"> 8CH / 기본 3TB(추가 1EA) / PoE 8port / SA </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='VRN10107'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\16ch_nvr.png"></td>
-                                                    <td class="ckb"> 16CH</td>
-                                                    <td class="code">VRN10107</td>
-                                                    <td class="code">NR-4316PS</td>
-                                                    <td class="spec"> 16CH / 기본 3TB(추가 3EA) / PoE 16port / SA</td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='VRN10187'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\16ch_nvr.png"></td>
-                                                    <td class="ckb"> 16CH</td>
-                                                    <td class="code">VRN10187</td>
-                                                    <td class="code">NR-6516P</td>
-                                                    <td class="spec"> 16CH / 기본 4TB(추가 5EA) / PoE 16port / SA</td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='VRN10185'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\16ch_nvr.png"></td>
-                                                    <td class="ckb"> 32CH</td>
-                                                    <td class="code">VRN10185</td>
-                                                    <td class="code">NR-6532P</td>
-                                                    <td class="spec"> 32CH / 기본 4TB(추가 5EA) / PoE 16port / SA</td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='VRN10096'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\64ch_nvr.png"></td>
-                                                    <td class="ckb"> 32CH</td>
-                                                    <td class="code">VRN10096</td>
-                                                    <td class="code">NR-8332D-SHB</td>
-                                                    <td class="spec"> 32CH / 기본 32TB / PoE X / SA</td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS19195'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\pc_nvr.png"></td>
-                                                    <td class="ckb"> 16CH</td>
-                                                    <td class="code">TGS19195</td>
-                                                    <td class="code">PR-100(16CH)</td>
-                                                    <td class="spec"> 16CH / 기본 (추가 4EA)) / PoE X / PC / iNEX 기본</td>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TSD10101'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\pc_nvr.png"></td>
-                                                    <td class="ckb"> 32CH</td>
-                                                    <td class="code">TSD10101</td>
-                                                    <td class="code">PR-100(32CH)</td>
-                                                    <td class="spec"> 32CH / 기본 (추가 4EA)) / PoE X / PC / iNEX 기본</td>
-                                                </tr>
-                                                </table>
-                                                <!-- Portfolio Modal - Image-->
-                                                <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png"
-                                                alt="..." /> -->
-                                                <!-- Portfolio Modal - Text -->
-                                                <button class="btn btn-primary" href="" data-bs-dismiss="modal">
-                                                <i class="fas fa-times fa-fw"></i> 창닫기</button>
-                                                <button class="btn btn-secondary"
-                                                        href="" data-bs-dismiss="modal" id="btn_sel"
-                                                        onclick='getCheckboxValue()'>
-                                                        <i class="fa-solid fa-circle-check"></i> 선택완료 </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-            <!-- HD-TVI -->
-            <div class="product_list product_list_fluid">
-                <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header border-0">
-                                <button
-                                    class="btn-close"
-                                    type="button"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body text-center pb-5">
-                                <div class="container">
-                                    <div class="row justify-content-center">
-                                        <div class="col-lg-8">
-                                            <!-- Portfolio Modal - Title-->
-                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">HD-TVI PRODUCT</h2>
-                                            <!-- Icon Divider-->
-                                            <div class="divider-custom">
-                                                <div class="divider-custom-line"></div>
-                                                <div class="divider-custom-icon">
-                                                    <i class="fa-solid fa-video"></i>
-                                                </div>
-                                                <div class="divider-custom-line"></div>
-                                            </div>
-                                            <table class="myTable">
-                                                <tr class="hdTable1">
-                                                    <th class="ckb">✓</th>
-                                                    <th class="img">IMG</th>
-                                                    <th class="ckb">MP</th>
-                                                    <th class="code">코드</th>
-                                                    <th class="code">모델명</th>
-                                                    <th class="spec">스펙</th>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='VBR10345'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\5m_b_v.png"></td>
-                                                    <td class="ckb"> 5M</td>
-                                                    <td class="code">VBR10345</td>
-                                                    <td class="code">TC-T5531WRX</td>
-                                                    <td class="spec"> HD-TVI 5M / 3~13.5mm MFZ / 0lux / IP66 / 어답터 제외 </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='VBR10213'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_b_v.png"></td>
-                                                    <td class="ckb"> 2M</td>
-                                                    <td class="code">VBR10213</td>
-                                                    <td class="code">HC-T4221WRX</td>
-                                                    <td class="spec"> HD-TVI 2M / 2.8~12mm MFZ / 0lux / IP66 / 어답터 제외 </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TSC10253'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_b_f.png"></td>
-                                                    <td class="ckb"> 2M</td>
-                                                    <td class="code">TSC10253</td>
-                                                    <td class="code">MTC-2230BR</td>
-                                                    <td class="spec"> HD-TVI 2M / 4mm / 0lux / IP66 / 어답터 제외 </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS32034'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_d_v.png"></td>
-                                                    <td class="ckb"> 5M</td>
-                                                    <td class="code">TGS32034</td>
-                                                    <td class="code">TC-D5531RX</td>
-                                                    <td class="spec"> HD-TVI 5M / 3~13.5mm / 0lux / 어답터 제외 </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='VDR10175'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\5m_d_f.png"></td>
-                                                    <td class="ckb"> 5M</td>
-                                                    <td class="code">VDR10175</td>
-                                                    <td class="code">HC-D4511RX</td>
-                                                    <td class="spec"> HD-TVI 2M / 4mm / 0lux / 어답터 제외 </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TSC10258'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_d_v.png"></td>
-                                                    <td class="ckb"> 2M</td>
-                                                    <td class="code">TSC10258</td>
-                                                    <td class="code">HC-D4221RX</td>
-                                                    <td class="spec"> HD-TVI 2M / 2.8~12mm MFZ / 0lux / 어답터 제외 </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TSC10254'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_d_f.png"></td>
-                                                    <td class="ckb"> 2M</td>
-                                                    <td class="code">TSC10254</td>
-                                                    <td class="code">MTC-2210DR</td>
-                                                    <td class="spec"> HD-TVI 2M / 4mm / 0lux / 어답터 제외 </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS29345'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_ph.png"></td>
-                                                    <td class="ckb"> 2M</td>
-                                                    <td class="code">TGS29345</td>
-                                                    <td class="code">TC-V5211X</td>
-                                                    <td class="spec"> HD-TVI 2M / 2.4mm / 0.1lux / 어답터 제외 </td>
-                                                </tr>
-                                                <br>
-                                                <table class="myTable">
-                                                    <tr class="hdTable1">
-                                                        <th class="ckb">✓</th>
-                                                        <th class="img">IMG</th>
-                                                        <th class="ckb">MP</th>
-                                                        <th class="code">코드</th>
-                                                        <th class="code">모델명</th>
-                                                        <th class="spec">스펙</th>
-                                                    </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='VRN10131'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\dvr\4ch_dvr_1.png"></td>
-                                                    <td class="ckb"> 4CH</td>
-                                                    <td class="code">VRN10131</td>
-                                                    <td class="code">HR-1204A </td>
-                                                    <td class="spec"> HD-TVI 4CH / 기본 2TB(추가 X) / SA </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS32035'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\dvr\4ch_dvr_1.png"></td>
-                                                    <td class="ckb"> 4CH</td>
-                                                    <td class="code">TGS32035</td>
-                                                    <td class="code">HR-1504 </td>
-                                                    <td class="spec"> HD-TVI 4CH /  기본 2TB(추가 X) / SA </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS31115'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\dvr\16ch_dvr.png"></td>
-                                                    <td class="ckb"> 4CH</td>
-                                                    <td class="code">TGS31115</td>
-                                                    <td class="code">HR-2504 </td>
-                                                    <td class="spec"> HD-TVI 4CH / 기본 2TB(추가 1EA) / SA </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS31426'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\dvr\16ch_dvr.png"></td>
-                                                    <td class="ckb"> 8CH</td>
-                                                    <td class="code">TGS31426</td>
-                                                    <td class="code">HR-2508 </td>
-                                                    <td class="spec"> HD-TVI 8CH / 기본 2TB(추가 1EA) / SA </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS31611'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\dvr\16ch_dvr.png"></td>
-                                                    <td class="ckb"> 16CH</td>
-                                                    <td class="code">TGS31611</td>
-                                                    <td class="code">TR-1625 </td>
-                                                    <td class="spec"> HD-TVI 16CH / 기본 4TB(추가 1EA) / SA </td>
-                                                </tr>
-                                                </table>
-                                                <!-- Portfolio Modal - Image-->
-                                                <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png"
-                                                alt="..." /> -->
-                                                <!-- Portfolio Modal - Text -->
-                                                <button class="btn btn-primary" href="" data-bs-dismiss="modal">
-                                                <i class="fas fa-times fa-fw"></i> 창닫기</button>
-                                                <button class="btn btn-secondary"
-                                                        href="" data-bs-dismiss="modal" id="btn_sel"
-                                                        onclick='getCheckboxValue()'>
-                                                        <i class="fa-solid fa-circle-check"></i> 선택완료 </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            <!-- Acc -->
-            <div class="product_list product_list_fluid">
-                <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header border-0">
-                                <button
-                                    class="btn-close"
-                                    type="button"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body text-center pb-5">
-                                <div class="container">
-                                    <div class="row justify-content-center">
-                                        <div class="col-lg-8">
-                                            <!-- Portfolio Modal - Title-->
-                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">NETWORK ACCESSORY</h2>
-                                            <!-- Icon Divider-->
-                                            <div class="divider-custom">
-                                                <div class="divider-custom-line"></div>
-                                                <div class="divider-custom-icon">
-                                                    <i class="fa-solid fa-video"></i>
-                                                </div>
-                                                <div class="divider-custom-line"></div>
-                                            </div>
-                                            <table class="myTable">
-                                                <tr class="hdTable1">
-                                                    <th class="ckb">✓</th>
-                                                    <th class="img">IMG</th>
-                                                    <th class="ckb">PORT</th>
-                                                    <th class="code">코드</th>
-                                                    <th class="code">모델명</th>
-                                                    <th class="spec">스펙</th>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS32037'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\24p_2126.png"></td>
-                                                    <td class="ckb"> 24P</td>
-                                                    <td class="code">TGS32037</td>
-                                                    <td class="code">DH-2126PFN </td>
-                                                    <td class="spec"> 24P PoE UTP 1Gbps / UP - 2P SFP 10Gbps / NTP기능(GPS)</td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS28074'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\24p_2126.png"></td>
-                                                    <td class="ckb"> 24P</td>
-                                                    <td class="code">TGS28074</td>
-                                                    <td class="code">DH-2026PFN </td>
-                                                    <td class="spec"> 24P PoE UTP 1Gbps / UP - 2P SFP & 2P UTP 1Gbps / NTP기능(GPS)</td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS19192'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\24p_poe.png"></td>
-                                                    <td class="ckb"> 24P</td>
-                                                    <td class="code">TGS19192</td>
-                                                    <td class="code">DH-2328PF </td>
-                                                    <td class="spec"> 24P PoE UTP 1Gbps / 4P SFP 1Gbps </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS27808'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\24p_poe_1.png"></td>
-                                                    <td class="ckb"> 24P</td>
-                                                    <td class="code">TGS27808</td>
-                                                    <td class="code">DH-2026PF </td>
-                                                    <td class="spec"> 24P PoE UTP 100Mbps / 2P SFP 1Gbps </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS13952'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\16p_poe.png"></td>
-                                                    <td class="ckb"> 16P</td>
-                                                    <td class="code">TGS13952</td>
-                                                    <td class="code">DH-2018P </td>
-                                                    <td class="spec"> 16P PoE UTP 100Mbps / 2P UTP 1Gbps </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS13951'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\8p_poe.png"></td>
-                                                    <td class="ckb"> 8P</td>
-                                                    <td class="code">TGS13951</td>
-                                                    <td class="code">DH-2212PF </td>
-                                                    <td class="spec"> 8P PoE UTP 1Gbps / 2P SFP 1Gbps </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS13950'></td>
-                                                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\8p_poe_1.png"></td>
-                                                    <td class="ckb"> 8P</td>
-                                                    <td class="code">TGS13950</td>
-                                                    <td class="code">DH-2010P </td>
-                                                    <td class="spec"> 8P PoE UTP 100Mbps / 2P UTP 1Gbps </td>
-                                                </tr>
-                                                    <tr class="hdTable1">
-                                                        <th class="ckb">✓</th>
-                                                        <th class="img">IMG</th>
-                                                        <th class="ckb">HDD</th>
-                                                        <th class="code">코드</th>
-                                                        <th class="code">모델명</th>
-                                                        <th class="spec">스펙</th>
-                                                    </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS22468'></td>
-                                                    <td class="img"> <img class="img-flex3" img="img" src="assets\img\acc\hdd.png"></td>
-                                                    <td class="ckb"> 1TB</td>
-                                                    <td class="code">TGS22468</td>
-                                                    <td class="code">HDD 1TB </td>
-                                                    <td class="spec"> VIDEO SURVEILLANCE / 제조사 랜덤발송 </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TSD10018'></td>
-                                                    <td class="img"> <img class="img-flex3" img="img" src="assets\img\acc\hdd.png"></td>
-                                                    <td class="ckb"> 3TB</td>
-                                                    <td class="code">TSD10018</td>
-                                                    <td class="code">HDD 3TB </td>
-                                                    <td class="spec"> VIDEO SURVEILLANCE / 제조사 랜덤발송 </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TSD10072'></td>
-                                                    <td class="img"> <img class="img-flex3" img="img" src="assets\img\acc\hdd.png"></td>
-                                                    <td class="ckb"> 4TB</td>
-                                                    <td class="code">TSD10072</td>
-                                                    <td class="code">HDD 4TB </td>
-                                                    <td class="spec"> VIDEO SURVEILLANCE / 제조사 랜덤발송 </td>
-                                                </tr>
-                                                <tr class="hdTable2">
-                                                    <td class="ckb"> <input type='checkbox' name='cam_sel' value='TSD10083'></td>
-                                                    <td class="img"> <img class="img-flex3" img="img" src="assets\img\acc\hdd.png"></td>
-                                                    <td class="ckb"> 6TB</td>
-                                                    <td class="code">TSD10083</td>
-                                                    <td class="code">HDD 6TB </td>
-                                                    <td class="spec"> VIDEO SURVEILLANCE / 제조사 랜덤발송 </td>
-                                                    
-                                                </tr>
-                                                <table class="myTable">
-                                                    <tr class="hdTable1">
-                                                        <th class="ckb">✓</th>
-                                                        <th class="img">IMG</th>
-                                                        <th class="ckb">종류</th>
-                                                        <th class="code">코드</th>
-                                                        <th class="code">모델명</th>
-                                                        <th class="spec">스펙</th>
-                                                    </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS18376'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\he1101.png"></td>
-                                                            <td class="ckb"> 엔코더</td>
-                                                            <td class="code">TGS18376</td>
-                                                            <td class="code">HE-1101 </td>
-                                                            <td class="spec"> IN IP 1PORT / OUT HDMI 1PORT </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS17765'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\dv1104.png"></td>
-                                                            <td class="ckb"> VA</td>
-                                                            <td class="code">TGS17765</td>
-                                                            <td class="code">DV-1104 </td>
-                                                            <td class="spec"> VA BOX / 피플 카운팅 / 히트맵 / 큐 매니지먼트 </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS18311'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\eoc1.png"></td>
-                                                            <td class="ckb"> EoC</td>
-                                                            <td class="code">TGS18311</td>
-                                                            <td class="code">DA-EC3101T </td>
-                                                            <td class="spec"> EoC TX / UTP-> 동축변환 </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS18312'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\eoc2.png"></td>
-                                                            <td class="ckb"> EoC</td>
-                                                            <td class="code">TGS18312</td>
-                                                            <td class="code">DA-EC3101R </td>
-                                                            <td class="spec"> EoC RX / UTP <- 동축변환 </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS29547'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\al1112.png"></td>
-                                                            <td class="ckb"> AL</td>
-                                                            <td class="code">TGS29547</td>
-                                                            <td class="code">AL-1112 </td>
-                                                            <td class="spec"> IN -접점,RS232 8PORT / OUT IP 1PORT </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS22818'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\he1101.png"></td>
-                                                            <td class="ckb"> 디코더</td>
-                                                            <td class="code">TGS22818</td>
-                                                            <td class="code">DE-1104 </td>
-                                                            <td class="spec"> 카메라 16CH 영상표출 / HDMI </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS17369'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\ink1100.png"></td>
-                                                            <td class="ckb"> 키보드</td>
-                                                            <td class="code">TGS17369</td>
-                                                            <td class="code">INK-1100 </td>
-                                                            <td class="spec"> 네트워크 조이스틱 타입 키보드 </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS12627'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\ids1004.png"></td>
-                                                            <td class="ckb"> STORAGE</td>
-                                                            <td class="code">TGS12627</td>
-                                                            <td class="code">IDS-1004 </td>
-                                                            <td class="spec"> 외장스토리지 케이스 / HDD 4EA 가능 </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='TGS10534'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\w1.png"></td>
-                                                            <td class="ckb"> ACC</td>
-                                                            <td class="code">TGS10534</td>
-                                                            <td class="code">JP-H-WL </td>
-                                                            <td class="spec"> PTZ카메라 벽부형 브라켓 </td>
-                                                                </tr>
-                                                        <tr class="hdTable2">
-                                                            <td class="ckb"> <input type='checkbox' name='cam_sel' value='pTGS12364'></td>
-                                                            <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\w2.png"></td>
-                                                            <td class="ckb"> ACC</td>
-                                                            <td class="code">TGS12364</td>
-                                                            <td class="code">IDB221BS &<br>JP-H-WL </td>
-                                                            <td class="spec"> PTZ카메라 벽부형 브라켓+ 선쉴드<br>(NC-S3283WHX-A용) </td>
-                                                                </tr>
-                                            </table>
-                                                <!-- Portfolio Modal - Text -->
-                                                <button class="btn btn-primary" href="" data-bs-dismiss="modal">
-                                                <i class="fas fa-times fa-fw"></i> 창닫기</button>
-                                                <button class="btn btn-secondary"
-                                                        href="" data-bs-dismiss="modal" id="btn_sel"
-                                                        onclick='getCheckboxValue()'>
-                                                        <i class="fa-solid fa-circle-check"></i> 선택완료 </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            <!-- Bootstrap core JS-->
-            <script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-            <!-- Core theme JS-->
-            <script src="js/scripts.js"></script>
-            <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-            <!-- 메일보낸후 메세지 띄우기-->
-            <script data-cfasync="false" src="form-submission-handler.js"></script>
-        </body>
-    </html>
+    </div>
+    <div id="modalEtc" class="modalContainer">
+        <h1>NETWORK ACCESSORY</h1>
+            <table>
+                <tr class="hdTable1">
+                    <th class="img">IMG</th>
+                    <th class="ckb">MP</th>
+                    <th class="code">PORT</th>
+                    <th class="code">모델명</th>
+                    <th class="spec">스펙</th>
+                    <th class="cost">가격</th>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\24p_2126.png"></td>
+                    <td class="ckb"> 24P</td>
+                    <td class="code">TGS32037</td>
+                    <td class="code">DH-2126PFN </td>
+                    <td class="spec"> 24P PoE UTP 1Gbps / UP - 2P SFP 10Gbps / NTP기능(GPS)</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('990,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\24p_2126.png"></td>
+                    <td class="ckb"> 24P</td>
+                    <td class="code">TGS28074</td>
+                    <td class="code">DH-2026PFN </td>
+                    <td class="spec"> 24P PoE UTP 1Gbps / UP - 2P SFP & 2P UTP 1Gbps / NTP기능(GPS)</td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('800,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\24p_poe.png"></td>
+                    <td class="ckb"> 24P</td>
+                    <td class="code">TGS19192</td>
+                    <td class="code">DH-2328PF </td>
+                    <td class="spec"> 24P PoE UTP 1Gbps / 4P SFP 1Gbps </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('590,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\24p_poe_1.png"></td>
+                    <td class="ckb"> 24P</td>
+                    <td class="code">TGS27808</td>
+                    <td class="code">DH-2026PF </td>
+                    <td class="spec"> 24P PoE UTP 100Mbps / 2P SFP 1Gbps </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('315,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\16p_poe.png"></td>
+                    <td class="ckb"> 16P</td>
+                    <td class="code">TGS13952</td>
+                    <td class="code">DH-2018P </td>
+                    <td class="spec"> 16P PoE UTP 100Mbps / 2P UTP 1Gbps </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('275,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\8p_poe.png"></td>
+                    <td class="ckb"> 8P</td>
+                    <td class="code">TGS13951</td>
+                    <td class="code">DH-2212PF </td>
+                    <td class="spec"> 8P PoE UTP 1Gbps / 2P SFP 1Gbps </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('250,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\8p_poe_1.png"></td>
+                    <td class="ckb"> 8P</td>
+                    <td class="code">TGS13950</td>
+                    <td class="code">DH-2010P </td>
+                    <td class="spec"> 8P PoE UTP 100Mbps / 2P UTP 1Gbps </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('170,000원')"> 클릭 </label></td>
+                </tr>
+                    <tr class="hdTable1">
+                        <th class="img">IMG</th>
+                        <th class="ckb">MP</th>
+                        <th class="code">코드</th>
+                        <th class="code">모델명</th>
+                        <th class="spec">스펙</th>
+                        <th class="cost">가격</th>
+                    </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex3" img="img" src="assets\img\acc\hdd.png"></td>
+                    <td class="ckb"> 1TB</td>
+                    <td class="code">TGS22468</td>
+                    <td class="code">HDD 1TB </td>
+                    <td class="spec"> VIDEO SURVEILLANCE / 제조사 랜덤발송 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('50,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex3" img="img" src="assets\img\acc\hdd.png"></td>
+                    <td class="ckb"> 3TB</td>
+                    <td class="code">TSD10018</td>
+                    <td class="code">HDD 3TB </td>
+                    <td class="spec"> VIDEO SURVEILLANCE / 제조사 랜덤발송 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('108,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex3" img="img" src="assets\img\acc\hdd.png"></td>
+                    <td class="ckb"> 4TB</td>
+                    <td class="code">TSD10072</td>
+                    <td class="code">HDD 4TB </td>
+                    <td class="spec"> VIDEO SURVEILLANCE / 제조사 랜덤발송 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('110,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex3" img="img" src="assets\img\acc\hdd.png"></td>
+                    <td class="ckb"> 6TB</td>
+                    <td class="code">TSD10083</td>
+                    <td class="code">HDD 6TB </td>
+                    <td class="spec"> VIDEO SURVEILLANCE / 제조사 랜덤발송 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('200,000원')"> 클릭 </label></td>
+                    
+                </tr>
+                    <tr class="hdTable1">
+                    <th class="img">IMG</th>
+                    <th class="ckb">MP</th>
+                    <th class="code">코드</th>
+                    <th class="code">모델명</th>
+                    <th class="spec">스펙</th>
+                    <th class="cost">가격</th>
+                    </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\he1101.png"></td>
+                    <td class="ckb"> 엔코더</td>
+                    <td class="code">TGS18376</td>
+                    <td class="code">HE-1101 </td>
+                    <td class="spec"> IN IP 1PORT / OUT HDMI 1PORT </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('400,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\dv1104.png"></td>
+                    <td class="ckb"> VA</td>
+                    <td class="code">TGS17765</td>
+                    <td class="code">DV-1104 </td>
+                    <td class="spec"> VA BOX / 피플 카운팅 / 히트맵 / 큐 매니지먼트 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('250,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\eoc1.png"></td>
+                    <td class="ckb"> EoC</td>
+                    <td class="code">TGS18311</td>
+                    <td class="code">DA-EC3101T </td>
+                    <td class="spec"> EoC TX / UTP-> 동축변환 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('100,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\eoc2.png"></td>
+                    <td class="ckb"> EoC</td>
+                    <td class="code">TGS18312</td>
+                    <td class="code">DA-EC3101R </td>
+                    <td class="spec"> EoC RX / UTP <- 동축변환 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('110,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\al1112.png"></td>
+                    <td class="ckb"> AL</td>
+                    <td class="code">TGS29547</td>
+                    <td class="code">AL-1112 </td>
+                    <td class="spec"> IN -접점,RS232 8PORT / OUT IP 1PORT </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('240,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\he1101.png"></td>
+                    <td class="ckb"> 디코더</td>
+                    <td class="code">TGS22818</td>
+                    <td class="code">DE-1104 </td>
+                    <td class="spec"> 카메라 16CH 영상표출 / HDMI </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('230,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\ink1100.png"></td>
+                    <td class="ckb"> 키보드</td>
+                    <td class="code">TGS17369</td>
+                    <td class="code">INK-1100 </td>
+                    <td class="spec"> 네트워크 조이스틱 타입 키보드 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('400,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\ids1004.png"></td>
+                    <td class="ckb"> STORAGE</td>
+                    <td class="code">TGS12627</td>
+                    <td class="code">IDS-1004 </td>
+                    <td class="spec"> 외장스토리지 케이스 / HDD 4EA 가능 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('230,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\w1.png"></td>
+                    <td class="ckb"> ACC</td>
+                    <td class="code">TGS10534</td>
+                    <td class="code">JP-H-WL </td>
+                    <td class="spec"> PTZ카메라 벽부형 브라켓 </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('50,000원')"> 클릭 </label></td>
+                </tr>
+                <tr class="hdTable2">
+                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\w2.png"></td>
+                    <td class="ckb"> ACC</td>
+                    <td class="code">TGS12364</td>
+                    <td class="code">IDB221BS &<br>JP-H-WL </td>
+                    <td class="spec"> PTZ카메라 벽부형 브라켓+ 선쉴드<br>(NC-S3283WHX-A용) </td>
+                    <td class="cost"><label id="costCheck" onclick="costAlram('120,000원')"> 클릭 </label></td>
+                </tr>
+            </table>
+                <input class="btnClose" type="button" onclick="closeModal('#modalEtc')" value="창닫기" />
+    </div>
+    <script>
+        function openModal(content){
+            document.querySelector(content).style.display='flex';
+            document.querySelector('header').style.opacity=0.1;
+            document.querySelector('nav').style.opacity=0.1;
+            document.querySelector('section').style.opacity=0.1;
+            document.querySelector('footer').style.opacity=0.1;
+        }
+        function closeModal(content){
+            document.querySelector(content).style.display='none';
+            document.querySelector('header').style.opacity=1;
+            document.querySelector('nav').style.opacity=1;
+            document.querySelector('section').style.opacity=1;
+            document.querySelector('footer').style.opacity=1;
+        }
+        function costAlram(content){
+            window.alert(content)
+        }
+    </script>
+    
+</body>
+</html>
+<!-- 
+<input type="button" id="modalTest1" onclick="openModal()" value="open" />
+<input type="button" id="modalTest2" onclick="closeModal()" value="close" /> -->
