@@ -31,7 +31,7 @@ header{
 }
 .idisHomepage{
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     width: 200px;
     height: 40px;
     display: flex;
@@ -66,8 +66,10 @@ details[open]{
 .cctvImage:hover{
     border-radius: 20px;
     background-color:aquamarine;
+    
 }
 nav{
+    font-family: 'Noto Sans KR', sans-serif;
     width: 100%;
     height: 80px;
     background-color:rgb(0, 153, 176);
@@ -80,17 +82,10 @@ nav{
 }
 h1{
     font-size: 45px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
-/* .navContent{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-style: normal;
-    font-size: 2rem;
-} */
 .navList{
+    font-family: 'Noto Sans KR', sans-serif;
     background-color:rgb(0, 153, 176);
     color: whitesmoke;
 }
@@ -116,7 +111,7 @@ h1{
     height: 100%;
     /* align-content: space-between; */
     justify-content:space-between;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     overflow: hidden;
 }
@@ -144,26 +139,8 @@ section{
     display: flex;
     flex-wrap: wrap;
 } */
-.damdang{
-
-    height: 400px;
-    flex-direction: column;
-    justify-content:space-between;
-    align-items:center;
-    display: flex;
-    /* background-color: aqsua; */
-
-}
-.damdangName{
-    font-size: 25px;
-    font-weight: bolder;
-}
-.damdangEmail{
-    font-size: 20px;
-    color:dimgrey;
-}
-.damdangEmail:hover{
-    color: darkblue;
+h1{
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .cctvImage{
     width: 400px;
@@ -176,8 +153,9 @@ section{
 .cctvImage:hover{
     border-radius: 20px;
     /* background-image: url('img/portfolio/plus.png'); */
-    background-color: aqua;
+    background-color:gold;
     z-index: 50;
+    cursor: pointer;
     /* display: flex; */
 
 }
@@ -210,8 +188,7 @@ i{
     display: flex;
 }
 .spanOne{
-    font-size: 1.5em; 
-    font-weight:bold;
+    font-size: 1.8em; 
     display: flex;
     justify-content: center;
     text-align: center;
@@ -257,142 +234,6 @@ i{
     flex-wrap: wrap;
 }
 
-/* 태블릿 PC */
-@media screen and (min-width:768px) {
-    .address{
-        display: none;
-    }
-    .homepage{        
-        display: none;
-    }
-    .footerTop{
-        font-family: 'Noto Sans KR', sans-serif;
-        width: 100%;
-        height: 100px;
-        background-color: #2c3e50;
-        color: white;
-        align-items: center;
-        text-align: center;
-        justify-content: space-evenly;
-        flex-direction: row;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .hdTable1{
-        font-size:10px;
-    }
-    #idisHomepages{
-        display:none;
-    }
-    .ckb{
-        display:none;
-    }
-    .btnClose{
-        display: flex;
-        width: 25%;
-        height: 15%;
-    }
-    .modalContainer {
-        display: none;
-        position:absolute;
-        top: 1%;
-        right: 5%;
-        left: 5%;
-        bottom: 1%;
-        border: 0.5px solid grey;
-        border-radius: 50px;
-        /* width: 90%;
-        height: 80%; */
-        font-size: 20px;
-        justify-content:space-between;
-        align-items: center;
-        flex-direction: column;
-        background:rgb(255,255,255,0.99);
-        z-index: 100;
-    }
-    /* .modalContainerSmall {
-        font-family: 'Noto Sans KR', sans-serif;
-        display: none;
-        position:absolute;
-        top: 0;
-        left: 0;
-        width: 450px;
-        border: 0.5px solid rgb(0, 153, 176);
-        border-radius: 30px;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background:rgb(255,255,255,0.99);
-        color:black;
-        font-size:18px;
-        z-index: 100;
-    } */
-
-
-}
-/* 모바일 */
-
-@media screen and (max-width:767px) {
-    .address{
-        display: none;
-    }
-    .homepage{        
-        display: none;
-    }
-    .idisHomepage{
-        display: none;
-    }
-    header{
-        width: 100%;
-        height: 80px;
-        background-color:#F5F5F5;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content:center;
-    }
-    nav{
-        width: 100%;
-        height: 50px;
-        background-color:rgb(0, 153, 176);
-    }
-    h1{
-        font-size: 30px;
-    }
-    .cctvImage{
-        width: 300px;
-        height: 200px;
-        border-radius: 50px;
-        display: flex;
-        padding: 10px;
-    }
-
- 
-    .footerTop{
-        width: 100%;
-        height: 100px;
-        background-color: #2c3e50;
-        color: white;
-        align-items: center;
-        text-align: center;
-        justify-content: space-evenly;
-        flex-direction: row;
-        display: flex;
-        flex-wrap: wrap;
-        }
-    .ckb{
-    visibility: visible;
-}
-.btnClose{
-    display: flex;
-    width: 200px;
-    height: 25px;
-
-    border-radius: 1px;
-}
-
-}
-
 .modalContainer {
     display: none;
     position:absolute;
@@ -415,6 +256,7 @@ i{
 .modalContainer > h1 {
     margin: 40px;
 }
+/* 담당자 연락처 모달 */
 .modalContainerSmall {
     font-family: 'Noto Sans KR', sans-serif;
     display: none;
@@ -431,8 +273,11 @@ i{
     color:black;
     font-size:18px;
     z-index: 100;
+    /* column-rule: 2px solid; */
 }
 .modalContainerSmall > div {
+    column-count: 2;
+    column-width: 10px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -449,14 +294,14 @@ i{
     padding-left: 20px;
     padding-right: 3px;
 }
-.modalContainerSmall > div > p {
+/* .modalContainerSmall > div > p {
     display: flex;
     align-items:flex-start;
     justify-content:center;
     flex-direction: column;
     width:55%;
     padding-left: 10px;
-}
+} */
 table{
     /* border: 1px grey solid; */
     display: flex;
@@ -509,7 +354,6 @@ table{
     align-content: center;
     justify-content: center;
     text-align: center;
-    font-weight: bold;
     border: ridge;
     border-radius: 20%;
     vertical-align: middle;
@@ -606,4 +450,147 @@ table{
     font-size: 0.9rem;
     height: 80px;
 }
+
+/* 태블릿 PC */
+@media screen and (max-width:768px) {
+    .address{
+        display: none;
+    }
+    .homepage{        
+        display: none;
+    }
+    .footerTop{
+        font-family: 'Noto Sans KR', sans-serif;
+        width: 100%;
+        height: 100px;
+        background-color: #2c3e50;
+        color: white;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hdTable1{
+        font-size:0.8em;
+    }
+    #idisHomepages{
+        display:none;
+    }
+    table{
+        width: 85%;
+        height: 80%;
+        padding: 0%;
+        margin-top: 30px;
+        overflow: auto;
+        margin: 0px;
+    }
+    .code{
+        width: 200px;
+    }
+    .spec{
+        width: 50%;
+        display: flex;
+        /* background-color:white; */
+        justify-content: center;
+        align-items: center;
+        border: 1px white solid;
+        word-break:break-all;
+    }
+    .cost{
+        width: 100px;
+    }
+    .ckb {
+        display:none;
+    }
+    .img{
+        display:none;
+    }
+    .modalContainer {
+        display: none;
+        position:absolute;
+        top: 1%;
+        right: 5%;
+        left: 5%;
+        bottom: 1%;
+        border: 0.5px solid grey;
+        border-radius: 50px;
+        /* width: 90%;
+        height: 80%; */
+        font-size: 20px;
+        justify-content:space-between;
+        align-items: center;
+        flex-direction: column;
+        background:rgb(255,255,255,0.99);
+        z-index: 100;
+    }
+    .btnClose{
+        display: flex;
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        margin-bottom:20px;
+        font-size: 0.9em;
+
+    }
+    #costCheck{
+        font-size: 0.9em;
+    }
+
+}
+/* 모바일 */
+
+@media screen and (max-width:767px) {
+    .address{
+        display: none;
+    }
+    .homepage{        
+        display: none;
+    }
+    .idisHomepage{
+        display: none;
+    }
+    header{
+        width: 100%;
+        height: 80px;
+        background-color:#F5F5F5;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content:center;
+    }
+    nav{
+        width: 100%;
+        height: 50px;
+        background-color:rgb(0, 153, 176);
+    }
+    h1{
+        font-size: 30px;
+    }
+    .cctvImage{
+        width: 300px;
+        height: 200px;
+        border-radius: 50px;
+        display: flex;
+        padding: 10px;
+    }
+
+    .footerTop{
+        width: 100%;
+        height: 100px;
+        background-color: #2c3e50;
+        color: white;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+
+}
+
+
 
