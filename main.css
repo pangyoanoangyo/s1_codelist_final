@@ -463,6 +463,9 @@ table{
     .idisHomepage{
         display: none;
     }
+    .ckb {
+        display:none;
+    }
     header{
         width: 100%;
         height: 100px;
@@ -550,6 +553,7 @@ table{
     .img{
         width: 10%;
         display: flex;
+        font-size: 10px;
         /* background-color: #0099B0; */
         justify-content: center;
         align-items: center;
@@ -557,7 +561,7 @@ table{
     }
     .code{
         width: 20%;
-        font-size: 1vw;
+        font-size: 10px;
         display: flex;
         /* background-color: blue; */
         justify-content: center;
@@ -567,7 +571,7 @@ table{
     }
     .spec{
         width: 30%;
-        font-size: 1vw;
+        font-size: 10px;
         display: flex;
         /* background-color:white; */
         justify-content: center;
@@ -578,7 +582,7 @@ table{
     .cost{
         width: 15%;
         display: flex;
-        font-size:3px;
+        font-size: 10px;
     }
     #costCheck{
         width: 70%;
@@ -596,7 +600,7 @@ table{
         text-align: center;
         /* flex-wrap: wrap; */
         background-color: #0099B0;
-        font-size: 0.9em;
+        font-size: 15px;
         height: 40px;
         color: var(--bs-dark);
         font-family: sans-serif;
@@ -613,7 +617,7 @@ table{
         /* flex-wrap: wrap; */
         /* background-color: orange; */
         background:rgb(160, 200, 222,0.2);
-        font-size: 0.9rem;
+        font-size: 10px;
         height: 80px;
     }
     .btnClose{
@@ -623,7 +627,7 @@ table{
         border-radius: 10px;
         margin-top: 10px;
         margin-bottom:20px;
-        font-size: 0.9em;
+        font-size: 10px;
 
     }
 
