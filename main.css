@@ -588,7 +588,7 @@ table{
         width: 70%;
         height:30%;
         display: flex;
-        font-size:3px;
+        font-size:10px;
     }
     .hdTable1{
         border: 0.4px grey solid;
