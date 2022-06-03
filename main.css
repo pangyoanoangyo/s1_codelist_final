@@ -16,7 +16,9 @@ header{
     flex-direction: row;
     justify-content:space-between;
     padding: 5px;
-
+}
+.logo{
+    padding-left:30px;
 }
 .headerRight{
     font-family: 'Noto Sans KR', sans-serif;
@@ -106,6 +108,7 @@ h1{
     flex-direction: column;
     overflow: hidden;
 }
+
 .containerBox{
     width: 100%;
     height: 100%;
@@ -115,11 +118,16 @@ h1{
     flex-direction: row;
     overflow: hidden;
 }
-
-section{
-    width: 100%;
-    height: 100%;
+.mainSection{
     /* background-color:yellow; */
+    display: flex;
+    justify-content: center;
+
+}
+section{
+    /* background-color:red; */
+    width: 90%;
+    height: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -721,4 +729,4 @@ table{
         font-size: 0.9em;
     }
 
-} */ */
+} */
