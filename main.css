@@ -465,6 +465,9 @@ table{
     .address{
         display: none;
     }
+    .logo{
+        padding-left:0px;
+    }
     .homepage{        
         display: none;
     }
@@ -476,7 +479,7 @@ table{
     }
     header{
         width: 100%;
-        height: 100px;
+        height: 90px;
         background-color:#F5F5F5;
         display: flex;
         align-items: center;
@@ -488,18 +491,32 @@ table{
     }
     nav{
         width: 100%;
-        height: 50px;
+        height: 60px;
         background-color:rgb(0, 153, 176);
     }
     h1{
         font-size: 8vw;
     }
-    .cctvImage{
-        width: 300px;
-        height: 200px;
-        border-radius: 50px;
+    section{
+        /* background-color:red; */
+        width: 90%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
         display: flex;
-        padding: 10px;
+        margin: 10px;
+        flex-wrap: wrap;
+        flex-flow: row 3;
+        /* padding: 30px; */
+        overflow: hidden;
+    
+    }
+    .cctvImage{
+        width: 45%;
+        height: 45%;
+        border-radius: 30px;
+        display: flex;
+        padding: 5px;
     }
     .modalContainer {
         display: none;
@@ -522,7 +539,7 @@ table{
 
     .footerTop{
         width: 100%;
-        height: 100px;
+        height: 70px;
         font-size: 15px;
         background-color: #2c3e50;
         color: white;
