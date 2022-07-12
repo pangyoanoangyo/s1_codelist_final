@@ -17,7 +17,10 @@
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
     </style>
     <header>
-        <h1>카메라 종류를 선택 하세요!</h1>
+        <h1>카메라를 선택 하세요!</h1>
+        <p>카메라를</p>
+        <p>선택 하세요!</p>
+        <div>⬇️⬇️⬇️⬇️⬇️⬇️</div>
     </header>
     <main>
         <input type="image" id='camImg' src='cam/dome/2m_d_f.png' onclick="openModal('#domeContent')">
@@ -69,7 +72,7 @@
     </section>
     <section id="bulletContent" class="modalContainer">
         <h1> Bullet Camera.</h1>
-        <div class="select_cam_window">
+        <form class="select_cam_window">
             <label for="bulletCamResolution">▶️ 카메라 화소수:</label>
             <select id="bulletCamResolution">
                 <!-- <option value=""> -- 카메라 화소 -- </option> -->
@@ -82,7 +85,7 @@
                 <option value="FLB">고정렌즈</option>
                 <option value="VLB">가변렌즈</option>
             </select>
-        </div>
+        </form>
         <div class="btnDiv">
             <input class="closeReset2" type="button" value="초기화" style="display:none" 
             onclick="btnReset('.closeReset2','.bullet_image','#bulletCamResolution','#bulletCamLens','#openBullet')">
@@ -115,7 +118,7 @@
     </section>
     <section id="spdContent" class="modalContainer">
         <h1> Special Camera.</h1>
-        <div class="select_cam_window">
+        <form class="select_cam_window">
             <label>▶️ 카메라종류</label>
             <select id="spdCamType" for="spdCamType">
                 <option name="spdCamType" value="SP" >스피드돔<br>
@@ -159,7 +162,7 @@
                 </select><br>
             </div>
 
-        </div>
+        </form>
         <div class="btnDiv">
             <input class="openWindow" id="openspd" type="submit"  style="display:none" value="선택" onclick="spd_btn('#openspd','.spd_image','#spdCamType','#spdCamResolution','.closeReset')">
             <input class="closeReset" type="button" value="초기화"  onclick="btnSpdReset('.closeReset','.spd_image','#spdCamType','#spdCamResolution')">
