@@ -49,8 +49,8 @@
                 </optgroup>
         </form>
         -->
-            <script>
-            //writeContent('#header','JS로 작성했dd습니다');
+        <script>
+           // writeContent('#header','JS로 작성했dd습니다');
         </script>
     </header>
     <nav>
@@ -58,19 +58,19 @@
             <span class="navList">LIST</span></h1>
         <!-- <div class="navBlank"></div> -->
     </nav>
+
     <div class="mainSection">
             <section>
+                <a href="/카메라선택기/camSelector.html">
+                    <img src="assets\img\portfolio\info.png">
+                </a>    
                 <img class="cctvImage" src="assets\img\portfolio\dome.png" onclick="openModal('#modalDome')">
                 <img class="cctvImage" src="assets\img\portfolio\bullet.png" onclick="openModal('#modalBullet')">
                 <img class="cctvImage" src="assets\img\portfolio\spd.png" onclick="openModal('#modalSpd')">
                 <img class="cctvImage" src="assets\img\portfolio\nvr.png" onclick="openModal('#modalNvr')">
                 <img class="cctvImage" src="assets\img\portfolio\hdtvi.png" onclick="openModal('#modalHdtvi')">
                 <img class="cctvImage" src="assets\img\portfolio\etc.png" onclick="openModal('#modalEtc')">
-                
             </section>
-            <!-- <aside>
-
-            </aside> -->
     </div>
 
     <div>
@@ -92,10 +92,8 @@
                     <i class="fa-brands fa-youtube"></i></a>
                 </div>
                 <div class="techPhone">
-                    <span class="spanOne">기술상담: 1644-6440</span>
-                    <table>
-                        <tr>(24시간 연중무휴)</tr>
-                    </table>
+                    기술상담: 1644-6440<br>
+                    (24시간 연중무휴)
                 </div>  
             </div>
             <div class="footerBottom">
@@ -105,14 +103,14 @@
     </div>
     <div id="modalPerson" class="modalContainerSmall">
         <div>
-            <img src="assets\img\idis_logo_sero.png" />
+            <!-- <img src="assets\img\idis_logo_sero.png" /> -->
             <p> 
-                <span style="font-size:20px"> ▫️ 김상필 과장 </span>| sangfeel@idis.co.kr | <br>
-                <span style="font-size:20px"> ▫️ 권혁제 주임 </span>| gurwp007@idis.co.kr |<br>
-                <span style="font-size:20px"> ▫️ 김오성 담당 </span>| sungk5@idis.co.kr |<br>
+                <span style="font-size:20px"> ▶️ 김상필 과장 </span>| sangfeel@idis.co.kr | <br>
+                <span style="font-size:20px"> ▶️ 권혁제 주임 </span>| gurwp007@idis.co.kr |<br>
+                <span style="font-size:20px"> ▶️ 김오성 담당 </span>| sungk5@idis.co.kr |<br>
             </p>
         </div>
-        <input class="btnC" type="button" onclick="closeModal('#modalPerson')" value="창닫기" />
+        <input class="btnC" type="button" onclick="closeModal('#modalPerson')" value="닫기" />
     </div>
 <!-- 카메라 콘텐츠 -->
 <!-- 돔카메라 -->
@@ -308,7 +306,7 @@
                     <td class="ckb"> 12M</td>
                     <td class="code">VBR10318</td>
                     <td class="code">NC-Y6C16WRX-A</td>
-                    <td class="spec">(어안)_12M(9.4M) / 1.2mm / 0lux / IP67 </td>
+                    <td class="spec">(어안) 12M(9.4M) / 1.2mm / 0lux / IP67 </td>
                     <td class="cost"><label id="costCheck" onclick="costAlram('500,000원')"> 클릭 </label></td>
                 </tr>
                 <tr class="hdTable2">
@@ -316,7 +314,7 @@
                     <td class="ckb">  5M</td>
                     <td class="code"> TGS30108</td>
                     <td class="code">NC-Y6516WRX-A</td>
-                    <td class="spec">(어안)_5M / 0 lux / H.265 / IP67 </td>
+                    <td class="spec">(어안) 5M / 0 lux / H.265 / IP67 </td>
                     <td class="cost"><label id="costCheck" onclick="costAlram('330,000원')"> 클릭 </label></td>
                 </tr>
                 <tr class="hdTable2">
@@ -324,7 +322,7 @@
                     <td class="ckb"> 8M</td>
                     <td class="code">TGS30333</td>
                     <td class="code">NC-S3883HRX-A</td>
-                    <td class="spec">(IR PTZ)_8M / 31x zoom / 0 lux / IP66 </td>
+                    <td class="spec">(IR PTZ) 8M / 31x zoom / 0 lux / IP66 </td>
                     <td class="cost"><label id="costCheck" onclick="costAlram('1,900,000원')"> 클릭 </label></td>
                 </tr>
                 <tr class="hdTable2">
@@ -332,7 +330,7 @@
                     <td class="ckb"> 5M</td>
                     <td class="code">TGS30459</td>
                     <td class="code">NC-S3583HRX-A</td>
-                    <td class="spec">(IR PTZ)_5M / 31x zoom / 0 lux / IP66 </td>
+                    <td class="spec">(IR PTZ) 5M / 31x zoom / 0 lux / IP66 </td>
                     <td class="cost"><label id="costCheck" onclick="costAlram('1,750,000원')"> 클릭 </label></td>
                 </tr>
                 <tr class="hdTable2">
@@ -340,7 +338,7 @@
                     <td class="ckb"> 2M</td>
                     <td class="code">VDP10061</td>
                     <td class="code">NC-S6286HRXL-A</td>
-                    <td class="spec">(IR PTZ)_2M / 36x zoom / 0 lux / H.265 / IP67 </td>
+                    <td class="spec">(IR PTZ) 2M / 36x zoom / 0 lux / H.265 / IP67 </td>
                     <td class="cost"><label id="costCheck" onclick="costAlram('1,180,000원')"> 클릭 </label></td>
                 </tr>
                 <tr class="hdTable2">
@@ -348,7 +346,7 @@
                     <td class="ckb"> 2M</td>
                     <td class="code">VDP10231</td>
                     <td class="code">NC-S3283WHX-A</td>
-                    <td class="spec">(PTZ)_2M / 30x zoom / H.265 / IP66 </td>
+                    <td class="spec">(PTZ) 2M / 30x zoom / H.265 / IP66 </td>
                     <td class="cost"><label id="costCheck" onclick="costAlram('750,000원')"> 클릭 </label></td>
                 </tr>
                 <tr class="hdTable2">
@@ -356,7 +354,7 @@
                     <td class="ckb"> 2M</td>
                     <td class="code">TGS32032</td>
                     <td class="code">NC-S3283FX-A</td>
-                    <td class="spec">(PTZ)_2M / 30x zoom / H.265 / 매립형 </td>
+                    <td class="spec">(PTZ) 2M / 30x zoom / H.265 / 매립형 </td>
                     <td class="cost"><label id="costCheck" onclick="costAlram('750,000원')"> 클릭 </label></td>
                 </tr>
                 <tr class="hdTable2">
@@ -364,7 +362,7 @@
                     <td class="ckb"> 2M</td>
                     <td class="code">VDP10060</td>
                     <td class="code">DC-S6162WHX-A</td>
-                    <td class="spec">(PTZ)_2M / 12x zoom / H.265 / 미니사이즈 </td>
+                    <td class="spec">(PTZ) 2M / 12x zoom / H.265 / 미니사이즈 </td>
                     <td class="cost"><label id="costCheck" onclick="costAlram('640,000원')"> 클릭 </label></td>
                 </tr>
                 <tr class="hdTable2">
@@ -372,7 +370,7 @@
                     <td class="ckb"> 2M</td>
                     <td class="code">TGS30988</td>
                     <td class="code">NC-V4211XJ<br> 2.4mm</td>
-                    <td class="spec">(핀홀)_2M / 2.4mm / H.265 </td>
+                    <td class="spec">(핀홀) 2M / 2.4mm / H.265 </td>
                     <td class="cost"><label id="costCheck" onclick="costAlram('280,000원')"> 클릭 </label></td>
                 </tr>
                 <tr class="hdTable2">
@@ -380,7 +378,7 @@
                     <td class="ckb"> 5M</td>
                     <td class="code">TGS24831</td>
                     <td class="code">DC-TH2012WR</td>
-                    <td class="spec">(열화상)_</strong> 5M - Thermal(160*120) / IP67 </td>
+                    <td class="spec">(열화상) </strong> 5M - Thermal(160*120) / IP67 </td>
                     <td class="cost"><label id="costCheck" onclick="costAlram('1,200,000원')"> 클릭 </label></td>
                 </tr>
                 <tr class="hdTable2">
@@ -465,7 +463,10 @@
                 <input class="btnClose" type="button" onclick="closeModal('#modalNvr')" value="창닫기" />
     </div>
     <div id="modalHdtvi" class="modalContainer">
-        <h1>HD-TVI PRODUCT (아날로그) </h1>
+        <div class="modalHdtvi_div">
+            <h1>HD-TVI PRODUCT
+            <span>(아날로그)</span></h1>
+        </div>
             <table>
                 <tr class="hdTable1">
                     <th class="img">IMG</th>

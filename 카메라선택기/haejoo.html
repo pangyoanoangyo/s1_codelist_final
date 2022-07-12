@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>나는 김해주 입니다</h1>
+    <p id="a">나는 빵꾸똥꾸 입니다</p>
+    <input type="button" onclick="btn()" value="버튼">
+
+    <select id='fruit'>
+        <option value='apple'>사과</option>
+        <option value='strawberry'>딸기</option>
+        <option value='grape'>포도</option>  
+    </select>
+    <input type='text' id='searchValue'>
+    <input type='button' onclick='selectedControl()' value='선택'>
+
+    <script type="text/javascript">
+
+        function btn(){
+            document.querySelector('#a').innerHTML = "사실 아니지롱";
+        }
+
+        function selectedControl(){
+            const el = document.getElementById('fruit');  //select box
+            const len = el.options.length; //select box의 option 갯수
+            const str = document.getElementById('searchValue').value; //입력 받은 value 값
+            //select box의 option 갯수만큼 for문 돌림
+            for (let i=0; i<len; i++){  
+                //select box의 option value가 입력 받은 value의 값과 일치할 경우 selected
+                if(el.options[i].value == str){
+                    el.options[i].selected = true;
+                    }
+            } 
+        } 
+
+
+    </script>
+</body>
+</html>
