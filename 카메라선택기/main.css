@@ -15,23 +15,43 @@ header{
     justify-content: center;
     align-items: center;
 }
+header > h1{
+    font-size: 40px;
+}
 header > p{
     display:none;
 }
 main{
     width: 75%;
     display: flex;
-    /* background-color:grey; */
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
+    margin: 50px;
 }
-main > input{
+main > div> {
     width: 50%;
     cursor: pointer;
+    background-color:grey;
+    justify-content: center;
 }
-main > p{
+main > div> input{
+    width: 100%;
+    cursor: pointer;
+    
+}
+main > div> p{
+    display: flex;
+    /* width : 200px; */
+    font-size:20px;
+    background-color: #0099B0;
+    color:whitesmoke;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 5px;
+    justify-content: center;
+}
+/* main > p{
     display: none;
-}
+} */
 img{
     width:40%;
 }
@@ -77,14 +97,26 @@ section > form > select{
 
 }
 .dome_image > p {
-    font-size:1.2vw;
+    font-size:20px;
     display:flex;
     flex-direction: column;
 }
 .dome_image > p >span{
-    font-size:1.2vw;
+    font-size:22px;
     font-family: 'Noto Sans KR', sans-serif;
-    color:#0099B0;
+    color:whitesmoke;
+    display:flex;
+}
+.spanCode{
+    font-size:22px;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color:rgb(246, 171, 0);    
+    display:flex;
+}
+.modelName{
+    font-size:22px;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color:#0099B0; 
     display:flex;
 }
 .bullet_image {
@@ -99,21 +131,22 @@ section > form > select{
     align-items: center;
 }
 .bullet_image > p {
-    font-size:1.2vw;
+    font-size:20px;
     display:flex;
     flex-direction: column;
 }
 .bullet_image > p >span{
-    font-size:1.2vw;
+    font-size:22px;
     font-family: 'Noto Sans KR', sans-serif;
-    color:#0099B0;
+    color:whitesmoke;
     display:flex;
 }
 .spd_image {
     display:flex;
     justify-content:center;
-    align-items: center;
+    align-items:flex-start;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 .spd_image > input {
     width: 40%;
@@ -121,16 +154,18 @@ section > form > select{
     align-items: center;
 }
 .spd_image > p {
-    font-size:1.2vw;
+    font-size:20px;
     display:flex;
     flex-direction: column;
 }
 .spd_image > p >span{
-    font-size:1.2vw;
+    font-size:22px;
     font-family: 'Noto Sans KR', sans-serif;
-    color:#0099B0;
+    color:whitesmoke;
     display:flex;
 }
+
+
 .select_cam_window{
     margin-bottom:50px;
 }
@@ -142,6 +177,29 @@ section > form > select{
     cursor: pointer;
 
 }
+.SPNO{
+    /* background-color:red; */
+    flex-direction: column;
+    justify-items: center;
+    align-items:center;
+    flex-wrap: wrap; 
+}
+.s3283whx{
+    width:250px;
+    height:150px;
+    /* background-color:red; */
+    /* flex-direction: column;
+    justify-items: center;     */
+}
+.bracket,
+.sunshield{
+    width: 150px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 
 .openWindow{
     font-size: 15px;
@@ -188,6 +246,55 @@ section > form > select{
 
 
 @media screen and (max-width:500px) {
+    .spd_image {
+        display:flex;
+        justify-content:center;
+        align-items:flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .spd_image > input {
+        width: 20%;
+        justify-content:center;
+        align-items: center;
+    }
+    .spd_image > p {
+        width: 60%;
+        font-size:15px;
+        display:flex;
+        flex-direction: column;
+    }
+    .spd_image > p >span{
+        font-size:15px;
+        font-family: 'Noto Sans KR', sans-serif;
+        color:whitesmoke;
+        display:flex;
+    }
+    .SPNO{
+        /* background-color:red; */
+        flex-direction: column;
+        justify-items: center;
+        align-items:center;
+        flex-wrap: wrap; 
+    }
+    
+    .s3283whx{
+        width:150px;
+        height:80px;
+        /* background-color:red; */
+        /* flex-direction: column;
+        justify-items: center;     */
+    }
+    .bracket,
+    .sunshield{
+        width: 100px;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
     header {
         flex-direction: column;
         padding: 50px;
@@ -197,10 +304,10 @@ section > form > select{
         display:none;
     }
 
-    header > p,
-    div{
+    header > p{
         display: flex;
-        font-size:30px;
+        font-size:40px;
+        border: weight;
         font-family: 'Noto Sans KR', sans-serif;
         margin: 1px;        
     }
@@ -216,13 +323,25 @@ section > form > select{
     main > input{
         width: 70%;
     }
-    main > p{
+    main > div {
         display: flex;
+        /* width : 200px; */
         font-size:20px;
         background-color: #0099B0;
         color:whitesmoke;
         font-family: 'Noto Sans KR', sans-serif;
         margin: 5px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    main > div> p{
+        display: flex;
+        /* width : 200px; */
+        font-size:20px;
+        background-color: #0099B0;
+        color:whitesmoke;
+        font-family: 'Noto Sans KR', sans-serif;
+        justify-content: center;
     }
     .SP,
     .IRSP,

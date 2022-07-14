@@ -20,15 +20,21 @@
         <h1>카메라를 선택 하세요!</h1>
         <p>카메라를</p>
         <p>선택 하세요!</p>
-        <div>⬇️⬇️⬇️⬇️⬇️⬇️</div>
+        <p>⬇️⬇️⬇️⬇️⬇️⬇️</p>
     </header>
     <main>
-        <input type="image" id='camImg' src='cam/dome/2m_d_f.png' onclick="openModal('#domeContent')">
-        <p> 돔카메라 </p>
-        <input type="image" id='camImg' src='cam/bullet/2m_f_f.png' onclick="openModal('#bulletContent')">
-        <p> 뷸렛카메라 </p>
-        <input type="image" id='camImg2' src='cam/etc_cam/8m_spd_ir.png' onclick="openModal('#spdContent')">
-        <p> 스피드돔/특수카메라 </p>
+        <div>
+            <input type="image" id='camImg' src='cam/dome/2m_d_f.png' onclick="openModal('#domeContent')">
+            <p>돔카메라 </p>
+        </div>
+        <div>
+            <input type="image" id='camImg' src='cam/bullet/2m_f_f.png' onclick="openModal('#bulletContent')">
+            <p> 뷸렛카메라 </p>
+        </div>
+        <div>
+            <input type="image" id='camImg2' src='cam/etc_cam/8m_spd_ir.png' onclick="openModal('#spdContent')">
+            <p> 스피드돔/특수카메라 </p>
+        </div>
     </main>
     <section id="domeContent" class="modalContainer">
         <h1> Dome Camera.</h1>
@@ -54,19 +60,19 @@
         <div class="dome_image">
             <input type="image" class='FL2M' src='cam/dome/2m_d_f.png' style="display:none">
             <p id='FL2M' style="display:none"> 
-                <span>코드 : TSC10266 <br> 모델명 : NC-D4217RX 4mm <br></span>2M / 4mm / 0ux / H.265<br>
-                <br><span>코드 : VDR10250 <br> 모델명 : NC-D4217RX 2.8mm <br></span> 2M / 2.8mm / 0ux / H.265<br>
-                <br><span>코드 : TGS32030 <br> 모델명 : NC-D4216RX-A 4mm <br></span> 2M / 4mm / 0ux / H.265</p>
+                <span class="spanCode">코드 : TSC10266 </span><span class="modelName"> 모델명 : NC-D4217RX 4mm </span>2M / 4mm / 0ux / H.265<br>
+                <br><span class="spanCode">코드 : VDR10250 </span><span class="modelName"> 모델명 : NC-D4217RX 2.8mm </span> 2M / 2.8mm / 0ux / H.265<br>
+                <br><span class="spanCode">코드 : TGS32030 </span><span class="modelName"> 모델명 : NC-D4216RX-A 4mm </span> 2M / 4mm / 0ux / H.265</p>
             <input type="image" class='VL2M' src='cam/dome/2m_d_v.png' style="display:none">
-            <p id='VL2M' style="display:none"> <span>코드 : VDR10243 <br> 모델명 : NC-D4236RX-A <br></span>2M / 2.8~12mm / 0ux / H.265</p>
+            <p id='VL2M' style="display:none"> <span class="spanCode">코드 : VDR10243 </span><span class="modelName"> 모델명 : NC-D4236RX-A </span>2M / 2.8~12mm / 0ux / H.265</p>
             <input type="image" class='FL5M' src='cam/dome/5m_d_f.png' style="display:none">
-            <p id='FL5M' style="display:none"> <span>코드 : VDR10244 <br> 모델명 : NC-D4516WRX-A 4mm <br></span>5M / 4mm / 0ux / H.265</p>
+            <p id='FL5M' style="display:none"> <span class="spanCode">코드 : VDR10244 </span><span class="modelName"> 모델명 : NC-D4516WRX-A 4mm </span>5M / 4mm / 0ux / H.265</p>
             <input type="image" class='VL5M' src='cam/dome/5m_d_v.png' style="display:none">
-            <p id='VL5M' style="display:none"> <span>코드 : TGS31463 <br> 모델명 : NC-D4536WRX-A <br></span> 5M / 3.0~13.5mm MFZ / 0ux / H.265</p>
+            <p id='VL5M' style="display:none"> <span class="spanCode">코드 : TGS31463 </span><span class="modelName"> 모델명 : NC-D4536WRX-A </span> 5M / 3.0~13.5mm MFZ / 0ux / H.265</p>
             <input type="image" class='FL8M' src='cam/dome/8m_d_f.png' style="display:none">
-            <p id='FL8M' style="display:none"> <span>코드 : VDR10225 <br> 모델명 : NC-D4811WRX-A 3.3mm <br></span> 8M / 3.3mm / 0ux / H.265</p>
+            <p id='FL8M' style="display:none"> <span class="spanCode">코드 : VDR10225 </span><span class="modelName"> 모델명 : NC-D4811WRX-A 3.3mm </span> 8M / 3.3mm / 0ux / H.265</p>
             <input type="image" class='VL8M' src='cam/dome/8m_d_v.png' style="display:none">
-            <p id='VL8M' style="display:none"> <span>코드 : VDR10226 <br> 모델명 : NC-D4831HRX-A <br></span> 8M / 2.7~13.5mm MFZ / 0ux / H.265</p>
+            <p id='VL8M' style="display:none"> <span class="spanCode">코드 : VDR10226 </span><span class="modelName"> 모델명 : NC-D4831HRX-A </span> 8M / 2.7~13.5mm MFZ / 0ux / H.265</p>
         </div>
 
     </section>
@@ -95,23 +101,23 @@
         <div class="bullet_image">
             <input type="image" class='FLB2M' src='cam/bullet/2m_f_f.png' style="display:none">
             <p id='FLB2M' style="display:none"> 
-                <span>코드 : VBR10327 <br> 모델명 : NC-T4217WRX-A <br></span>2M / 4mm / 0ux / H.265 / IP67 / noAudio<br>
-                <br><span>코드 : VBR30672 <br> 모델명 : NC-T4216WRX-A 4mm <br></span> 2M / 4mm / 0ux / H.265 / IP67<br></p>
+                <span class="spanCode">코드 : VBR10327 </span><span class="modelName"> 모델명 : NC-T4217WRX-A </span> 2M / 4mm / 0ux / H.265 / IP67 / noAudio<br>
+                <br><span class="spanCode">코드 : VBR30672 </span><span class="modelName"> 모델명 : NC-T4216WRX-A 4mm </span> 2M / 4mm / 0ux / H.265 / IP67<br></p>
             <input type="image" class='VLB2M' src='cam/bullet/2m_f_v.png' style="display:none">
-            <p id='VLB2M' style="display:none"> <span>코드 : TGS30338 <br> 모델명 : NC-T4236WRX-A <br>
+            <p id='VLB2M' style="display:none"> <span class="spanCode">코드 : TGS30338 </span><span class="modelName"> 모델명 : NC-T4236WRX-A </span>
             </span>2M / 2.8~12mm MFZ / 0ux / H.265 / IP67</p>
             <input type="image" class='FLB5M' src='cam/bullet/8m_f_f.png' style="display:none">
-            <p id='FLB5M' style="display:none"> <span>코드 : VBR10346 <br> 모델명 : NC-T4516WRX-A 4mm <br>
+            <p id='FLB5M' style="display:none"> <span class="spanCode">코드 : VBR10346 </span><span class="modelName"> 모델명 : NC-T4516WRX-A 4mm </span>
             </span>5M / 4mm / 0ux / H.265 / IP67 (only PoE)<br>
-            <span>코드 : VBR10344 <br> 모델명 : NC-T4516WRX-A 2.8mm <br></span>5M / 2.8mm / 0ux / H.265 / IP67 (only PoE)</p>
+            <span class="spanCode">코드 : VBR10344 </span><span class="modelName"> 모델명 : NC-T4516WRX-A 2.8mm </span>5M / 2.8mm / 0ux / H.265 / IP67 (only PoE)</p>
             <input type="image" class='VLB5M' src='cam/bullet/8m_f_v.png' style="display:none">
-            <p id='VLB5M' style="display:none"> <span>코드 : TGS32031 <br> 모델명 : NC-T4536HRX-A <br>
+            <p id='VLB5M' style="display:none"> <span class="spanCode">코드 : TGS32031 </span><span class="modelName"> 모델명 : NC-T4536HRX-A </span>
             </span> 5M / 3.0~13.5mm MFZ / 0ux / H.265 / IP67</p>
             <input type="image" class='FLB8M' src='cam/bullet/8m_f_f.png' style="display:none">
-            <p id='FLB8M' style="display:none"> <span>코드 : TGS30334 <br> 모델명 : NC-D4811WRX-A 3.3mm <br></span>
+            <p id='FLB8M' style="display:none"> <span class="spanCode">코드 : TGS30334 </span><span class="modelName"> 모델명 : NC-D4811WRX-A 3.3mm </span>
             8M / 3.3mm / 0ux / H.265 / IP67</p>
             <input type="image" class='VLB8M' src='cam/bullet/8m_f_v.png' style="display:none">
-            <p id='VLB8M' style="display:none"> <span>코드 : VBR10328 <br> 모델명 : NC-T4831HRX-A <br></span>
+            <p id='VLB8M' style="display:none"> <span class="spanCode">코드 : VBR10328 </span><span class="modelName"> 모델명 : NC-T4831HRX-A </span>
             8M / 2.7~13.5mm MFZ / 0lux / H.265 /IP67</p>
         </div>
 
@@ -169,36 +175,45 @@
             <input class="closeWindow" type="button" value="창닫기" onclick="closeModal('#spdContent','.spd_image')">
         </div>
         <div class="spd_image" style="display:none">
-            <input type="image" class='SPNO' src='cam/etc_cam/2m_spd_d.png' style="display:none">
-            <p id='SPNO' style="display:none"><span>코드 : VDP10231 <br> 모델명 : NC-S3283WHX-A <br></span>실내외 카메라<br>
-                2M / 30x zoom / H.265 / IP66<br></p>
+            <div class='SPNO' style="display:none">
+                <input class="s3283whx" type="image" src='cam/etc_cam/2m_spd_d.png' >
+                <input class="bracket" type="image" src='cam/w1.png'>
+                <input class="sunshield" type="image" src='cam/w2.png'>
+            </div>
+            
+            <p id='SPNO' style="display:none"><span class="spanCode">코드 : VDP10231 </span>
+                <span class="modelName"> 모델명 : NC-S3283WHX-A </span>
+                실내외 카메라<br>
+                2M / 30x zoom / H.265 / IP66<br><br><span class="spanCode">벽부형 브라켓 /TGS10534</span><br>
+                <span class="spanCode">브라켓 체결용 선쉴드 / TGS12364</span> </p>
+            
             <input type="image" class='SPFL' src='cam/etc_cam/2m_spd_f.png' style="display:none">
-            <p id='SPFL' style="display:none"><span>코드 : TGS32032 <br> 모델명 : NC-S3283FX-A <br></span>매립형 카메라<br> 
+            <p id='SPFL' style="display:none"><span class="spanCode">코드 : TGS32032 </span><span class="modelName"> 모델명 : NC-S3283FX-A </span>매립형 카메라<br> 
                 2M / 30x zoom / H.265 / IP66<br></p>
             <input type="image" class='SPMINI' src='cam/etc_cam/2m_spd_d_m.png' style="display:none">
-            <p id='SPMINI' style="display:none"><span>코드 : VDP10060 <br> 모델명 : DC-S6162WHX-A <br></span>
+            <p id='SPMINI' style="display:none"><span class="spanCode">코드 : VDP10060 </span><span class="modelName"> 모델명 : DC-S6162WHX-A </span>
                 미니사이즈 카메라<br>2M / 12x zoom / H.265 <br></p>
             
             <input type="image" class='IRSP2M' src='cam/etc_cam/2m_spd_ir.png' style="display:none">
             <p id='IRSP2M' style="display:none">
-            <span>코드 : VDP10061 <br> 모델명 : NC-S6286HRXL-A <br></span> 2M / 36x zoom / 0ux / H.265 / IP67 <br></p>
+            <span class="spanCode">코드 : VDP10061 </span><span class="modelName"> 모델명 : NC-S6286HRXL-A </span> 2M / 36x zoom / 0ux / H.265 / IP67 <br></p>
             <input type="image" class='IRSP5M' src='cam/etc_cam/8m_spd_ir.png' style="display:none">
             <p id='IRSP5M' style="display:none">
-            <span>코드 : TGS30459 <br> 모델명 : NC-S3583HRX-A <br></span> 5M / 31x zoom / 0ux / IP66 <br></p>
+            <span class="spanCode">코드 : TGS30459 </span><span class="modelName"> 모델명 : NC-S3583HRX-A </span> 5M / 31x zoom / 0ux / IP66 <br></p>
             <input type="image" class='IRSP8M' src='cam/etc_cam/8m_spd_ir.png' style="display:none">
             <p id='IRSP8M' style="display:none">
-            <span>코드 : TGS30333 <br> 모델명 : NC-S3883HRX-A <br></span> 8M / 31x zoom / 0ux / IP66 <br></p>
+            <span class="spanCode">코드 : TGS30333 </span><span class="modelName"> 모델명 : NC-S3883HRX-A </span> 8M / 31x zoom / 0ux / IP66 <br></p>
             
             <input type="image" class='FE5M' src='cam/etc_cam/5m_fe.png' style="display:none">
             <p id='FE5M' style="display:none">
-            <span>코드 : TGS30108 <br> 모델명 : NC-Y6516WRX-A <br></span> 5M / 0ux / H.265 / IP67 <br></p>
+            <span class="spanCode">코드 : TGS30108 </span><span class="modelName"> 모델명 : NC-Y6516WRX-A </span> 5M / 0ux / H.265 / IP67 <br></p>
             <input type="image" class='FE12M' src='cam/etc_cam/12m_fe.png' style="display:none">
             <p id='FE12M' style="display:none">
-            <span>코드 : VBR10318 <br> 모델명 : NC-Y6C16WRX-A <br></span> 12M(9.4M) / 1.2mm / 0lux / IP67 <br></p>
+            <span class="spanCode">코드 : VBR10318 </span><span class="modelName"> 모델명 : NC-Y6C16WRX-A </span> 12M(9.4M) / 1.2mm / 0lux / IP67 <br></p>
             
             <input type="image" class='ETCPIN' src='cam/etc_cam/2m_ph.png' style="display:none">
             <p id='ETCPIN' style="display:none">
-            <span>코드 : TGS30988 <br> 모델명 : NC-V4211XJ 2.4mm <br></span> 2M / 2.4mm / H.265 <br></p>
+            <span class="spanCode">코드 : TGS30988 </span><span class="modelName"> 모델명 : NC-V4211XJ 2.4mm </span> 2M / 2.4mm / H.265 <br></p>
         </div>
     </section>
     
