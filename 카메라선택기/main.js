@@ -47,8 +47,8 @@ function spd_btn(content1,content2,content3,content4,content5){
 
 function openModal(content){
     document.querySelector(content).style.display='flex';
-    document.querySelector('header').style.opacity=0.1;
-    document.querySelector('main').style.opacity=0.1;
+    document.querySelector('header').style.opacity=0.05;
+    document.querySelector('main').style.opacity=0.05;
 }
 
 function btnReset(content1,content2,content3,content4,content5){

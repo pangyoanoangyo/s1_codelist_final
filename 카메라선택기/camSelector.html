@@ -20,7 +20,7 @@
         <h1>카메라를 선택 하세요!</h1>
         <p>카메라를</p>
         <p>선택 하세요!</p>
-        <p>⬇️⬇️⬇️⬇️⬇️⬇️</p>
+        <!-- <p>⬇️⬇️⬇️⬇️⬇️⬇️</p> -->
     </header>
     <main>
         <div>
@@ -33,7 +33,7 @@
         </div>
         <div>
             <input type="image" id='camImg2' src='cam/etc_cam/8m_spd_ir.png' onclick="openModal('#spdContent')">
-            <p> 스피드돔/특수카메라 </p>
+            <p> 스피드돔/<br>특수카메라 </p>
         </div>
     </main>
     <section id="domeContent" class="modalContainer">
@@ -132,7 +132,7 @@
                 <option name="spdCamType" value="FE">어안카메라<br>
                 <option name="spdCamType" value="ETC">기타<br>
             </select>
-            <input type="button" value="다음" onclick="selectedControl()">
+            <input class="nextBtn "type="button" value="다음" onclick="selectedControl()">
             <br>
             <div class="SP" style="display:none">
                 <label for="SP">▶️ 스피드돔 종류:</label>
@@ -177,14 +177,15 @@
         <div class="spd_image" style="display:none">
             <div class='SPNO' style="display:none">
                 <input class="s3283whx" type="image" src='cam/etc_cam/2m_spd_d.png' >
-                <input class="bracket" type="image" src='cam/w1.png'>
-                <input class="sunshield" type="image" src='cam/w2.png'>
+                <span class="spanCode">코드 : VDP10231 </span>
+                <span class="modelName"> 모델명 : NC-S3283WHX-A </span>
+                실내외 카메라<br>2M / 30x zoom / H.265 / IP66<br></span>
             </div>
             
-            <p id='SPNO' style="display:none"><span class="spanCode">코드 : VDP10231 </span>
-                <span class="modelName"> 모델명 : NC-S3283WHX-A </span>
-                실내외 카메라<br>
-                2M / 30x zoom / H.265 / IP66<br><br><span class="spanCode">벽부형 브라켓 /TGS10534</span><br>
+            <p id='SPNO' style="display:none">
+                <input class="bracket" type="image" src='cam/w1.png'>
+                <br><span class="spanCode">벽부형 브라켓 /TGS10534</span><br>
+                <input class="sunshield" type="image" src='cam/w2.png'>
                 <span class="spanCode">브라켓 체결용 선쉴드 / TGS12364</span> </p>
             
             <input type="image" class='SPFL' src='cam/etc_cam/2m_spd_f.png' style="display:none">
@@ -196,7 +197,9 @@
             
             <input type="image" class='IRSP2M' src='cam/etc_cam/2m_spd_ir.png' style="display:none">
             <p id='IRSP2M' style="display:none">
-            <span class="spanCode">코드 : VDP10061 </span><span class="modelName"> 모델명 : NC-S6286HRXL-A </span> 2M / 36x zoom / 0ux / H.265 / IP67 <br></p>
+                <span class="spanCode">코드 : VDP10061 </span><span class="modelName"> 모델명 : NC-S6286HRXL-A </span> 2M / 36x zoom / 0ux / H.265 / IP67 <br>
+                <!-- <div><input class="bracket" type="image" src='cam/w1.png'><span class="spanCode">벽부형 브라켓 /TGS10534</span></div> -->
+            </p>
             <input type="image" class='IRSP5M' src='cam/etc_cam/8m_spd_ir.png' style="display:none">
             <p id='IRSP5M' style="display:none">
             <span class="spanCode">코드 : TGS30459 </span><span class="modelName"> 모델명 : NC-S3583HRX-A </span> 5M / 31x zoom / 0ux / IP66 <br></p>
@@ -213,7 +216,7 @@
             
             <input type="image" class='ETCPIN' src='cam/etc_cam/2m_ph.png' style="display:none">
             <p id='ETCPIN' style="display:none">
-            <span class="spanCode">코드 : TGS30988 </span><span class="modelName"> 모델명 : NC-V4211XJ 2.4mm </span> 2M / 2.4mm / H.265 <br></p>
+            <span class="spanCode">코드 : TGS32466  </span><span class="modelName"> 모델명 :NC-V4212XJ-A 2.4mm </span> 2M / 2.4mm / H.265 <br></p>
         </div>
     </section>
     
