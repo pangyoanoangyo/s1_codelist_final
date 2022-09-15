@@ -1,828 +1,1172 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>IDIS_CODE</title>
+<!doctype html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>IDIS CODE LIST</title>
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-YG6VNYDS13"></script>
     
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-    <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <!-- Core icon (includes Bootstrap)-->
-        <script src="https://kit.fontawesome.com/ac202f0dd2.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
 
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YG6VNYDS13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/pricing/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+     <style>
 
-  gtag('config', 'G-YG6VNYDS13');
-</script>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
 
-</head>
-<body>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
-    </style>
+        .bg-idis {
+          --bs-bg-opacity: 1;
+          background-color: rgb(0, 153, 176) !important;
+        }
 
+        body {
+          background-image: linear-gradient(180deg, #eee, #fff 100px, #fff);
+          font-family: 'Noto Sans KR', sans-serif;
+        }
 
-    <header>
-        <div>
-            <a href="#">
-            <img src="assets\img\IDIS_logo_only.png" class="logo" /></a>
+        .container {
+          max-width: 960px;
+        }
+        #headNav{
+          display: flex;
+          font-size: 10px;
+          margin-bottom: 50px;
+          justify-content:end;
+        }
+        #cardContent{
+          display: flex;
+          margin-bottom: 70px;
+        }
+
+        .pricing-header {
+          max-width: 700px;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+
+        .b-example-divider {
+          height: 3rem;
+          background-color: rgba(0, 0, 0, .1);
+          border: solid rgba(0, 0, 0, .15);
+          border-width: 1px 0;
+          box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+          flex-shrink: 0;
+          width: 1.5rem;
+          height: 100vh;
+        }
+
+        .bi {
+          vertical-align: -.125em;
+          fill: currentColor;
+        }
+
+        .nav-scroller {
+          position: relative;
+          z-index: 2;
+          height: 2.75rem;
+          overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+          display: flex;
+          flex-wrap: nowrap;
+          padding-bottom: 1rem;
+          margin-top: -1px;
+          overflow-x: auto;
+          text-align: center;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+        }
+      </style>
+    </head>
+  <body>
+    <div id='headNav'>
+        <button class="w-25 btn btn-xl btn-outline-primary fs-5 "  data-bs-toggle="modal" data-bs-target="#modal-dialogIdis">담당자 소개 (클릭)</button>
+        <div class="modal fade" id="modal-dialogIdis" tabindex="-1" aria-labelledby="modal-dialogLabel"  aria-hidden="true">
+          <div class="modal-dialog ">
+              <div class="modal-content " >
+                  <div class="modal-header card text-center">
+                    <h2><span style="color:rgb(0, 153, 176);">IDIS</span> 담당자</h2>
+                    <h6 class="opacity-50">담당자를 소개합니다.</h6>
+
+                    <h4>▶️ 권혁제 주임 | gurwp007@idis.co.kr |</h4>
+                    <h4>▶️ 김오성 담당 | &nbsp;sungk5@idis.co.kr &nbsp;|<br></h4>
+                    <h4>▶️ 김민성 담당 | &nbsp;kms613@idis.co.kr  &nbsp;|<br></h4>
+
+                  </div>
+                  <div class="modal-footer d-grid gap-2">
+                    <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                  </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="headerRight">    
-            <a href="https://www.idisglobal.com/" class="logoHomepage">
-            <div id="idisHomepages" class="idisHomepage">아이디스 홈페이지</div></a>
-            <a class="logoHomepage" onclick="openModal('#modalPerson')">
-                <div class="idisHomepage"> 담당자 소개</div></a>
-        </div>    
-            
-        <!-- <form>
-            <optgroup label="제품 선택">
-                    <option>돔카메라</option>
-                    <li>뷸렛카메라</li>
-                    <li>특수카메라</li>
-                    <li>네트워크 저장장치</li>
-                    <li>아날로그 저장장치</li>
-                    <li>보안용 악세사리</li>
-                </optgroup>
-        </form>
-        -->
-        <script>
-           // writeContent('#header','JS로 작성했dd습니다');
-        </script>
-    </header>
+    </div>
     <nav>
-        <h1> <span class="navList">IDIS</span> CODE 
-            <span class="navList">LIST</span></h1>
-        <!-- <div class="navBlank"></div> -->
+
     </nav>
-
-    <div class="mainSection">
-            <section>
-                <a href="/카메라선택기/camSelector.html">
-                    <img src="assets\img\portfolio\info.png">
-                </a>    
-                <img class="cctvImage" src="assets\img\portfolio\dome.png" onclick="openModal('#modalDome')">
-                <img class="cctvImage" src="assets\img\portfolio\bullet.png" onclick="openModal('#modalBullet')">
-                <img class="cctvImage" src="assets\img\portfolio\spd.png" onclick="openModal('#modalSpd')">
-                <img class="cctvImage" src="assets\img\portfolio\nvr.png" onclick="openModal('#modalNvr')">
-                <img class="cctvImage" src="assets\img\portfolio\hdtvi.png" onclick="openModal('#modalHdtvi')">
-                <img class="cctvImage" src="assets\img\portfolio\etc.png" onclick="openModal('#modalEtc')">
-            </section>
-    </div>
-
-    <div>
-        <footer>
-            <div class="footerTop">
-                <div class="address">
-                    <span class="spanOne">㈜아이디스</span>
-                    <table>
-                        <tr>본사: 대전 광역시 유성구 테크노3로 8-10</tr><br>
-                        <tr>지사: 경기 성남시 분당구 판교로 344</tr>
-                    </table>
-                </div>
-                <div class="homepage">
-                    <a href="https://www.idisglobal.com"> 
-                    <i class="fa-solid fa-house-chimney-window"></i></a>
-                    <a href="https://www.facebook.com/idis.co.kr">
-                    <i class="fab fa-fw fa-facebook-f"></i></a>
-                    <a href="https://www.youtube.com/channel/UCnGB42OLnoOzdBWoEjWccLg">
-                    <i class="fa-brands fa-youtube"></i></a>
-                </div>
-                <div class="techPhone">
-                    기술상담: 1644-6440<br>
-                    (24시간 연중무휴)
-                </div>  
-            </div>
-            <div class="footerBottom">
-                Copyright © Domestic Business Solution Sales Team 2022
-            </div>
-        </footer>
-    </div>
-    <div id="modalPerson" class="modalContainerSmall">
-        <div>
-            <!-- <img src="assets\img\idis_logo_sero.png" /> -->
-            <p> 
-                <span style="font-size:20px"> ▶️ 김상필 과장 </span>| sangfeel@idis.co.kr | <br>
-                <span style="font-size:20px"> ▶️ 권혁제 주임 </span>| gurwp007@idis.co.kr |<br>
-                <span style="font-size:20px"> ▶️ 김오성 담당 </span>| sungk5@idis.co.kr |<br>
-            </p>
-        </div>
-        <input class="btnC" type="button" onclick="closeModal('#modalPerson')" value="닫기" />
-    </div>
-<!-- 카메라 콘텐츠 -->
-<!-- 돔카메라 -->
-    <div id="modalDome" class="modalContainer">
-        <h1>DOME CAMERA</h1>
-            <table>
-                <tr class="hdTable1">
-                    <th class="img">IMG</th>
-                    <th class="ckb">MP</th>
-                    <th class="code">코드</th>
-                    <th class="code">모델명</th>
-                    <th class="spec">스펙</th>
-                    <th class="cost">가격</th>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"><img class="img-flex1" src="assets\img\cam\8m_d_f.png">                                                                                                                                                                                                                                                                                                                                                        </td>
-                    <td class="ckb">8M</td>
-                    <td class="code">VDR10226</td>
-                    <td class="code">NC-D4831HRX-A</td>
-                    <td class="spec"> 8M / 2.7~13.5mm MFZ / 0.lux / H.265</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('340,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"><img class="img-flex1" src="assets\img\cam\8m_d_f.png"></td>
-                    <td class="ckb"> 8M</td>
-                    <td class="code"> VDR10225</td>
-                    <td class="code">NC-D4811WRX-A <br> 3.3mm</td>
-                    <td class="spec">8M / 3.3mm / 0 lux / H.265</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('270,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"><img class="img-flex1" src="assets\img\cam\5m_d_v.png"></td>
-                    <td class="ckb"> 5M</td>
-                    <td class="code">TGS31463</td>
-                    <td class="code">NC-D4536WRX-A</td>
-                    <td class="spec">5M / 3.0~13.5mm MFZ / 0 lux / H.265</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('250,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"><img class="img-flex1" src="assets\img\cam\5m_d_f.png"></td>
-                    <td class="ckb"> 5M</td>
-                    <td class="code">VDR10244</td>
-                    <td class="code">NC-D4516WRX-A<br> 4mm</td>
-                    <td class="spec">5M / 4mm / 0 lux / H.265</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('160,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" src="assets\img\cam\5m_d_v.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">VDR10243</td>
-                    <td class="code">NC-D4236RX-A</td>
-                    <td class="spec">2M / 2.8~12mm MFZ / 0 lux / H.265</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('160,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" src="assets\img\cam\2m_d_f_w.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">TGS28250 </td>
-                    <td class="code">NC-D4216RX-A<br> 2.8mm</td>
-                    <td class="spec">2M / 2.8mm / 0 lux / H.265</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('110,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" src="assets\img\cam\2m_d_f_w.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">TGS32030 </td>
-                    <td class="code">NC-D4216RX-A<br> 4mm</td>
-                    <td class="spec">2M / 4mm / 0 lux / H.265</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('110,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\2m_d_f.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">VDR10250</td>
-                    <td class="code">NC-D4217RX<br> 2.8mm</td>
-                    <td class="spec">2M / 2.8mm / 0 lux / H.265</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('79,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\2m_d_f.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">TSC10266</td>
-                    <td class="code">NC-D4217RX<br> 4mm</td>
-                    <td class="spec">2M / 4mm / 0 lux / H.265</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('79,000원')"> 클릭 </label></td>
-                </tr>
-            </table>
-                <input class="btnClose" type="button" onclick="closeModal('#modalDome')" value="창닫기" />
-                <!-- <label for="modalBox" onclick="closeModal()"> X </label> -->
-    </div>
-    <div id="modalBullet" class="modalContainer">
-        <h1>BULLET CAMERA</h1>
-            <table>
-                <tr class="hdTable1">
-                    
-                    <th class="img">IMG</th>
-                    <th class="ckb">MP</th>
-                    <th class="code">코드</th>
-                    <th class="code">모델명</th>
-                    <th class="spec">스펙</th>
-                    <th class="cost">가격</th>
-                </tr>
-                <tr class="hdTable2">
-                    
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_v.png"></td>
-                    <td class="ckb"> 8M</td>
-                    <td class="code">VBR10328</td>
-                    <td class="code">NC-T4831HRX-A</td>
-                    <td class="spec"> 8M / 2.7~13.5mm MFZ / 0lux / H.265 /IP67 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('350,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_f.png"></td>
-                    <td class="ckb">  8M</td>
-                    <td class="code"> TGS30334</td>
-                    <td class="code">NC-D4811WRX-A<br> 3.3mm</td>
-                    <td class="spec">8M / 3.3mm / 0 lux / H.265 / IP67 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('280,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_v.png"></td>
-                    <td class="ckb"> 5M</td>
-                    <td class="code">TGS32031</td>
-                    <td class="code">NC-T4536HRX-A</td>
-                    <td class="spec">5M / 3.0~13.5mm MFZ / 0 lux / H.265 / IP67 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('290,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_f.png"></td>
-                    <td class="ckb"> 5M</td>
-                    <td class="code">VBR10346</td>
-                    <td class="code">NC-T4516WRX-A<br> 4mm</td>
-                    <td class="spec">5M / 4mm / 0 lux / H.265 / IP67 (only PoE)</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('180,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_f.png"></td>
-                    <td class="ckb"> 5M</td>
-                    <td class="code">VBR10344</td>
-                    <td class="code">NC-T4516WRX-A<br> 2.8mm</td>
-                    <td class="spec">5M / 2.8mm / 0 lux / H.265 / IP67 (only PoE)</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('180,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex2" img="img" src="assets\img\cam\bullet\2m_f_v.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">TGS30338</td>
-                    <td class="code">NC-T4236WRX-A</td>
-                    <td class="spec">2M / 2.8~12mm MFZ / 0 lux / H.265 / IP67</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('186,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_f.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">VBR30672</td>
-                    <td class="code">NC-T4216WRX-A<br> 4mm</td>
-                    <td class="spec">2M / 4mm / 0 lux / H.265 / IP67</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('130,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\8m_f_f.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">TGS28251</td>
-                    <td class="code">NC-T4216WRX-A<br> 2.8mm</td>
-                    <td class="spec">2M / 2.8mm / 0 lux / H.265 / IP67 / noAudio</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('135,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\bullet\2m_f_f.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">VBR10327</td>
-                    <td class="code">NC-T4217WRX-A </td>
-                    <td class="spec">2M / 4mm / 0 lux / H.265 / IP67 / noAudio</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('85,000원')"> 클릭 </label></td>
-                </tr>
-            </table>
-                <input class="btnClose" type="button" onclick="closeModal('#modalBullet')" value="창닫기" />
-    </div>
-    <div id="modalSpd" class="modalContainer">
-        <h1>SPECIAL CAMERA</h1>
-            <table>
-                <tr class="hdTable1">
-                    <th class="img">IMG</th>
-                    <th class="ckb">MP</th>
-                    <th class="code">코드</th>
-                    <th class="code">모델명</th>
-                    <th class="spec">스펙</th>
-                    <th class="cost">가격</th>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\12m_fe.png"></td>
-                    <td class="ckb"> 12M</td>
-                    <td class="code">VBR10318</td>
-                    <td class="code">NC-Y6C16WRX-A</td>
-                    <td class="spec">(어안) 12M(9.4M) / 1.2mm / 0lux / IP67 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('500,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\5m_fe.png"></td>
-                    <td class="ckb">  5M</td>
-                    <td class="code"> TGS30108</td>
-                    <td class="code">NC-Y6516WRX-A</td>
-                    <td class="spec">(어안) 5M / 0 lux / H.265 / IP67 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('330,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\8m_spd_ir.png"></td>
-                    <td class="ckb"> 8M</td>
-                    <td class="code">채번필요</td>
-                    <td class="code">NC-S6881HRX-A</td>
-                    <td class="spec">(IR PTZ) 8M / 31x zoom / 0 lux / IP66 
-                    &ensp;&ensp;<label class='bracketBtn' onclick="costAlram(` TGS10534 / JP-H-WL / 벽부형 브라켓 (50,000원) `)"> 브라켓 </label></td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('2,200,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\8m_spd_ir.png"></td>
-                    <td class="ckb"> 5M</td>
-                    <td class="code">TGS30459</td>
-                    <td class="code">NC-S3583HRX-A</td>
-                    <td class="spec">(IR PTZ) 5M / 31x zoom / 0 lux / IP66 
-                    &ensp;&ensp;<label class='bracketBtn' onclick="costAlram(` TGS10534 / JP-H-WL / 벽부형 브라켓 (50,000원) `)"> 브라켓 </label></td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('1,750,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\2m_spd_ir.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">VDP10061</td>
-                    <td class="code">NC-S6286HRXL-A</td>
-                    <td class="spec">(IR PTZ) 2M / 36x zoom / 0 lux / H.265 / IP67 
-                        &ensp;&ensp;<label class='bracketBtn' onclick="costAlram(` TGS10534 / JP-H-WL / 벽부형 브라켓 (50,000원) `)"> 브라켓 </label></td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('1,180,000원')"> 클릭 </label></td>
-                </tr>
-                <style>
-
-
-                </style>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\2m_spd_d.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">VDR10231</td>
-                    <td class="code">NC-S3283WHX-A</td>
-                    <td class="spec">(PTZ) 2M / 30x zoom / H.265 / IP66 
-                    &ensp;&ensp;<label class='bracketBtn' onclick="costAlram(` TGS12364 / IDB221BS & JP-H-WL / 벽부형 브라켓 셋트 (120,000원) `)"> 브라켓 </label></td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('750,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\2m_spd_f.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">TGS32032</td>
-                    <td class="code">NC-S3283FX-A</td>
-                    <td class="spec">(PTZ) 2M / 30x zoom / H.265 / 매립형 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('750,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\2m_spd_d_m.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">VDP10060</td>
-                    <td class="code">DC-S6162WHX-A</td>
-                    <td class="spec">(PTZ) 2M / 12x zoom / H.265 / 미니사이즈 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('640,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex2" img="img" src="assets\img\cam\etc_cam\2m_ph.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">TGS32466 </td>
-                    <td class="code">NC-V4212XJ-A 2.4mm <br> 2.4mm</td>
-                    <td class="spec">(핀홀) 2M / 2.4mm / H.265 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('300,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\etc_cam\2m_th.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">TGS24788</td>
-                    <td class="code">DC-TH2011</td>
-                    <td class="spec">(열화상)_1.3M - Thermal(80*60) / 실내용 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('1,000,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex2" img="img" src="assets\img\cam\etc_cam\2m_car.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">TGS28707</td>
-                    <td class="code">DC-T2262HRL</td>
-                    <td class="spec">(차량번호)_2M / 12-50mm / H.265 / IP66 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('1,450,000원')"> 클릭 </label></td>
-                </tr>
-            </table>
-                <input class="btnClose" type="button" onclick="closeModal('#modalSpd')" value="창닫기" />
-    </div>
-    <div id="modalNvr" class="modalContainer">
-        <h1>NETWORK RECORDER</h1>
-            <table>
-                <tr class="hdTable1">
-                    <th class="img">IMG</th>
-                    <th class="ckb">MP</th>
-                    <th class="code">코드</th>
-                    <th class="code">모델명</th>
-                    <th class="spec">스펙</th>
-                    <th class="cost">가격</th>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\8ch_nvr.png"></td>
-                    <td class="ckb"> 4CH</td>
-                    <td class="code">TGS32033</td>
-                    <td class="code">NR-2504P </td>
-                    <td class="spec"> 4CH / 기본 2TB(추가 1EA) / PoE 4port / SA </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('330,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\8ch_nvr.png"></td>
-                    <td class="ckb"> 8CH</td>
-                    <td class="code">VRN10204</td>
-                    <td class="code">NR-2508P </td>
-                    <td class="spec"> 8CH / 기본 2TB(추가 1EA) / PoE 8port / SA </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('400,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\16ch_nvr.png"></td>
-                    <td class="ckb"> 16CH</td>
-                    <td class="code">TGS32779</td>
-                    <td class="code">NR-3516P</td>
-                    <td class="spec"> 16CH / 기본 3TB(추가 3EA) / PoE 16port / SA</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('880,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\16ch_nvr.png"></td>
-                    <td class="ckb"> 16CH</td>
-                    <td class="code">VRN10187</td>
-                    <td class="code">NR-6516P</td>
-                    <td class="spec"> 16CH / 기본 4TB(추가 5EA) / PoE 16port / SA</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('1,020,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\16ch_nvr.png"></td>
-                    <td class="ckb"> 32CH</td>
-                    <td class="code">VRN10185</td>
-                    <td class="code">NR-6532P</td>
-                    <td class="spec"> 32CH / 기본 4TB(추가 5EA) / PoE 16port / SA</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('1,200,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\nvr\64ch_nvr.png"></td>
-                    <td class="ckb"> 64CH</td>
-                    <td class="code">채번필요</td>
-                    <td class="code">DR-8364D</td>
-                    <td class="spec"> 64CH / 기본 0TB / PoE X / SA</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('2,500,000원')"> 클릭 </label></td>
-                </tr>
-            </table>
-                <input class="btnClose" type="button" onclick="closeModal('#modalNvr')" value="창닫기" />
-    </div>
-    <div id="modalHdtvi" class="modalContainer">
-        <div class="modalHdtvi_div">
-            <h1>HD-TVI PRODUCT
-            <span>(아날로그)</span></h1>
-        </div>
-            <table>
-                <tr class="hdTable1">
-                    <th class="img">IMG</th>
-                    <th class="ckb">MP</th>
-                    <th class="code">코드</th>
-                    <th class="code">모델명</th>
-                    <th class="spec">스펙</th>
-                    <th class="cost">가격</th>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\5m_b_v.png"></td>
-                    <td class="ckb"> 5M</td>
-                    <td class="code">VBR10345</td>
-                    <td class="code">TC-T5531WRX</td>
-                    <td class="spec"> HD-TVI 5M / 3~13.5mm MFZ / 0lux / IP66 / 어답터 제외 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('155,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_b_v.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">VBR10213</td>
-                    <td class="code">HC-T4221WRX</td>
-                    <td class="spec"> HD-TVI 2M / 2.8~12mm MFZ / 0lux / IP66 / 어답터 제외 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('85,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_b_f.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">TSC10253</td>
-                    <td class="code">MTC-2230BR</td>
-                    <td class="spec"> HD-TVI 2M / 4mm / 0lux / IP66 / 어답터 제외 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('65,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_d_v.png"></td>
-                    <td class="ckb"> 5M</td>
-                    <td class="code">TGS32034</td>
-                    <td class="code">TC-D5531RX</td>
-                    <td class="spec"> HD-TVI 5M / 3~13.5mm / 0lux / 어답터 제외 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('125,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\5m_d_f.png"></td>
-                    <td class="ckb"> 5M</td>
-                    <td class="code">VDR10175</td>
-                    <td class="code">HC-D4511RX</td>
-                    <td class="spec"> HD-TVI 2M / 4mm / 0lux / 어답터 제외 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('68,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_d_v.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">TSC10258</td>
-                    <td class="code">HC-D4221RX</td>
-                    <td class="spec"> HD-TVI 2M / 2.8~12mm MFZ / 0lux / 어답터 제외 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('65,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_d_f.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">TSC10254</td>
-                    <td class="code">MTC-2210DR</td>
-                    <td class="spec"> HD-TVI 2M / 4mm / 0lux / 어답터 제외 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('55,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\cam\hdtvi\2m_ph.png"></td>
-                    <td class="ckb"> 2M</td>
-                    <td class="code">TGS29345</td>
-                    <td class="code">TC-V5211X</td>
-                    <td class="spec"> HD-TVI 2M / 2.4mm / 0.1lux / 어답터 제외 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('85,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable1">
-                <th class="img">IMG</th>
-                <th class="ckb">MP</th>
-                <th class="code">코드</th>
-                <th class="code">모델명</th>
-                <th class="spec">스펙</th>
-                <th class="cost">가격</th>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\dvr\4ch_dvr_1.png"></td>
-                    <td class="ckb"> 4CH</td>
-                    <td class="code">VRN10131</td>
-                    <td class="code">HR-1204A </td>
-                    <td class="spec"> HD-TVI 4CH / 기본 2TB(추가 X) / SA </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('120,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\dvr\4ch_dvr_1.png"></td>
-                    <td class="ckb"> 4CH</td>
-                    <td class="code">TGS32035</td>
-                    <td class="code">HR-1504 </td>
-                    <td class="spec"> HD-TVI 4CH /  기본 2TB(추가 X) / SA </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('165,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\dvr\16ch_dvr.png"></td>
-                    <td class="ckb"> 4CH</td>
-                    <td class="code">TGS31115</td>
-                    <td class="code">HR-2504 </td>
-                    <td class="spec"> HD-TVI 4CH / 기본 2TB(추가 1EA) / SA </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('300,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\dvr\16ch_dvr.png"></td>
-                    <td class="ckb"> 8CH</td>
-                    <td class="code">TGS31426</td>
-                    <td class="code">HR-2508 </td>
-                    <td class="spec"> HD-TVI 8CH / 기본 2TB(추가 1EA) / SA </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('350,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\dvr\16ch_dvr.png"></td>
-                    <td class="ckb"> 16CH</td>
-                    <td class="code">TGS31611</td>
-                    <td class="code">TR-1625 </td>
-                    <td class="spec"> HD-TVI 16CH / 기본 4TB(추가 1EA) / SA </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('460,000원')"> 클릭 </label></td>
-                </tr>
-            </table>    
-                <input class="btnClose" type="button" onclick="closeModal('#modalHdtvi')" value="창닫기" />
-            
-    </div>
-    <div id="modalEtc" class="modalContainer">
-        <h1>NETWORK ACCESSORY</h1>
-            <table>
-                <tr class="hdTable1">
-                    <th class="img">IMG</th>
-                    <th class="ckb">MP</th>
-                    <th class="code">PORT</th>
-                    <th class="code">모델명</th>
-                    <th class="spec">스펙</th>
-                    <th class="cost">가격</th>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\24p_2126.png"></td>
-                    <td class="ckb"> 24P</td>
-                    <td class="code">TGS32037</td>
-                    <td class="code">DH-2126PFN </td>
-                    <td class="spec"> 24P PoE UTP 1Gbps / UP - 2P SFP 10Gbps / NTP기능(GPS)</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('990,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2" >
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\24p_2126.png"></td>
-                    <td class="ckb"> 24P</td>
-                    <td class="code">TGS28074</td>
-                    <td class="code">DH-2026PFN </td>
-                    <td class="spec"> 24P PoE UTP 1Gbps / UP - 2P SFP & 2P UTP 1Gbps / NTP기능(GPS)</td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('800,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\16p_poe.png"></td>
-                    <td class="ckb"> 16P</td>
-                    <td class="code">TGS13952</td>
-                    <td class="code">DH-2018P </td>
-                    <td class="spec"> 16P PoE UTP 100Mbps / 2P UTP 1Gbps </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('275,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\8p_poe.png"></td>
-                    <td class="ckb"> 8P</td>
-                    <td class="code">TGS13951</td>
-                    <td class="code">DH-2212PF </td>
-                    <td class="spec"> 8P PoE UTP 1Gbps / 2P SFP 1Gbps </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('250,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\8p_poe_1.png"></td>
-                    <td class="ckb"> 8P</td>
-                    <td class="code">TGS13950</td>
-                    <td class="code">DH-2010P </td>
-                    <td class="spec"> 8P PoE UTP 100Mbps / 2P UTP 1Gbps </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('170,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2" style="opacity:0.5;">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\24p_poe.png"></td>
-                    <td class="ckb"> 24P</td>
-                    <td class="code" style="color:red">TGS19192 (출하X)</td>
-                    <td class="code" style="color:red">DH-2328PF (출하X)</td>
-                    <td class="spec"> 24P PoE UTP 1Gbps / 4P SFP 1Gbps </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('590,000원 (원자재 이슈로 당분간 출하X)')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2" style="opacity:0.5;">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\24p_poe_1.png"></td>
-                    <td class="ckb"> 24P</td>
-                    <td class="code" style="color:red">TGS27808 (출하X)</td>
-                    <td class="code" style="color:red">DH-2026PF (출하X)</td>
-                    <td class="spec"> 24P PoE UTP 100Mbps / 2P SFP 1Gbps </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('315,000원 (원자재 이슈로 당분간 출하X)')"> 클릭 </label></td>
-                </tr>
-                    <tr class="hdTable1">
-                        <th class="img">IMG</th>
-                        <th class="ckb">MP</th>
-                        <th class="code">코드</th>
-                        <th class="code">모델명</th>
-                        <th class="spec">스펙</th>
-                        <th class="cost">가격</th>
-                    </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex3" img="img" src="assets\img\acc\hdd.png"></td>
-                    <td class="ckb"> 1TB</td>
-                    <td class="code">TGS22468</td>
-                    <td class="code">HDD 1TB </td>
-                    <td class="spec"> VIDEO SURVEILLANCE / 제조사 랜덤발송 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('50,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex3" img="img" src="assets\img\acc\hdd.png"></td>
-                    <td class="ckb"> 3TB</td>
-                    <td class="code">TSD10018</td>
-                    <td class="code">HDD 3TB </td>
-                    <td class="spec"> VIDEO SURVEILLANCE / 제조사 랜덤발송 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('108,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex3" img="img" src="assets\img\acc\hdd.png"></td>
-                    <td class="ckb"> 4TB</td>
-                    <td class="code">TSD10072</td>
-                    <td class="code">HDD 4TB </td>
-                    <td class="spec"> VIDEO SURVEILLANCE / 제조사 랜덤발송 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('110,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex3" img="img" src="assets\img\acc\hdd.png"></td>
-                    <td class="ckb"> 6TB</td>
-                    <td class="code">TSD10083</td>
-                    <td class="code">HDD 6TB </td>
-                    <td class="spec"> VIDEO SURVEILLANCE / 제조사 랜덤발송 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('200,000원')"> 클릭 </label></td>
-                    
-                </tr>
-                    <tr class="hdTable1">
-                    <th class="img">IMG</th>
-                    <th class="ckb">MP</th>
-                    <th class="code">코드</th>
-                    <th class="code">모델명</th>
-                    <th class="spec">스펙</th>
-                    <th class="cost">가격</th>
-                    </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\he1101.png"></td>
-                    <td class="ckb"> 엔코더</td>
-                    <td class="code">TGS18376</td>
-                    <td class="code">HE-1101 </td>
-                    <td class="spec"> IN IP 1PORT / OUT HDMI 1PORT </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('250,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\dv1104.png"></td>
-                    <td class="ckb"> VA</td>
-                    <td class="code">TGS17765</td>
-                    <td class="code">DV-1104 </td>
-                    <td class="spec"> VA BOX / 피플 카운팅 / 히트맵 / 큐 매니지먼트 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('400,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\eoc1.png"></td>
-                    <td class="ckb"> EoC</td>
-                    <td class="code">TGS18311</td>
-                    <td class="code">DA-EC3101T </td>
-                    <td class="spec"> EoC TX / UTP-> 동축변환 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('100,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\eoc2.png"></td>
-                    <td class="ckb"> EoC</td>
-                    <td class="code">TGS18312</td>
-                    <td class="code">DA-EC3101R </td>
-                    <td class="spec"> EoC RX / UTP <- 동축변환 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('110,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\al1112.png"></td>
-                    <td class="ckb"> AL</td>
-                    <td class="code">TGS29547</td>
-                    <td class="code">AL-1112 </td>
-                    <td class="spec"> IN -접점,RS232 8PORT / OUT IP 1PORT </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('240,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\he1101.png"></td>
-                    <td class="ckb"> 디코더</td>
-                    <td class="code">TGS22818</td>
-                    <td class="code">DE-1104 </td>
-                    <td class="spec"> 카메라 16CH 영상표출 / HDMI </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('230,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\ink1100.png"></td>
-                    <td class="ckb"> 키보드</td>
-                    <td class="code">TGS17369</td>
-                    <td class="code">INK-1100 </td>
-                    <td class="spec"> 네트워크 조이스틱 타입 키보드 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('400,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\ids1004.png"></td>
-                    <td class="ckb"> STORAGE</td>
-                    <td class="code">TGS12627</td>
-                    <td class="code">IDS-1004 </td>
-                    <td class="spec"> 외장스토리지 케이스 / HDD 4EA 가능 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('230,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\w1.png"></td>
-                    <td class="ckb"> ACC</td>
-                    <td class="code">TGS10534</td>
-                    <td class="code">JP-H-WL </td>
-                    <td class="spec"> PTZ카메라 벽부형 브라켓 </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('50,000원')"> 클릭 </label></td>
-                </tr>
-                <tr class="hdTable2">
-                    <td class="img"> <img class="img-flex1" img="img" src="assets\img\acc\w2.png"></td>
-                    <td class="ckb"> ACC</td>
-                    <td class="code">TGS12364</td>
-                    <td class="code">IDB221BS &<br>JP-H-WL </td>
-                    <td class="spec"> PTZ카메라 벽부형 브라켓+ 선쉴드<br>(NC-S3283WHX-A용) </td>
-                    <td class="cost"><label id="costCheck" onclick="costAlram('120,000원')"> 클릭 </label></td>
-                </tr>
-            </table>
-                <input class="btnClose" type="button" onclick="closeModal('#modalEtc')" value="창닫기" />
-    </div>
+<div class="container py-1">
+  <main>
     <script>
-        function openModal(content){
-            document.querySelector(content).style.display='flex';
-            document.querySelector('header').style.opacity=0.1;
-            document.querySelector('nav').style.opacity=0.1;
-            document.querySelector('section').style.opacity=0.1;
-            document.querySelector('footer').style.opacity=0.1;
-        }
-        function closeModal(content){
-            document.querySelector(content).style.display='none';
-            document.querySelector('header').style.opacity=1;
-            document.querySelector('nav').style.opacity=1;
-            document.querySelector('section').style.opacity=1;
-            document.querySelector('footer').style.opacity=1;
-        }
-        function costAlram(content){
-            window.alert(content);
-        }
+      /** 예외 파일 */
+      function costAlram(content){
+        window.alert(content);
+    }
     </script>
+    <div  class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal ">IP-CAMERA ™️</h1>
+      <!-- <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p> -->
+    </div>
     
-</body>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      
+      <!-- 돔 카드박스 -->
+      <div class="col" id="cardContent">
+        <div class="card mb-4 rounded-3 shadow-sm" >
+            <div class="card-header py-3" style="background-color:rgb(0, 153, 176);">
+              <h4 class="my-0 fw-normal " style="color:white;" >돔 카메라</h4>
+            </div>
+                  <input type="image" src='/카메라선택기/cam/dome/2m_d_f.png' />
+            <div class="card-body">
+                <!-- <h1 class="card-title pricing-card-title "><small class="text-muted fw-light">IR DOME</small></h1> -->
+                  <!-- <i class="fa-sharp fa-solid fa-camera-web"></i>
+                  <ul class="list-unstyled mt-3 mb-4 .bg-idis">
+                    <li>✔️ 2MP/5MP/8MP </li>
+                    <li>✔️ PoE (IEEE 802.3af), 12V DC</li>
+                    <li>✔️ H.265, H.264 (MP) M-JPEG,</li>
+                    <li>✔️ IR LED 포함</li>
+                  </ul> -->
+                <button class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal-dialog">Contact</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="modal-dialog" tabindex="-1" aria-labelledby="modal-dialogLabel"  aria-hidden="true">
+                    <div class="modal-dialog modal-xl ">
+                        <div class="modal-content " >
+                            <div class="modal-header card text-center">
+                              <h2><span style="color:rgb(0, 153, 176);">IDIS</span> DOME CAM LIST ®️</h2>
+                              <h6 class="opacity-50">원하시는 해상도(MP)을 클릭하세요!</h6>
+                              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                            </div>
+                            <div class="modal-body d-grid gap-2" >
+                                <!-- collapse button -->
+                                <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                  <input type="checkbox" class="btn-check btn-danger" data-bs-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1" id="btncheck1" autocomplete="off"/>
+                                  <label class="btn btn-outline-danger" for="btncheck1">2MP</label>
+                                  <input type="checkbox" class="btn-check btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" id="btncheck2" autocomplete="off"/>
+                                  <label class="btn btn-outline-warning" for="btncheck2">5MP</label>
+                                  <input type="checkbox" class="btn-check btn-warning" data-bs-toggle="collapse" href="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3" id="btncheck3" autocomplete="off"/>
+                                  <label class="btn btn-outline-info" for="btncheck3">8MP</label>
+                                  <input type="checkbox" class="btn-check btn-info" data-bs-toggle="collapse" href=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3" id="btncheck4" autocomplete="off"/>
+                                  <label class="btn btn-outline-primary" for="btncheck4">전체</label>
+                                  <!-- <button type="button" class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">5MP</button>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">8MP</button>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="collapse" href=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3"> Total </button> -->
+                                </div>
+
+                                <!-- collapse content-->
+                                <div class="col">
+                                  <div class="row">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                      <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                      align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                        <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                        <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button>
+                                        <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/dome/2m_d_f.png' alt="고정카메라" >
+                                        <p class="p-2 bd-highlight fs-6" style="width: 50%;">TSC10266&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-D4217RX 4)</span><br> 4mm 고정렌즈 /IR Led / PoE only </p>
+                                        <!-- <a type="button" style="width: 3rem; height: 3rem;" class="badge bg-idis btn btn-idis fs-6 align-middle" href="https://www.idisglobal.com/index/product_view/2783"> 자료</a> -->
+                                        <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('79,000원')"> 금액</button>
+                                      </div>
+                                      <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                      align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                        <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                        <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button>
+                                        <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/dome/2m_d_f.png' alt="고정카메라" >
+                                        <p class="p-2 bd-highlight fs-6" style="width: 50%;">VDR10250&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-D4217RX 2.8)</span><br> 2.8mm 고정렌즈 /IR Led / PoE only </p>
+                                        <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('79,000원')"> 금액</button>
+                                      </div>
+                                      <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                      align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                        <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                        <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button>
+                                        <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/dome/2m_d_f_w.png' alt="고정카메라" >
+                                        <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS32030&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-D4216RX 4)</span><br> 4mm 고정렌즈 /IR Led (30m) / 저조도 특화 CMOS </p>
+                                        <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('110,000원')"> 금액</button>
+                                      </div>
+                                      <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                      align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                        <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                        <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button>
+                                        <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/dome/2m_d_f_w.png' alt="고정카메라" >
+                                        <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS28250&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-D4216RX 2.8)</span><br> 2.8mm 고정렌즈 /IR Led (30m) / 저조도 특화 CMOS </p>
+                                        <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('110,000원')"> 금액</button>
+                                      </div>
+                                      <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                      align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                        <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                        <button type="button"  class="badge bg-success btn btn-bg-success fs-7" style="width: 3rem; height: 3rem;">가변</button>
+                                        <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/dome/2m_d_v.png' alt="가변카메라" >
+                                        <p class="p-2 bd-highlight fs-6" style="width: 50%;">VDR10243&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-D4236RX-A)</span><br> 2.8~12mm 가변렌즈 /IR Led (30m) / 저조도 특화 CMOS </p>
+                                        <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('160,000원')"> 금액</button>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                      <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                      align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                        <button type="button"  class="badge bg-warning btn btn-warning fs-7" style="width: 3rem; height: 3rem;">5MP</button>
+                                        <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button>
+                                        <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/dome/2m_d_f_w.png' alt="고정카메라" >
+                                        <p class="p-2 bd-highlight fs-6" style="width: 50%;">VDR10244&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-D4516RX-A)</span><br> 4mm 고정렌즈 /IR Led (30m) / 저조도 특화 CMOS </p>
+                                        <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('160,000원')"> 금액</button>
+                                      </div>
+                                      <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                      align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                        <button type="button"  class="badge bg-warning btn btn-warning fs-7" style="width: 3rem; height: 3rem;">5MP</button>
+                                        <button type="button"  class="badge bg-success btn btn-bg-success fs-7" style="width: 3rem; height: 3rem;">가변</button>
+                                        <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/dome/2m_d_v.png' alt="가변카메라" >
+                                        <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS31463&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-D4536RX-A)</span><br> 3.0~13.5mm 가변렌즈 /IR Led (30m) / 저조도 특화 CMOS </p>
+                                        <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('250,000원')"> 금액</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample3">
+                                      <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                      align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                        <button type="button"  class="badge bg-info btn btn-info fs-7" style="width: 3rem; height: 3rem;">8MP</button>
+                                        <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button>
+                                        <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/dome/2m_d_f_w.png' alt="고정카메라" >
+                                        <p class="p-2 bd-highlight fs-6" style="width: 50%;">VDR10225&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-D4811RX-A)</span><br> 3.3mm 고정렌즈 /IR Led (30m) / 저조도 특화 CMOS </p>
+                                        <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('270,000원')"> 금액</button>
+                                      </div>
+                                      <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                      align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                        <button type="button"  class="badge bg-info btn btn-info fs-7" style="width: 3rem; height: 3rem;">8MP</button>
+                                        <button type="button"  class="badge bg-success btn btn-bg-success fs-7" style="width: 3rem; height: 3rem;">가변</button>
+                                        <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/dome/2m_d_v.png' alt="가변카메라" >
+                                        <p class="p-2 bd-highlight fs-6" style="width: 50%;">VDR10226&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-D4831HRX-A)</span><br> 2.7~13.5mm 가변렌즈 /IR Led (30m) / 저조도 특화 CMOS </p>
+                                        <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('340,000원')"> 금액</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            <div class="modal-footer d-grid gap-2">
+                              <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                            </div>
+                        </div>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>     
+ 
+
+              <!-- 뷸렛 카드박스 -->
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">뷸렛 카메라</h4>
+                    </div>
+                    <input type="image" id='camImg' src='/카메라선택기/cam/bullet/2m_f_f.png' />
+                    <div class="card-body">
+                      <!-- <h1 class="card-title pricing-card-title"><small class="text-muted fw-light">IR BULLET</small></h1> -->
+                      <!-- <ul class="list-unstyled mt-3 mb-4">
+                        <li>✔️ 2MP/5MP/8MP 다양한 해상도</li>
+                        <li>✔️ PoE (IEEE 802.3af) 지원</li>
+                        <li>✔️ H.265, H.264 (MP) M-JPEG,</li>
+                        <li>✔️ 아이디스만의 지능형 코덱</li>
+                      </ul> -->
+                      <button class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal-dialog1">Contact</button>
+                      <div class="modal fade" id="modal-dialog1" tabindex="-1" data-bs-backdrop="static" aria-labelledby="..." aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content " >
+                                <div class="modal-header card text-center">
+                                  <h2><span style="color:rgb(0, 153, 176);">IDIS</span> BULLET CAM LIST ®️</h2>
+                                  <h6 class="opacity-50">원하시는 해상도(MP)을 클릭하세요!</h6>
+                                  <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                                </div>
+                                <div class="modal-body d-grid gap-2" >
+                                    <!-- collapse button -->
+                                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                      <input type="checkbox" class="btn-check btn-danger" data-bs-toggle="collapse" href="#multiCollapseExample10" aria-expanded="false" aria-controls="multiCollapseExample10" id="btncheck10" autocomplete="off"/>
+                                      <label class="btn btn-outline-danger" for="btncheck10">2MP</label>
+                                      <input type="checkbox" class="btn-check btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample20" aria-expanded="false" aria-controls="multiCollapseExample20" id="btncheck20" autocomplete="off"/>
+                                      <label class="btn btn-outline-warning" for="btncheck20">5MP</label>
+                                      <input type="checkbox" class="btn-check btn-warning" data-bs-toggle="collapse" href="#multiCollapseExample30" aria-expanded="false" aria-controls="multiCollapseExample30" id="btncheck30" autocomplete="off"/>
+                                      <label class="btn btn-outline-info" for="btncheck30">8MP</label>
+                                      <input type="checkbox" class="btn-check btn-info" data-bs-toggle="collapse" href=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample10 multiCollapseExample20 multiCollapseExample30" id="btncheck40" autocomplete="off"/>
+                                      <label class="btn btn-outline-primary" for="btncheck40">전체</label>
+                                    </div>
+                                    <!-- collapse content-->
+                                    <div class="col">
+                                      <div class="row">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample10">
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                            <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button>
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/bullet/2m_f_f.png' alt="고정카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">VBR10327&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-T4217WRX 4)</span><br> 4mm 고정렌즈 /IR Led / IP67 / PoE only </p>
+                                            <!-- <a type="button" style="width: 3rem; height: 3rem;" class="badge bg-idis btn btn-idis fs-6 align-middle" href="https://www.idisglobal.com/index/product_view/2783"> 자료</a> -->
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('85,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                            <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button>
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/bullet/8m_f_f.png' alt="고정카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">VBR30672&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-T4216WRX 4)</span><br> 4mm 고정렌즈 /IR Led (30m) / IP67 / 저조도 특화 CMOS </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('130,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                            <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button>
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/bullet/8m_f_f.png' alt="고정카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS28251&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-T4216WRX 2.8)</span><br> 2.8mm 고정렌즈 /IR Led (30m) / IP67 / 저조도 특화 CMOS </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('135,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                            <button type="button"  class="badge bg-success btn btn-bg-success fs-7" style="width: 3rem; height: 3rem;">가변</button>
+                                            <img  class="p-2 bd-highlight" style="width: 15%; height: 15%;" src='/카메라선택기/cam/bullet/2m_f_v.png' alt="가변카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS30338&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-T4236WRX-A)</span><br> 2.8~12mm 가변렌즈 /IR Led (30m) / IP67 / 저조도 특화 CMOS </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('186,000원')"> 금액</button>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample20">
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-warning btn btn-warning fs-7" style="width: 3rem; height: 3rem;">5MP</button>
+                                            <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button>
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/bullet/8m_f_f.png' alt="고정카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">VDR10346&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-T4516WRX-A 4)</span><br> 4mm 고정렌즈 /IR Led (30m) / IP67 / 저조도 특화 CMOS </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('180,000원')"> 금액</button>
+                                          </div>
+
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-warning btn btn-warning fs-7" style="width: 3rem; height: 3rem;">5MP</button>
+                                            <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button>
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/bullet/8m_f_f.png' alt="고정카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">VBR10344&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-T4516WRX-A 2.8)</span><br> 2.8mm 고정렌즈 /IR Led (30m) / IP67 / 저조도 특화 CMOS </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('180,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-warning btn btn-warning fs-7" style="width: 3rem; height: 3rem;">5MP</button>
+                                            <button type="button"  class="badge bg-success btn btn-bg-success fs-7" style="width: 3rem; height: 3rem;">가변</button>
+                                            <img  class="p-2 bd-highlight" style="width: 15%; height: 15%;" src='/카메라선택기/cam/bullet/8m_f_v.png' alt="가변카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS32031&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-T4536WRX-A)</span><br> 3.0~13.5mm 가변렌즈 /IR Led (30m) / IP67 / 저조도 특화 CMOS </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('290,000원')"> 금액</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample30">
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-info btn btn-info fs-7" style="width: 3rem; height: 3rem;">8MP</button>
+                                            <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button>
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/bullet/8m_f_f.png' alt="고정카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS30334&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-T4811RX-A)</span><br> 4mm 고정렌즈 /IR Led (30m) / 저조도 특화 CMOS </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('280,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-info btn btn-info fs-7" style="width: 3rem; height: 3rem;">8MP</button>
+                                            <button type="button"  class="badge bg-success btn btn-bg-success fs-7" style="width: 3rem; height: 3rem;">가변</button>
+                                            <img  class="p-2 bd-highlight" style="width: 15%; height: 15%;" src='/카메라선택기/cam/bullet/8m_f_v.png' alt="가변카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">VBR10328&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-T4831HRX-A)</span><br> 2.7~13.5mm 가변렌즈 /IR Led (30m) / 저조도 특화 CMOS </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('350,000원')"> 금액</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                <div class="modal-footer d-grid gap-2">
+                                  <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
+                            </div>
+                           </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+          </div>  
+
+              <!-- 특수 카드박스 -->
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3" style="background-color:rgb(0, 153, 176);">
+                      <h4 class="my-0 fw-normal" style="color:white;">특수 카메라</h4>
+                    </div>
+                    <input type="image" id='camImg' src='/카메라선택기/cam/etc_cam/etccam.png' />
+                    <div class="card-body">
+                      <!-- <h1 class="card-title pricing-card-title"><small class="text-muted fw-light">SPECIAL</small></h1> -->
+                      <!-- <ul class="list-unstyled mt-3 mb-4">
+                        <li>✔️ 스피드돔/어안/핀홀카메라...</li>
+                        <li>✔️ PoE (IEEE 802.3af) / 일부제외</li>
+                        <li>✔️ H.265, H.264 (MP) M-JPEG,</li>
+                        <li>✔️ 아이디스만의 지능형 코덱</li>
+                      </ul> -->
+                      <button class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal-dialog2">Contact</button>
+                      <div class="modal fade" id="modal-dialog2" tabindex="-1" data-bs-backdrop="static" aria-labelledby="..." aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content " >
+                                <div class="modal-header card text-center">
+                                  <h2><span style="color:rgb(0, 153, 176);">IDIS</span> PTZ/FishEyes<br>Pinhole/Etc CAM LIST ®️</h2>
+                                  <h6 class="opacity-50">원하시는 카메라를 클릭하세요!</h6>
+                                  <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                                </div>
+                                <div class="modal-body d-grid gap-2" >
+                                    <!-- collapse button -->
+                                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                      <input type="checkbox" class="btn-check btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample11" aria-expanded="false" aria-controls="multiCollapseExample11" id="btncheck11" autocomplete="off"/>
+                                      <label class="btn btn-outline-primary" for="btncheck11">PTZ</label>
+                                      <input type="checkbox" class="btn-check btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample21" aria-expanded="false" aria-controls="multiCollapseExample21" id="btncheck21" autocomplete="off"/>
+                                      <label class="btn btn-outline-primary" for="btncheck21">Fisheyes</label>
+                                      <input type="checkbox" class="btn-check btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample31" aria-expanded="false" aria-controls="multiCollapseExample31" id="btncheck31" autocomplete="off"/>
+                                      <label class="btn btn-outline-primary" for="btncheck31">기타</label>
+                                      <input type="checkbox" class="btn-check btn-primary" data-bs-toggle="collapse" href=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample11 multiCollapseExample21 multiCollapseExample31" id="btncheck41" autocomplete="off"/>
+                                      <label class="btn btn-outline-primary" for="btncheck40">전체</label>
+                                    </div>
+                                    <!-- collapse content-->
+                                    <div class="col">
+                                      <div class="row">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample11">
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                            <button type="button"  class="badge bg-success btn btn-bg-success fs-7" style="width: 3rem; height: 3rem;">IR</button>
+                                            <img  class="p-2 bd-highlight" style="width: 15%; height: 15%;" src='/카메라선택기/cam/etc_cam/2m_spd_ir.png' alt="PTZ카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">VDP10061&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-S6286HRXL-A)</span><br> 36배줌 광학렌즈 / IR LED(350m) / IP66 </p>
+                                            <button type="button"  class="badge bg-dark btn btn-dark fs-7" style="width: 4rem; height: 2rem;"
+                                            data-bs-toggle="collapse" href="#collapseBracket0" role="button" aria-expanded="false" aria-controls="#collapseBracket0">브라켓</button>&nbsp;&nbsp;&nbsp;
+                                            <div class="collapse row" id="collapseBracket0">
+                                              <div class="card card-body"  style="width:200%;">
+                                                <div class="row">
+                                                  <img  class="p-2 bd-highlight" style="width: 100px;" src='/카메라선택기/cam/w1.png' alt="브라켓" />
+                                                </div>
+                                                <P> TGS10534 / JP-H-WL / 벽부형 브라켓 (50,000원) </P>
+                                              </div>
+                                            </div>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('1,180,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                            <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">일반</button>
+                                            <img  class="p-2 bd-highlight" style="width: 15%; height: 15%;" src='/카메라선택기/cam/etc_cam/2m_spd_d.png' alt="PTZ카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">VDP10231&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-S3283WHX-A)</span><br> 30배줌 광학렌즈 / IP66 </p>
+                                            <button type="button"  class="badge bg-dark btn btn-dark fs-7" style="width: 4rem; height: 2rem;"
+                                            data-bs-toggle="collapse" href="#collapseBracket1" role="button" aria-expanded="false" aria-controls="#collapseBracket1">브라켓</button>&nbsp;&nbsp;&nbsp;
+                                            <div class="collapse row" id="collapseBracket1">
+                                              <div class="card card-body"  style="width:200%;">
+                                                <div class="row">
+                                                  <img  class="p-2 bd-highlight" style="width: 100px;" src='/카메라선택기/cam/w2.png' alt="선쉴드" />
+                                                  <img  class="p-2 bd-highlight" style="width: 100px;" src='/카메라선택기/cam/w1.png' alt="브라켓" />
+                                                </div>
+                                                <P> TGS12364 / IDB221BS & JP-H-WL / 벽부형 브라켓 셋트 (120,000원) </P>
+                                              </div>
+                                            </div>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('750,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                            <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">일반</button>
+                                            <img  class="p-2 bd-highlight" style="width: 15%; height: 15%;" src='/카메라선택기/cam/etc_cam/2m_spd_f.png' alt="PTZ카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS32032&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-S3283FX-A)</span><br> 30배줌 광학렌즈 / 천정매립형 </p>
+                                            <button type="button"  class="badge bg-light btn btn-light fs-7" style="width: 4rem; height: 2rem;">브라켓없음</button>&nbsp;&nbsp;&nbsp;
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('750,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                            <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">일반</button>
+                                            <img  class="p-2 bd-highlight" style="width: 15%; height: 15%;" src='/카메라선택기/cam/etc_cam/2m_spd_d_m.png' alt="PTZ카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">VDP10060&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (DC-S6162WHX-A)</span><br> 12배줌 광학렌즈 / 미니사이즈 </p>
+                                            <button type="button"  class="badge bg-light btn btn-light fs-7" style="width: 4rem; height: 2rem;">브라켓없음</button>&nbsp;&nbsp;&nbsp;
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('640,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                          <button type="button"  class="badge bg-warning btn btn-warning fs-7" style="width: 3rem; height: 3rem;">5MP</button>
+                                            <button type="button"  class="badge bg-success btn btn-bg-success fs-7" style="width: 3rem; height: 3rem;">IR</button>
+                                            <img  class="p-2 bd-highlight" style="width: 15%; height: 15%;" src='/카메라선택기/cam/etc_cam/8m_spd_ir.png' alt="PTZ카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS30459&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-S3583HRX-A)</span><br> 31배줌 광학렌즈 / IR LED(250m) / IP66 </p>
+                                            <button type="button"  class="badge bg-dark btn btn-dark fs-7" style="width: 4rem; height: 2rem;"
+                                            data-bs-toggle="collapse" href="#collapseBracket5" role="button" aria-expanded="false" aria-controls="#collapseBracket5">브라켓</button>&nbsp;&nbsp;&nbsp;
+                                            <div class="collapse row" id="collapseBracket5">
+                                              <div class="card card-body"  style="width:200%;">
+                                                <div class="row">
+                                                  <img  class="p-2 bd-highlight" style="width: 100px;" src='/카메라선택기/cam/w1.png' alt="브라켓" />
+                                                </div>
+                                                <P> TGS10534 / JP-H-WL / 벽부형 브라켓 (50,000원) </P>
+                                              </div>
+                                            </div>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('1,750,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                          <button type="button"  class="badge bg-info btn btn-info fs-7" style="width: 3rem; height: 3rem;">8MP</button>
+                                            <button type="button"  class="badge bg-success btn btn-bg-success fs-7" style="width: 3rem; height: 3rem;">IR</button>
+                                            <img  class="p-2 bd-highlight" style="width: 15%; height: 15%;" src='/카메라선택기/cam/etc_cam/8m_spd_ir.png' alt="PTZ카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">채번필요&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-S6881HRX-A)</span><br> 31배줌 광학렌즈 / IR LED(250m) / IP66 </p>
+                                            <button type="button"  class="badge bg-dark btn btn-dark fs-7" style="width: 4rem; height: 2rem;"
+                                            data-bs-toggle="collapse" href="#collapseBracket8" role="button" aria-expanded="false" aria-controls="#collapseBracket8">브라켓</button>&nbsp;&nbsp;&nbsp;
+                                            <div class="collapse row" id="collapseBracket8">
+                                              <div class="card card-body"  style="width:200%;">
+                                                <div class="row">
+                                                  <img  class="p-2 bd-highlight" style="width: 100px;" src='/카메라선택기/cam/w1.png' alt="브라켓" />
+                                                </div>
+                                                <P> TGS10534 / JP-H-WL / 벽부형 브라켓 (50,000원) </P>
+                                              </div>
+                                            </div>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('2,200,000원')"> 금액</button>
+                                          </div>
+                                      </div>
+                                      <!-- 어안카메라 모달 -->
+                                      <div class="row">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample21">
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-warning btn btn-warning fs-7" style="width: 3rem; height: 3rem;">5MP</button>
+                                            <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">어안</button>
+                                            <img  class="p-2 bd-highlight" style="width: 15%; height: 15%;" src='/카메라선택기/cam/etc_cam/5m_fe.png' alt="고정카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS30108&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-Y6516WRX-A)</span><br> 1.5mm 어안렌즈 /IR Led (30m) / IP67 </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('330,000원')"> 금액</button>
+                                          </div>
+
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                          <button type="button"  class="badge bg-info btn btn-info fs-7" style="width: 3rem; height: 3rem;">12MP</button>
+                                            <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">어안</button>
+                                            <img  class="p-2 bd-highlight" style="width: 15%; height: 15%;" src='/카메라선택기/cam/etc_cam/12m_fe.png' alt="고정카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">VBR10318&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-Y6C16WRX-A)</span><br> 1.6mm 어안렌즈 /IR Led (15m) / IP67 </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('500,000원')"> 금액</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                       <!-- 기타 카메라 모달 -->
+                                      <div class="row">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample31">
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                          <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                          <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">핀홀</button>
+                                            <img  class="p-2 bd-highlight" style="width: 10%; height: 10%;" src='/카메라선택기/cam/etc_cam/2m_ph.png' alt="고정카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS32466&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NC-V4212XJ-A 2.4mm)</span><br> 2.4mm 고정렌즈 / 핀홀카메라 </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('300,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                          <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                          <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">ANPR</button>
+                                            <img  class="p-2 bd-highlight" style="width: 10%; height: 10%;" src='/카메라선택기/cam/etc_cam/2m_car.png' alt="가변카메라" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS28707&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (DC-T2262HRL)</span><br> 12~50mm /차량번호 인식 / IDIS NVR전용 </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('1,450,000원')"> 금액</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                <div class="modal-footer d-grid gap-2">
+                                  <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
+                            </div>
+                           </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+          </div>
+        <section class="col">
+              <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-6 fw-normal ">NVR ™️</h1>
+                <!-- <p class="fs-5 text-muted">
+                  <i class="fa-sharp fa-solid fa-camera-web"></i>
+                  <ul class="list-unstyled mt-3 mb-4 .bg-idis">
+                    <li>✔️ 2MP/5MP/8MP </li>
+                    <li>✔️ 내장 PoE (IEEE 802.3af)</li>
+                    <li>✔️ H.265, H.264 (MP) M-JPEG,</li>
+                  </ul>
+                </p> -->
+                </div>
+            <!-- NVR 카드박스 -->
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3" style="background-color:rgb(0, 153, 176);">
+                    <h4 class="my-0 fw-normal " style="color:white;" >저장장치(NVR)</h4>
+                  </div>
+                        <input type="image" class="p-2 bd-highlight" src='/카메라선택기/cam/nvr/64ch_nvr.png' />
+                  <div class="card-body">
+                      <!-- <h1 class="card-title pricing-card-title "><small class="text-muted fw-light">NETWORK RECORDER</small></h1> -->
+
+                      <button class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal-dialogNVR">Contact</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modal-dialogNVR" tabindex="-1" aria-labelledby="modal-dialogLabel"  aria-hidden="true">
+                          <div class="modal-dialog modal-xl ">
+                              <div class="modal-content " >
+                                  <div class="modal-header card text-center">
+                                    <h2><span style="color:rgb(0, 153, 176);">IDIS</span> NVR LIST ®️</h2>
+                                    <h6 class="opacity-50">원하시는 채널(CH)을 클릭하세요!</h6>
+                                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                                  </div>
+                                  <div class="modal-body d-grid gap-2" >
+                                      <!-- collapse button -->
+                                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                        <input type="checkbox" class="btn-check btn-danger" data-bs-toggle="collapse" href="#multiCollapseExample12" aria-expanded="false" aria-controls="multiCollapseExample12" id="btncheck12" autocomplete="off"/>
+                                        <label class="btn btn-outline-danger" for="btncheck12">4-8CH</label>
+                                        <input type="checkbox" class="btn-check btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample22" aria-expanded="false" aria-controls="multiCollapseExample22" id="btncheck22" autocomplete="off"/>
+                                        <label class="btn btn-outline-warning" for="btncheck22">16-32CH</label>
+                                        <input type="checkbox" class="btn-check btn-warning" data-bs-toggle="collapse" href="#multiCollapseExample32" aria-expanded="false" aria-controls="multiCollapseExample32" id="btncheck32" autocomplete="off"/>
+                                        <label class="btn btn-outline-info" for="btncheck32">64CH--</label>
+                                        <input type="checkbox" class="btn-check btn-info" data-bs-toggle="collapse" href=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample12 multiCollapseExample22 multiCollapseExample32" id="btncheck42" autocomplete="off"/>
+                                        <label class="btn btn-outline-primary" for="btncheck42">전체</label>
+                                        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">5MP</button>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">8MP</button>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" href=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3"> Total </button> -->
+                                      </div>
+      
+                                      <!-- collapse content-->
+                                      <div class="col">
+                                        <div class="row">
+                                          <div class="collapse multi-collapse" id="multiCollapseExample12">
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                              <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">4CH</button>
+                                              <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">SA</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/nvr/4ch_nvr.png' alt="NVR" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS32033&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NR-2504P)</span><br> 4CH / 기본 2TB(추가 1EA) / PoE 4port 내장 </p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('330,000원')"> 금액</button>
+                                            </div>
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                              <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">8CH</button>
+                                              <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">SA</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/nvr/4ch_nvr.png' alt="NVR" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">VRN10204&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NR-2508P)</span><br> 8CH / 기본 2TB(추가 1EA) / PoE 8port 내장 </p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('400,000원')"> 금액</button>
+                                            </div>
+                                          </div>
+                                          <div class="collapse multi-collapse" id="multiCollapseExample22">
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-warning btn btn-warning fs-7" style="width: 3rem; height: 3rem;">16CH</button>
+                                              <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">SA</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/nvr/16ch_nvr.png' alt="NVR" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS32779&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NR-3516P)</span><br> 16CH / 기본 3TB(추가 3EA) / PoE 16port 내장 </p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('880,000원')"> 금액</button>
+                                            </div>
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-warning btn btn-warning fs-7" style="width: 3rem; height: 3rem;">16CH</button>
+                                              <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">SA</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/nvr/16ch_nvr.png' alt="NVR" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">VRN10187&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NR-6516P)</span><br> 16CH / 기본 4TB(추가 5EA) / PoE 16port 내장 </p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('1,020,000원')"> 금액</button>
+                                            </div>
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-warning btn btn-warning fs-7" style="width: 3rem; height: 3rem;">32CH</button>
+                                              <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">SA</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/nvr/16ch_nvr.png' alt="NVR" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">VRN10185&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (NR-6532P)</span><br> 32CH / 기본 4TB(추가 5EA) / PoE 16port 내장 </p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('1,200,000원')"> 금액</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="collapse multi-collapse" id="multiCollapseExample32">                                            
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-info btn btn-info fs-7" style="width: 3rem; height: 3rem;">64CH</button>
+                                              <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">SA</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/nvr/64ch_nvr.png' alt="NVR" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">채번필요&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (DR-8564D)</span><br> 64CH / 기본 0TB(추가 8EA) / PoE 내장없음 </p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('2,500,000원')"> 금액</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  <div class="modal-footer d-grid gap-2">
+                                    <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                  </div>
+                              </div>
+                             </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+          <section class="col">
+              <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-6 fw-normal ">HD-TVI ™️</h1>
+                <!-- <p class="fs-5 text-muted">
+                  <i class="fa-sharp fa-solid fa-camera-web"></i>
+                  <ul class="list-unstyled mt-3 mb-4 .bg-idis">
+                    <li>✔️ 2MP/5MP 해상도 지원 </li>
+                    <li>✔️ HD-TVI 전용</li>
+                    <li>✔️ H.265, H.264 (MP) M-JPEG,</li>
+                  </ul>
+                </p> -->
+              </div>
+            <!-- HD-TVI 카드박스 -->
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal " >HD-TVI(아날로그)</h4>
+                  </div>
+                        <input type="image" class="p-2 bd-highlight" src='/카메라선택기/cam/hdtvi/hdtvi.png' />
+                  <div class="card-body">
+                      <!-- <h1 class="card-title pricing-card-title "><small class="text-muted fw-light">HD-TVI CAM/DVR</small></h1> -->
+
+                      <button class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal-dialogTvi">Contact</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modal-dialogTvi" tabindex="-1" aria-labelledby="modal-dialogLabel"  aria-hidden="true">
+                          <div class="modal-dialog modal-xl ">
+                              <div class="modal-content " >
+                                  <div class="modal-header card text-center">
+                                    <h2><span style="color:rgb(0, 153, 176);">IDIS</span> HD-TVI PRODUCT LIST ®️</h2>
+                                    <h6 class="opacity-50">원하시는 장비(CAM/DVR)을 클릭하세요!</h6>
+                                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                                  </div>
+                                  <div class="modal-body d-grid gap-2" >
+                                      <!-- collapse button -->
+                                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                        <input type="checkbox" class="btn-check btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample13" aria-expanded="false" aria-controls="multiCollapseExample13" id="btncheck13" autocomplete="off"/>
+                                        <label class="btn btn-outline-primary" for="btncheck13">HD-TVI-DOME</label>
+                                        <input type="checkbox" class="btn-check btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample23" aria-expanded="false" aria-controls="multiCollapseExample23" id="btncheck23" autocomplete="off"/>
+                                        <label class="btn btn-outline-primary" for="btncheck23">HD-TVI-BULLET</label>
+                                        <input type="checkbox" class="btn-check btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample33" aria-expanded="false" aria-controls="multiCollapseExample33" id="btncheck33" autocomplete="off"/>
+                                        <label class="btn btn-outline-primary" for="btncheck33">ETC-CAM</label>
+                                        <input type="checkbox" class="btn-check btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample43" aria-expanded="false" aria-controls="multiCollapseExample43" id="btncheck43" autocomplete="off"/>
+                                        <label class="btn btn-outline-primary" for="btncheck43">HD-TVI-DVR</label>
+                                        <input type="checkbox" class="btn-check btn-primary" data-bs-toggle="collapse" href=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample13 multiCollapseExample23 multiCollapseExample33 multiCollapseExample43" id="btncheck53" autocomplete="off"/>
+                                        <label class="btn btn-outline-primary" for="btncheck53">HD-TVI 전체</label>
+                                        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">5MP</button>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">8MP</button>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" href=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3"> Total </button> -->
+                                      </div>
+      
+                                      <!-- collapse content-->
+                                      <div class="col">
+                                        <div class="row">
+                                          <div class="collapse multi-collapse" id="multiCollapseExample13">
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                              <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                              <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/hdtvi/2m_d_f.png' alt="고정카메라" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">TSC10254&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (MTC-2210DR)</span><br> 4mm 고정렌즈 /IR Led /(어답터제외) DC 12V, 5W </p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('55,000원')"> 금액</button>
+                                            </div>
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                              <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                              <button type="button"  class="badge bg-success btn btn-bg-success fs-7" style="width: 3rem; height: 3rem;">가변</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/hdtvi/2m_d_v.png' alt="가변카메라" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">VDR10243&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (HC-D4221RX)</span><br> 2.8~12mm 가변렌즈 /IR Led /(어답터제외) DC 12V, 6W </p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('65,000원')"> 금액</button>
+                                            </div>
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                              <button type="button"  class="badge bg-warning btn btn-warning fs-7" style="width: 3rem; height: 3rem;">5MP</button>
+                                              <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/hdtvi/5m_d_f.png' alt="고정카메라" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">VDR10175&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (HC-D4511RX)</span><br> 4mm 고정렌즈 /IR Led /(어답터제외) DC 12V, 5.4W</p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('68,000원')"> 금액</button>
+                                            </div>
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                              <button type="button"  class="badge bg-warning btn btn-warning fs-7" style="width: 3rem; height: 3rem;">5MP</button>
+                                              <button type="button"  class="badge bg-success btn btn-bg-success fs-7" style="width: 3rem; height: 3rem;">가변</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/hdtvi/5m_d_v.png' alt="가변카메라" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS32034&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (TC-D5531RX)</span><br> 3~13.5mm 가변렌즈 /IR Led /(어답터제외) DC 12V, 5.4W </p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('125,000원')"> 금액</button>
+                                            </div>
+                                          </div>
+                                          <div class="collapse multi-collapse" id="multiCollapseExample23">
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                              <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                              <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/hdtvi/2m_b_f.png' alt="고정카메라" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">TSC10253&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (MTC-2230BR)</span><br> 4mm 고정렌즈 /IR Led /IP66 /(어답터제외)  </p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('65,000원')"> 금액</button>
+                                            </div>
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                              <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                              <button type="button"  class="badge bg-success btn btn-bg-success fs-7" style="width: 3rem; height: 3rem;">가변</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/hdtvi/2m_b_v.png' alt="가변카메라" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">VBR10213&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (HC-T4221WRX)</span><br> 2.8~12mm 가변렌즈 /IR Led / IP66 /(어답터제외) </p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('85,000원')"> 금액</button>
+                                            </div>
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                              <button type="button"  class="badge bg-warning btn btn-warning fs-7" style="width: 3rem; height: 3rem;">5MP</button>
+                                              <button type="button"  class="badge bg-success btn btn-bg-success fs-7" style="width: 3rem; height: 3rem;">가변</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/hdtvi/5m_b_v.png' alt="가변카메라" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">VBR10345&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (TC-T5531WRX)</span><br> 3~13.5mm 가변렌즈 /IR Led / IP66 /(어답터제외) </p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('155,000원')"> 금액</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="collapse multi-collapse" id="multiCollapseExample33">                                            
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                              <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">2MP</button>
+                                              <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/hdtvi/2m_ph.png' alt="고정카메라" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS29345&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (TC-V5211X)</span><br> 2.4mm 고정렌즈 / 0.1 Lux /(어답터제외)  </p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('85,000원')"> 금액</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="collapse multi-collapse" id="multiCollapseExample43">                                            
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">4CH</button>
+                                              <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">SA</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/dvr/4ch_dvr_1.png' alt="DVR" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS32035&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (HR-1504)</span><br> HD-TVI 4CH / 기본 2TB(추가안됨) </p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('165,000원')"> 금액</button>
+                                            </div>
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">4CH</button>
+                                              <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">SA</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/dvr/16ch_dvr.png' alt="DVR" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS31115&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (HR-2504)</span><br> HD-TVI 4CH / 기본 2TB(추가 1개) </p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('300,000원')"> 금액</button>
+                                            </div>
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-warning btn btn-warning fs-7" style="width: 3rem; height: 3rem;">8CH</button>
+                                              <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">SA</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/dvr/16ch_dvr.png' alt="DVR" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS31426&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (HR-2508)</span><br> HD-TVI 8CH / 기본 2TB(추가 1개) </p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('350,000원')"> 금액</button>
+                                            </div>
+                                            <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                            align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-warning btn btn-warning fs-7" style="width: 3rem; height: 3rem;">16CH</button>
+                                              <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">SA</button>
+                                              <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/dvr/16ch_dvr.png' alt="DVR" >
+                                              <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS31611&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (TR-1625)</span><br> HD-TVI 16CH / 기본 4TB(추가 1개) </p>
+                                              <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-7" onclick="costAlram('460,000원')"> 금액</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  <div class="modal-footer d-grid gap-2">
+                                    <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                  </div>
+                              </div>
+                             </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+          <section class="col">
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+              <h1 class="display-6 fw-normal">ACCESSORY ™️</h1>
+              <!-- <p class="fs-5 text-muted">                      
+                <i class="fa-sharp fa-solid fa-camera-web"></i>
+                <ul class="list-unstyled mt-3 mb-4 .bg-idis">
+                  <li>✔️ MADE IN IDIS </li>
+                  <li>✔️ CCTV 전용 악세사리</li>
+                  <li>✔️ 보안전용 하드디스크</li>
+                </ul>
+              </p> -->
+            </div>
+          <!-- 악세사리 카드박스 -->
+          <div class="col"id="cardContent" >
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3" style="background-color:rgb(0, 153, 176);">
+                <h4 class="my-0 fw-normal " style="color:white;" >CCTV 악세사리</h4>
+                </div>
+                      <input type="image" class="p-2 bd-highlight" src='/카메라선택기/cam/acc/acc.png' />
+                <div class="card-body">
+                    <!-- <h1 class="card-title pricing-card-title "><small class="text-muted fw-light">CCTV ACCESSORY ITEM</small></h1> -->
+
+                    <button class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal-dialogAcc">Contact</button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="modal-dialogAcc" tabindex="-1" aria-labelledby="modal-dialogLabel"  aria-hidden="true">
+                        <div class="modal-dialog modal-xl ">
+                            <div class="modal-content " >
+                                <div class="modal-header card text-center">
+                                  <h2><span style="color:rgb(0, 153, 176);">IDIS</span> ACCESSORY ITEM LIST®️</h2>
+                                  <h6 class="opacity-50">원하시는 장비(ITEM)을 클릭하세요!</h6>
+                                  <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                                </div>
+                                <div class="modal-body d-grid gap-2" >
+                                    <!-- collapse button -->
+                                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                      <input type="checkbox" class="btn-check btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample14" aria-expanded="false" aria-controls="multiCollapseExample14" id="btncheck14" autocomplete="off"/>
+                                      <label class="btn btn-outline-primary" for="btncheck14">PoE HUB</label>
+                                      <input type="checkbox" class="btn-check btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample24" aria-expanded="false" aria-controls="multiCollapseExample24" id="btncheck24" autocomplete="off"/>
+                                      <label class="btn btn-outline-primary" for="btncheck24">HDD</label>
+                                      <input type="checkbox" class="btn-check btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample34" aria-expanded="false" aria-controls="multiCollapseExample34" id="btncheck34" autocomplete="off"/>
+                                      <label class="btn btn-outline-primary" for="btncheck34">IP 부속자재</label>
+                                      <input type="checkbox" class="btn-check btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample44" aria-expanded="false" aria-controls="multiCollapseExample44" id="btncheck44" autocomplete="off"/>
+                                      <label class="btn btn-outline-primary" for="btncheck44">카메라 브라켓</label>
+                                      <input type="checkbox" class="btn-check btn-primary" data-bs-toggle="collapse" href=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample14 multiCollapseExample24 multiCollapseExample34 multiCollapseExample44" id="btncheck54" autocomplete="off"/>
+                                      <label class="btn btn-outline-primary" for="btncheck54">ACC 전체</label>
+                                      <!-- <button type="button" class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">5MP</button>
+                                      <button type="button" class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">8MP</button>
+                                      <button type="button" class="btn btn-primary" data-bs-toggle="collapse" href=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3"> Total </button> -->
+                                    </div>
+    
+                                    <!-- collapse content-->
+                                    <div class="col">
+                                      <div class="row">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample14">
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">8P</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/acc/8p_poe.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS13950&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (DH-2010P)</span><br> 8P PoE UTP 100Mbps / 2P UTP(업링크) 1Gbps </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('170,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-danger btn btn-danger fs-7" style="width: 3rem; height: 3rem;">8P</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/acc/8p_poe_1.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS13951&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (DH-2212PF)</span><br> 8P PoE UTP 1Gbps / 2P SFP(업링크) 1Gbps </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('250,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-warning btn btn-warning fs-7" style="width: 3rem; height: 3rem;">16P</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/acc/16p_poe.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS13952&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (DH-2018P)</span><br> 16P PoE UTP 100Mbps / 2P UTP(업링크) 1Gbps </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('275,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-info btn btn-info fs-7" style="width: 3rem; height: 3rem;">24P</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/acc/24p_poe_1.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS28074&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (DH-2026PFN)</span><br> 24P PoE UTP 1Gbps / 2P UTP-2P SFP(업링크) 1Gbps/ NTP기능(GPS) </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('800,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-info btn btn-info fs-7" style="width: 3rem; height: 3rem;">24P</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/acc/24p_poe_1.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS32037&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (DH-2126PFN)</span><br> 24P PoE UTP 1Gbps / 2P SFP(업링크) 10Gbps/ NTP기능(GPS) </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('990,000원')"> 금액</button>
+                                          </div>
+                                        </div>
+                                        <div class="collapse multi-collapse" id="multiCollapseExample24">
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-idis btn btn-idis fs-6" style="width: 4rem; height: 3rem;">1TB</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 7%; height: 7%;" src='/카메라선택기/cam/acc/hdd.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS22468&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (HDD 1TB)</span><br> VIDEO SURVEILLANCE 전용/ 제조사 랜덤발송 </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('50,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-idis btn btn-idis fs-6" style="width: 4rem; height: 3rem;">3TB</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 7%; height: 7%;" src='/카메라선택기/cam/acc/hdd.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TSD10018&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (HDD 3TB)</span><br> VIDEO SURVEILLANCE 전용/ 제조사 랜덤발송 </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('108,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-idis btn btn-idis fs-6" style="width: 4rem; height: 3rem;">4TB</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 7%; height: 7%;" src='/카메라선택기/cam/acc/hdd.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TSD10072&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (HDD 4TB)</span><br> VIDEO SURVEILLANCE 전용/ 제조사 랜덤발송 </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('110,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-idis btn btn-idis fs-6" style="width: 4rem; height: 3rem;">6TB</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 7%; height: 7%;" src='/카메라선택기/cam/acc/hdd.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TSD10083&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (HDD 6TB)</span><br> VIDEO SURVEILLANCE 전용/ 제조사 랜덤발송 </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('200,000원')"> 금액</button>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample34">                                            
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-primary btn btn-primary fs-6" style="width: 5rem; height: 3rem;">키보드</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/acc/ink1100.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS17369&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (INK-1100)</span><br> 네트워크 조이스틱(PTZ조작)  </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('400,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-primary btn btn-primary fs-6" style="width: 5rem; height: 3rem;">E-SATA</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/acc/ids1004.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS12627&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (INK-1100)</span><br> E-SATA 스토리지 케이스 / HDD 4EA 장착  </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('230,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-primary btn btn-primary fs-6" style="width: 5rem; height: 3rem;">엔코더</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/acc/he1101.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS18376&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (HE-1101)</span><br> IN) RJ-45 1port / OUT) HDMI 1port  </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('250,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-primary btn btn-primary fs-6" style="width: 5rem; height: 3rem;">디코더</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/acc/he1101.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS22818&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (DE-1104)</span><br> 카메라 16대 표출 / HDMI </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('230,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-primary btn btn-primary fs-6" style="width: 5rem; height: 3rem;">알람박스</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/acc/al1112.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS29547&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (AL-1112)</span><br>접점 알람 8p - IP로 NVR전송 </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('240,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-primary btn btn-primary fs-6" style="width: 5rem; height: 3rem;">EoC(T)</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/acc/eoc1.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS18311&nbsp;&nbsp;<span class="bg-idis" style="color:white;">(DA-EC3101T)</span><br> TX / UTP -> 동축변환(엘리베이터 사용) </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('100,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-primary btn btn-primary fs-6" style="width: 5rem; height: 3rem;">EoC(R)</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/acc/eoc1.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS18312&nbsp;&nbsp;<span class="bg-idis" style="color:white;">(DA-EC3101R)</span><br> RX / 동축 -> UTP (엘리베이터 사용) </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('110,000원')"> 금액</button>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample44">                                            
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-primary btn btn-primary fs-6" style="width: 5rem; height: 3rem;">브라켓</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/acc/w1.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS10534&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (JP-H-WL)</span><br> PTZ용 벽부형 브라켓  </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('50,000원')"> 금액</button>
+                                          </div>
+                                          <div class="card card-body d-flex flex-row bd-highlight mb-3 inline-flex justify-content-between 
+                                          align-items-center border border-start-0 border-end-0 " style="margin:0; padding:0; --bs-bg-opacity: .5;" >
+                                            <button type="button"  class="badge bg-primary btn btn-primary fs-6" style="width: 5rem; height: 3rem;">선쉴드</button>
+                                            <!-- <button type="button"  class="badge bg-idis btn btn-bg-idis fs-7" style="width: 3rem; height: 3rem;">고정</button> -->
+                                            <img  class="p-2 bd-highlight" style="width: 20%; height: 20%;" src='/카메라선택기/cam/acc/w2.png' alt="acc" >
+                                            <p class="p-2 bd-highlight fs-6" style="width: 50%;">TGS12364&nbsp;&nbsp;<span class="bg-idis" style="color:white;"> (IDB221BS & JP-H-WL)</span><br> PTZ카메라 벽부형 브라켓+ 선쉴드(VDR10231용)  </p>
+                                            <button type="button" style="width: 3rem; height: 3rem;" class="badge bg-secondary btn btn-secondary fs-" onclick="costAlram('120,000원')"> 금액</button>
+                                          </div>
+                                    </div>
+                                <div class="modal-footer d-grid gap-2">
+                                  <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
+                            </div>
+                           </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+          <script>
+            var myModal = document.getElementById('myModal');
+            var myInput = document.getElementById('myInput');
+            myModal.addEventListener('shown.bs.modal', function () {
+            myInput.focus()
+            })
+          </script>
+    </div>
+  </main>
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <small class="d-block mb-3 text-muted">&copy; Copyright © Domestic Business Solution Sales Team 2022</small>
+      </div>
+      <div class="col-6 col-md">
+        <h4>(주)아이디스</h4>
+        <h6>본사: 대전 광역시 유성구 테크노3로 8-10</h6>
+        <h6>지사: 경기 성남시 분당구 판교로 344</h6>
+      </div>
+      <div class="col-6 col-md">
+        <h4>기술상담 : 1644-6440</h4>
+        <h6>(24시간 연중무휴)</h6>
+      </div>
+    </div>
+  </footer>
+</div>
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+   
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+</style>
+
+    
+  </body>
 </html>
-<!-- 
-<input type="button" id="modalTest1" onclick="openModal()" value="open" />
-<input type="button" id="modalTest2" onclick="closeModal()" value="close" /> -->
